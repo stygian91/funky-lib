@@ -1,4 +1,4 @@
-const sub = require('../src/subtract');
+const sub = require('../src/math/subtract');
 
 test('creates a function that subtracts 3', () => {
   const sub3 = sub(3);

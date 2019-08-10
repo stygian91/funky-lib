@@ -1,24 +1,11 @@
-const dir = './src/';
-const map = {
-  add: 'add',
-  sub: 'subtract',
-  allPass: 'allPass',
-  anyPass: 'anyPass',
-  both: 'both',
-  either: 'either',
-  pipe: 'pipe',
-  curry: 'curry',
-  __: 'placeholderArgument',
+module.exports = {
+  add: require('./src/math/add'),
+  sub: require('./src/math/subtract'),
+  allPass: require('./src/allPass'),
+  anyPass: require('./src/anyPass'),
+  both: require('./src/both'),
+  either: require('./src/either'),
+  pipe: require('./src/pipe'),
+  curry: require('./src/curry'),
+  __: require('./src/placeholderArgument'),
 };
-
-const mapExports = (map) => {
-  const exports = {};
-
-  for (const name in map) {
-    exports[name] = require(`${dir}${map[name]}`);
-  }
-
-  return exports;
-};
-
-module.exports = mapExports(map);
