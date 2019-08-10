@@ -1,5 +1,4 @@
 const pipe = require('./pipe');
+const flip = require('./flip');
 
-const compose = (...funcs) => pipe(...funcs.reverse());
-
-module.exports = compose;
+module.exports = flip(pipe);
