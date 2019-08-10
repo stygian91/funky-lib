@@ -1,12 +1,15 @@
 {
-  "name": "ramda-training",
+  "name": "funky-lib",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
 }
