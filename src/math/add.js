@@ -1,3 +1,3 @@
-const add = termToAdd => (term) => term + termToAdd;
+const add = termToAdd => term => term + termToAdd;
 
 module.exports = add;
