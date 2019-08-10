@@ -1,4 +1,4 @@
-const add = require('../src/math/add');
+const add = require('./add');
 
 test('creates a function that adds 2', () => {
   const add2 = add(2);

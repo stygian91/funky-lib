@@ -1,4 +1,4 @@
-const ifElse = require('../src/ifElse');
+const ifElse = require('./ifElse');
 
 const greaterThan10 = a => a > 10;
 

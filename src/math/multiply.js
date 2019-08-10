@@ -1,4 +1,4 @@
-const curry = require('../curry');
+const curry = require('../function/curry');
 
 const multiply = (termToMultiply, term) => term * termToMultiply;
 

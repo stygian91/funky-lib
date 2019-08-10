@@ -1,4 +1,4 @@
-const multiply = require('../src/math/multiply');
+const multiply = require('./multiply');
 
 test('creates a function that multiplies by 3', () => {
   const mul3 = multiply(3);

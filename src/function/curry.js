@@ -8,7 +8,6 @@ const curry = func => (...args) => {
   return (...curriedArgs) => {
     const actualArgs = [];
     let curryIndex = 0;
-
     for (let index = 0; index < func.length; index++) {
       if (args[index] === __ || index >= args.length) {
         actualArgs.push(curriedArgs[curryIndex++]);

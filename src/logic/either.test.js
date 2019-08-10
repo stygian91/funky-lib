@@ -1,4 +1,4 @@
-const either = require('../src/either');
+const either = require('./either');
 
 test('returns true when either one of the argument functions returns true', () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

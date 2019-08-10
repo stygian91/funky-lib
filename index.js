@@ -1,11 +1,17 @@
 module.exports = {
   add: require('./src/math/add'),
   sub: require('./src/math/subtract'),
-  allPass: require('./src/allPass'),
-  anyPass: require('./src/anyPass'),
-  both: require('./src/both'),
-  either: require('./src/either'),
-  pipe: require('./src/pipe'),
-  curry: require('./src/curry'),
-  __: require('./src/placeholderArgument'),
+  div: require('./src/math/divide'),
+  mul: require('./src/math/multiply'),
+
+  allPass: require('./src/logic/allPass'),
+  anyPass: require('./src/logic/anyPass'),
+  both: require('./src/logic/both'),
+  either: require('./src/logic/either'),
+  ifElse: require('./src/logic/ifElse'),
+
+  compose: require('./src/function/compose'),
+  pipe: require('./src/function/pipe'),
+  curry: require('./src/function/curry'),
+  __: require('./src/function/placeholderArgument'),
 };

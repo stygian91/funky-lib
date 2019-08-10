@@ -1,4 +1,4 @@
-const divide = require('../src/math/divide');
+const divide = require('./divide');
 
 test('creates a function that divides by 2', () => {
   const div2 = divide(2);

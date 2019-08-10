@@ -1,4 +1,4 @@
-const pipe = require('../src/pipe');
+const pipe = require('./pipe');
 
 test('pipes results from left to right', () => {
   const add2 = a => a + 2;

@@ -1,4 +1,4 @@
-const curry = require('../curry');
+const curry = require('../function/curry');
 
 const divide = (divisor, divident) => {
   if (divisor === 0) {

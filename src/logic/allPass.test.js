@@ -1,4 +1,4 @@
-const allPass = require('../src/allPass');
+const allPass = require('./allPass');
 
 test('returns true only when all argument functions return true', () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

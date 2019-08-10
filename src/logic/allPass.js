@@ -1,4 +1,4 @@
-const curry = require('./curry');
+const curry = require('../function/curry');
 
 const allPass = (...funcs) => (...args) => funcs.reduce((accumulator, current) => accumulator && current(...args), true);
 

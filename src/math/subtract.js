@@ -1,4 +1,4 @@
-const curry = require('../curry');
+const curry = require('../function/curry');
 
 const subtract = (b, a) => a - b;
 

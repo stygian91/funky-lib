@@ -1,5 +1,5 @@
-const curry = require('../src/curry');
-const __ = require('../src/placeholderArgument');
+const curry = require('./curry');
+const __ = require('./placeholderArgument');
 
 const operation = (a, b, c) => a * b + c;
 const biggerOperation = (a, b, c, d) => a * b + c * d;

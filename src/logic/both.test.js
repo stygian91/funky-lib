@@ -1,4 +1,4 @@
-const both = require('../src/both');
+const both = require('./both');
 
 test('returns true only when both argument functions return true', () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;
