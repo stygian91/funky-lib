@@ -1,6 +1,6 @@
 const pipe = (...funcs) => (...args) => {
   if (funcs.length === 0) {
-    throw new Error('No functions provided to the pipe.');
+    throw new Error('No functions provided.');
   }
 
   let res = funcs[0](...args);
