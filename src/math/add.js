@@ -1,3 +1,5 @@
-const add = termToAdd => term => term + termToAdd;
+const curry = require('../curry');
 
-module.exports = add;
+const add = (a, b) => a + b;
+
+module.exports = curry(add);

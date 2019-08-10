@@ -1,3 +1,5 @@
-const multiply = termToMultiply => term => term * termToMultiply;
+const curry = require('../curry');
 
-module.exports = multiply;
+const multiply = (termToMultiply, term) => term * termToMultiply;
+
+module.exports = curry(multiply);

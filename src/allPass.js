@@ -1,3 +1,5 @@
+const curry = require('./curry');
+
 const allPass = (...funcs) => (...args) => funcs.reduce((accumulator, current) => accumulator && current(...args), true);
 
-module.exports = allPass;
+module.exports = curry(allPass);

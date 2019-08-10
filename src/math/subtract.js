@@ -1,3 +1,5 @@
-const subtract = termToSubtract => term => term - termToSubtract;
+const curry = require('../curry');
 
-module.exports = subtract;
+const subtract = (b, a) => a - b;
+
+module.exports = curry(subtract);
