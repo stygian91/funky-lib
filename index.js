@@ -19,5 +19,6 @@ module.exports = {
   pipe   : require('./src/function/pipe'),
   curry  : require('./src/function/curry'),
   flip   : require('./src/function/flip'),
+  always : require('./src/function/always'),
   __     : require('./src/function/placeholderArgument'),
 };
