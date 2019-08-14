@@ -21,4 +21,7 @@ module.exports = {
   flip   : require('./src/function/flip'),
   always : require('./src/function/always'),
   __     : require('./src/function/placeholderArgument'),
+
+  filter: require('./src/list/filter'),
+  map   : require('./src/list/map'),
 };
