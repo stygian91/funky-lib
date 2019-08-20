@@ -1,4 +1,4 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const divide = (divisor, divident) => {
   if (divisor === 0) {
@@ -8,4 +8,4 @@ const divide = (divisor, divident) => {
   return divident / divisor;
 };
 
-module.exports = curry(divide);
+export default curry(divide);

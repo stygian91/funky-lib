@@ -1,4 +1,4 @@
-const gte = require('./greaterThanOrEqual');
+import gte from './greaterThanOrEqual';
 
 test('returns true if left is >= right', () => {
   expect(gte(2, 2)).toBe(true);

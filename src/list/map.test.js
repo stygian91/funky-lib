@@ -1,4 +1,4 @@
-const map = require('./map');
+import map from './map';
 
 test('it returns a new array of the same size', () => {
   const list = [1, 2, 3];

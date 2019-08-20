@@ -1,4 +1,4 @@
-const complement = require('./complement');
+import complement from './complement';
 
 test("returns the opposite 'truthy' or 'falsy' value to the provided function", () => {
   const check = a => a > 5;

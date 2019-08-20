@@ -1,5 +1,5 @@
-const curry = require('./curry');
+import curry from './curry';
 
 const flip = func => (...args) => func(...args.reverse());
 
-module.exports = curry(flip);
+export default curry(flip);

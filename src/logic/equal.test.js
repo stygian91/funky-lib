@@ -1,4 +1,4 @@
-const equal = require('./equal');
+import equal from './equal';
 
 test('returns true if left === right', () => {
   const func1 = (a, b) => a + b;

@@ -1,3 +1,3 @@
 const __ = Symbol('placeholderArgument');
 
-module.exports = __;
+export default __;

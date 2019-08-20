@@ -1,4 +1,4 @@
-const pipe = require('./pipe');
+import pipe from './pipe';
 
 test('pipes results from left to right', () => {
   const add2 = a => a + 2;

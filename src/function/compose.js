@@ -1,4 +1,4 @@
-const pipe = require('./pipe');
-const flip = require('./flip');
+import pipe from './pipe';
+import flip from './flip';
 
-module.exports = flip(pipe);
+export default flip(pipe);

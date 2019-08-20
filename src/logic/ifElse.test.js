@@ -1,5 +1,5 @@
-const ifElse = require('./ifElse');
-const always = require('../function/always');
+import ifElse from './ifElse';
+import always from '../function/always';
 
 const greaterThan10 = (a, b, c) => (a + b + c) > 10;
 const sum3 = (a, b, c) => a + b + c;

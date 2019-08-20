@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const lte = (left, right) => left <= right;
 
-module.exports = curry(lte);
+export default curry(lte);

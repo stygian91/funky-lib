@@ -1,4 +1,4 @@
-const reduce = require('./reduce');
+import reduce from './reduce';
 
 test('it accumulates a result by calling the function over the list', () => {
   const list = [1, 2, 3, 4];

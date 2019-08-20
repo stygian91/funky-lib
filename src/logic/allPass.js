@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const allPass = (...funcs) => (...args) => funcs.reduce((accumulator, current) => accumulator && current(...args), true);
 
-module.exports = curry(allPass);
+export default curry(allPass);

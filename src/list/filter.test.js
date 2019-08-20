@@ -1,4 +1,4 @@
-const filter = require('./filter');
+import filter from './filter';
 
 test('returns a new list filtered by the condition function', () => {
   const list = [1, 2, 3];

@@ -1,7 +1,7 @@
-const curry = require('./curry');
+import curry from './curry';
 
 const thunkify = func => (...args) => () => {
   return func(...args);
 }
 
-module.exports = curry(thunkify);
+export default curry(thunkify);

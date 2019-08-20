@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const when = (conditionFn, thenFn) => (arg) => conditionFn(arg) ? thenFn(arg) : arg;
 
-module.exports = curry(when);
+export default curry(when);

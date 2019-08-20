@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const greaterThan = (left, right) => left > right;
 
-module.exports = curry(greaterThan);
+export default curry(greaterThan);

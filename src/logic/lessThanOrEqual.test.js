@@ -1,4 +1,4 @@
-const lte = require('./lessThanOrEqual');
+import lte from './lessThanOrEqual';
 
 test('returns true if left <= right', () => {
   expect(lte(1, 2)).toBe(true);

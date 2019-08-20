@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const map = (func, list) => list.map(func);
 
-module.exports = curry(map);
+export default curry(map);

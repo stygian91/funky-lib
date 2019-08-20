@@ -1,4 +1,4 @@
-const __ = require('./placeholderArgument');
+import __ from './placeholderArgument';
 
 const curry = func => (...args) => {
   if (!args.includes(__) && func.length <= args.length) {
@@ -21,4 +21,4 @@ const curry = func => (...args) => {
 };
 
 
-module.exports = curry;
+export default curry;

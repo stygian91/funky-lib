@@ -1,3 +1,3 @@
-const curry = require('./curry');
+import curry from './curry';
 
-module.exports = curry(a => a);
+export default curry(a => a);

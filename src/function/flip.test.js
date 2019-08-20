@@ -1,4 +1,4 @@
-const flip = require('./flip');
+import flip from './flip';
 
 test('reverses the order of arguments', () => {
   const func = flip((a, b, c) => a * b + c);

@@ -12,4 +12,4 @@ const pipe = (...funcs) => (...args) => {
   return res;
 }
 
-module.exports = pipe;
+export default pipe;

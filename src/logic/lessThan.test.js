@@ -1,4 +1,4 @@
-const lt = require('./lessThan');
+import lt from './lessThan';
 
 test('returns true if left < right', () => {
   expect(lt(1, 2)).toBe(true);

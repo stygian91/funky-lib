@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const subtract = (b, a) => a - b;
 
-module.exports = curry(subtract);
+export default curry(subtract);

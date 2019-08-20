@@ -1,4 +1,4 @@
-const always = require('./always');
+import always from './always';
 
 test('always returns the given value', () => {
   const alwaysTrue = always(true);

@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const complement = (func) => (...args) => func(...args) ? false : true;
 
-module.exports = curry(complement);
+export default curry(complement);

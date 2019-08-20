@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const reduce = (func, initialValue, list) => list.reduce(func, initialValue);
 
-module.exports = curry(reduce);
+export default curry(reduce);

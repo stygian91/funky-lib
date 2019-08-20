@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const equal = (left, right) => left === right;
 
-module.exports = curry(equal);
+export default curry(equal);

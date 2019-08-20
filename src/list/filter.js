@@ -1,5 +1,5 @@
-const curry = require('../function/curry');
+import curry from '../function/curry';
 
 const filter = (func, list) => list.filter(func);
 
-module.exports = curry(filter);
+export default curry(filter);

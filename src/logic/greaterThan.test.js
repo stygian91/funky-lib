@@ -1,4 +1,4 @@
-const gt = require('./greaterThan');
+import gt from './greaterThan';
 
 test('returns true if left is > right argument', () => {
   expect(gt(2, 1)).toBe(true);

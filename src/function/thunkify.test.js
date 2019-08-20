@@ -1,4 +1,4 @@
-const thunkify = require('./thunkify');
+import thunkify from './thunkify';
 
 test('delays execution by returning a nullary function', () => {
   const func = (a, b) => a * b;

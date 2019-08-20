@@ -1,7 +1,7 @@
-const unless = require('./unless');
-const gt = require('./greaterThan');
-const __ = require('../function/placeholderArgument');
-const always = require('../function/always');
+import unless from './unless';
+import gt from './greaterThan';
+import __ from '../function/placeholderArgument';
+import always from '../function/always';
 
 test('it calls the elseFn only unless the condition is met', () => {
   const neverBelow18 = unless(gt(__, 18), always(18));

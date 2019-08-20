@@ -1,4 +1,4 @@
-const compose = require('./compose');
+import compose from './compose';
 
 test('composes results from right to left', () => {
   const add2 = a => a + 2;
