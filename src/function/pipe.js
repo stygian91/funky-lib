@@ -3,13 +3,12 @@ const pipe = (...funcs) => (...args) => {
     throw new Error('No functions provided.');
   }
 
-  let res = funcs[0](...args);
-  for (let index = 1; index < funcs.length; index++) {
-    const func = funcs[index];
-    res = func(res);
-  }
+  const result = funcs.reduce(
+    (prevResult, currentFn) => [currentFn(...prevResult)],
+    args
+  );
 
-  return res;
+  return result[0];
 }
 
 export default pipe;

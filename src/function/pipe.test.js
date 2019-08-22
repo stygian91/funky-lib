@@ -12,5 +12,6 @@ test('pipes results from left to right', () => {
   );
 
   expect(operation(1)).toBe(10);
+  expect(pipe(add2)(1)).toBe(3);
   expect(pipe()).toThrow();
 });
