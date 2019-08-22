@@ -6,6 +6,7 @@ export { default as either }     from './either';
 export { default as equal }      from './equal';
 export { default as gt }         from './greaterThan';
 export { default as gte }        from './greaterThanOrEqual';
+export { default as ifElse }     from './ifElse';
 export { default as lt }         from './lessThan';
 export { default as lte }        from './lessThanOrEqual';
 export { default as not }        from './not';
