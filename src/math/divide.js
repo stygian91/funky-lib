@@ -1,6 +1,6 @@
 import curry from '../function/curry';
 
-const divide = (divisor, divident) => {
+const divide = (divident, divisor) => {
   if (divisor === 0) {
     throw new Error('Divide by zero error');
   }
