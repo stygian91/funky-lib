@@ -3,10 +3,17 @@ import curry from "../function/curry";
 const _objectMap = (func, object) => {
   const result = {};
 
-  for (const key in object) {
+  const iteratee = key => {
+    if (!object.propertyIsEnumerable(key)) {
+      return;
+    }
+
     const element = object[key];
     result[key] = func(element, key, object);
-  }
+  };
+
+  Object.getOwnPropertyNames(object).forEach(iteratee);
+  Object.getOwnPropertySymbols(object).forEach(iteratee);
 
   return result;
 };
