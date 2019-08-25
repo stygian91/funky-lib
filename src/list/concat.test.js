@@ -1,16 +1,17 @@
 import concat from "./concat";
 
 test('it concatenates two arrays', () => {
-  const left = [1, 2];
-  const right = [3, 4];
-  const string = '5, 6';
+  const leftArray = [1, 2];
+  const rightArray = [3, 4];
+  const leftString ='1, 2';
+  const rightString = '5, 6';
 
-  const result = concat(left, right);
+  const resultArray = concat(leftArray, rightArray);
+  const resultString = concat(leftString, rightString);
 
-  expect(result.length).toBe(4);
-  expect(result[0]).toBe(1);
-  expect(result[1]).toBe(2);
-  expect(result[2]).toBe(3);
-  expect(result[3]).toBe(4);
-  expect(() => concat(left, string)).toThrow();
+  expect(resultArray.length).toBe(4);
+  expect(resultArray).toEqual([1, 2, 3, 4]);
+  expect(resultString.length).toEqual(8);
+  expect(resultString).toEqual('1, 25, 6');
+  expect(() => concat(leftArray, rightString)).toThrow();
 });
