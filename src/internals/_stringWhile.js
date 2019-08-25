@@ -10,7 +10,6 @@ const _stringWhile = (condFn, func, string) => {
 
     func(element, key, string);
   }
-
 };
 
 export default curry(_stringWhile);
