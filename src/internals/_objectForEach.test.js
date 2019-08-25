@@ -31,5 +31,5 @@ test("it iterates over an object's string and symbol props in that order", () =>
     expect(result.key).toEqual(expectedValues[index].key);
     expect(result.value).toEqual(expectedValues[index].value);
     expect(result.object).toEqual(expectedValues[index].object);
-  })
+  });
 });

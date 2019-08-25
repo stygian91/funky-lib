@@ -1,16 +1,11 @@
 import curry from "../function/curry";
+import _objectWhile from './_objectWhile';
+import always from '../function/always';
 
-const _objectForEach = (iterationFn, object) => {
-  const _iterationFn = (key) => {
-    if (!object.propertyIsEnumerable(key)) {
-      return;
-    }
-
-    iterationFn(object[key], key, object);
-  };
-
-  Object.getOwnPropertyNames(object).forEach(_iterationFn);
-  Object.getOwnPropertySymbols(object).forEach(_iterationFn);
-};
+const _objectForEach = (iterationFn, object) => _objectWhile(
+  always(true),
+  iterationFn,
+  object
+);
 
 export default curry(_objectForEach);
