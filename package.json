@@ -7,7 +7,7 @@
     "prepare": "npm run build",
     "build": "babel src -d dist",
     "test": "jest --testPathIgnorePatterns=dist",
-    "test:coverage": "npm run test -- --coverage"
+    "test:watch": "npm run test -- --watch --coverage"
   },
   "author": "",
   "license": "ISC",
