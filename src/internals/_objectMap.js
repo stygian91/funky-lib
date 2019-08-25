@@ -1,19 +1,14 @@
 import curry from "../function/curry";
+import _objectForEach from './_objectForEach';
 
 const _objectMap = (func, object) => {
   const result = {};
 
-  const iteratee = key => {
-    if (!object.propertyIsEnumerable(key)) {
-      return;
-    }
-
-    const element = object[key];
+  const iterationFn = (element, key, object) => {
     result[key] = func(element, key, object);
   };
 
-  Object.getOwnPropertyNames(object).forEach(iteratee);
-  Object.getOwnPropertySymbols(object).forEach(iteratee);
+  _objectForEach(iterationFn, object);
 
   return result;
 };
