@@ -1,12 +1,15 @@
 import curry from "../function/curry";
+import always from '../function/always';
+import _stringWhile from './_stringWhile';
 
-const _stringMap = (func, object) => {
+const _stringMap = (func, string) => {
   const result = [];
 
-  for (const key in object) {
-    const element = object[key];
-    result.push(func(element, key, object));
-  }
+  const iterationFn = (char, key, string) => {
+    result.push(func(char, key, string));
+  };
+
+  _stringWhile(always(true), iterationFn, string);
 
   return result.join('');
 };
