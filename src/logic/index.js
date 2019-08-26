@@ -2,6 +2,7 @@ export { default as allPass }    from './allPass';
 export { default as anyPass }    from './anyPass';
 export { default as both }       from './both';
 export { default as complement } from './complement';
+export { default as cond }       from './cond';
 export { default as either }     from './either';
 export { default as equal }      from './equal';
 export { default as gt }         from './greaterThan';
