@@ -12,3 +12,4 @@ export { default as thunkify }    from './thunkify';
 export { default as then }        from './then';
 export { default as otherwise }   from './otherwise';
 export { default as memoizeWith } from './memoizeWith';
+export { default as nthArg }      from './nthArg';
