@@ -33,3 +33,17 @@ test('calling with all arguments just returns the result', () => {
   const operationResult = curriedOperation(1, 2, 3, 4);
   expect(operationResult).toBe(14);
 });
+
+test('it continues to return a function until all arguments have been passed', () => {
+  const result1 = curry(operation);
+  expect(typeof result1).toEqual('function');
+
+  const result2 = result1(1);
+  expect(typeof result2).toEqual('function');
+
+  const result3 = result2(2);
+  expect(typeof result3).toEqual('function');
+
+  const result4 = result3(3);
+  expect(result4).toEqual(5);
+});

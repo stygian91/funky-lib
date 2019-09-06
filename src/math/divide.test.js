@@ -8,6 +8,6 @@ test('creates a function that divides by 2', () => {
   expect(div2(0)).toBe(0);
 });
 
-test('creating a divide by zero function throws an error', () => {
-  expect(divide(__, 0)).toThrow();
+test('divide by zero throws an error', () => {
+  expect(() => divide(1, 0)).toThrow();
 });
