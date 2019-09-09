@@ -10,3 +10,5 @@ export { default as map }         from './map';
 export { default as reduce }      from './reduce';
 export { default as reduceWhile } from './reduceWhile';
 export { default as slice }       from './slice';
+export { default as take }        from './take';
+export { default as takeLast }    from './takeLast';
