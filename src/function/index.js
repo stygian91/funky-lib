@@ -13,3 +13,4 @@ export { default as then }        from './then';
 export { default as otherwise }   from './otherwise';
 export { default as memoizeWith } from './memoizeWith';
 export { default as nthArg }      from './nthArg';
+export { default as unapply }     from './unapply';
