@@ -1,3 +1,4 @@
+export { default as assoc }         from './assoc';
 export { default as path }          from './path';
 export { default as pathOr }        from './pathOr';
 export { default as pathSatisfies } from './pathSatisfies';

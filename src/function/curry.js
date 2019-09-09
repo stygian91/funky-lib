@@ -6,6 +6,7 @@ const _curryN = (length, received, func) => (...args) => {
   let argsIdx = 0;
   let left = length;
   let combinedIdx = 0;
+
   while (combinedIdx < received.length || argsIdx < args.length) {
     let result;
 
@@ -17,6 +18,7 @@ const _curryN = (length, received, func) => (...args) => {
     } else {
       result = args[argsIdx++];
     }
+
     combined[combinedIdx] = result;
 
     if (result !== __) {
@@ -30,7 +32,6 @@ const _curryN = (length, received, func) => (...args) => {
     ? func.apply(this, combined)
     : _arity(left, _curryN(length, combined, func));
 };
-
 
 const curry = func => _curryN(func.length, [], func);
 
