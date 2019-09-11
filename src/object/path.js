@@ -1,4 +1,4 @@
 import curry from '../function/curry';
-import get from 'lodash.get';
+import pathOr from './pathOr';
 
-export default curry((path, object) => get(object, path));
+export default curry((path, object) => pathOr(void 0, path, object));

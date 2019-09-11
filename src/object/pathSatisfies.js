@@ -1,6 +1,6 @@
-import get from 'lodash.get';
+import pathFn from './path';
 import curry from '../function/curry';
 
-const pathSatisfies = (condFn, path, object) => !!condFn(get(object, path));
+const pathSatisfies = (condFn, path, object) => !!condFn(pathFn(path, object));
 
 export default curry(pathSatisfies);
