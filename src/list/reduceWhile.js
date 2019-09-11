@@ -16,7 +16,7 @@ const reduceWhile = (condFn, reducer, initialValue, list) => {
     return _stringReduceWhile(condFn, reducer, initialValue, list);
   }
 
-  throw new Error('Argument is not reducable.');
+  throw new Error('Argument is not reducible.');
 }
 
 export default curry(reduceWhile);
