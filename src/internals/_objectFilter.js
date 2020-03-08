@@ -1,5 +1,5 @@
-import _objectForEach from './_objectForEach';
-import curry from '../function/curry';
+import _objectForEach from "./_objectForEach";
+import curry from "../function/curry";
 
 const _objectFilter = (filterFn, object) => {
   const result = {};
@@ -12,12 +12,9 @@ const _objectFilter = (filterFn, object) => {
     result[key] = value;
   };
 
-  _objectForEach(
-    iterationFn,
-    object
-  );
+  _objectForEach(iterationFn, object);
 
   return result;
-}
+};
 
 export default curry(_objectFilter);

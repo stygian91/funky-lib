@@ -1,5 +1,5 @@
 import curry from "../function/curry";
-import _objectForEach from './_objectForEach';
+import _objectForEach from "./_objectForEach";
 
 const _objectMap = (func, object) => {
   const result = {};

@@ -15,7 +15,7 @@ const _stringFilter = (filterFn, string) => {
 
   _stringWhile(always(true), iterationFn, string);
 
-  return result.join('');
-}
+  return result.join("");
+};
 
 export default curry(_stringFilter);

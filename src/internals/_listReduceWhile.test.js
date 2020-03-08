@@ -1,6 +1,6 @@
-import _listReduceWhile from './_listReduceWhile';
+import _listReduceWhile from "./_listReduceWhile";
 
-test('it reduces the list only while the condition fn returns a truthy value', () => {
+test("it reduces the list only while the condition fn returns a truthy value", () => {
   const subtractWhileNotNegative = _listReduceWhile(
     (acc, current) => acc - current >= 0,
     (acc, current) => acc - current

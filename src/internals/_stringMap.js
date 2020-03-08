@@ -1,6 +1,6 @@
 import curry from "../function/curry";
-import always from '../function/always';
-import _stringWhile from './_stringWhile';
+import always from "../function/always";
+import _stringWhile from "./_stringWhile";
 
 const _stringMap = (func, string) => {
   const result = [];
@@ -11,7 +11,7 @@ const _stringMap = (func, string) => {
 
   _stringWhile(always(true), iterationFn, string);
 
-  return result.join('');
+  return result.join("");
 };
 
 export default curry(_stringMap);

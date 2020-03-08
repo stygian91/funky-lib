@@ -3,19 +3,25 @@
   "version": "1.1.9",
   "description": "",
   "main": "dist/index.js",
+  "module": "es/index.js",
   "scripts": {
     "prepare": "npm run build",
-    "build": "babel src -d dist",
-    "test": "jest --testPathIgnorePatterns=dist",
-    "test:watch": "npm run test -- --watch --coverage"
+    "build:es": "cross-env BABEL_ENV=es babel src -d es",
+    "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist",
+    "build": "npm run build:es && npm run build:cjs",
+    "test": "jest",
+    "test:watch": "npm run test -- --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "jest": "^24.8.0"
-  }
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-plugin-annotate-pure-calls": "^0.4.0",
+    "cross-env": "^7.0.2",
+    "jest": "^25"
+  },
+  "sideEffects": false
 }

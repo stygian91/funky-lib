@@ -1,4 +1,4 @@
-import curry from './curry';
+import curry from "./curry";
 
 const then = (onSuccess, promise) => promise.then(onSuccess);
 

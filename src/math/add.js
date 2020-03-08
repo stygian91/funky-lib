@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const add = (a, b) => a + b;
 

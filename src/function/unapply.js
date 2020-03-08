@@ -1,4 +1,4 @@
-import curry from './curry';
+import curry from "./curry";
 
 const unapply = func => (...args) => func(args);
 

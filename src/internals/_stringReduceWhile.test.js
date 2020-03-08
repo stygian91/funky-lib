@@ -1,9 +1,9 @@
-import _stringReduceWhile from './_stringReduceWhile';
-import lte from '../logic/lessThanOrEqual';
-import __ from '../function/placeholderArgument';
+import _stringReduceWhile from "./_stringReduceWhile";
+import lte from "../logic/lessThanOrEqual";
+import __ from "../function/placeholderArgument";
 
-test('it reduces while the condition function returns a truthy value', () => {
-  const str = 'abcd';
+test("it reduces while the condition function returns a truthy value", () => {
+  const str = "abcd";
 
   const addWhileLessThan500 = _stringReduceWhile(
     (accumulator, current) => lte(accumulator + current.charCodeAt(0), 500),

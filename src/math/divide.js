@@ -1,8 +1,8 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const divide = (divident, divisor) => {
   if (divisor === 0) {
-    throw new Error('Divide by zero error');
+    throw new Error("Divide by zero error");
   }
 
   return divident / divisor;

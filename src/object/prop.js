@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const prop = (propName, object) => object[propName];
 

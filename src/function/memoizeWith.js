@@ -1,4 +1,4 @@
-import curry from './curry';
+import curry from "./curry";
 
 const memoizeWith = (keyGenerator, func) => {
   const cache = {};
@@ -12,6 +12,6 @@ const memoizeWith = (keyGenerator, func) => {
 
     return cache[key];
   };
-}
+};
 
 export default curry(memoizeWith);

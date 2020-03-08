@@ -1,5 +1,20 @@
 {
-  "presets": [
-    "@babel/preset-env"
-  ]
+  "presets": ["@babel/preset-env"],
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "@babel/preset-env",
+          {
+            "modules": false
+          }
+        ]
+      ],
+      "plugins": ["annotate-pure-calls"],
+      "ignore": ["**/*.test.js"]
+    },
+    "cjs": {
+      "ignore": ["**/*.test.js"]
+    }
+  }
 }

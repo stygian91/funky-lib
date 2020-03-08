@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const reduceWhile = (condFn, reducer, initialValue, list) => {
   let accumulator = initialValue;
@@ -13,6 +13,6 @@ const reduceWhile = (condFn, reducer, initialValue, list) => {
   }
 
   return accumulator;
-}
+};
 
 export default curry(reduceWhile);

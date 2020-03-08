@@ -1,11 +1,11 @@
-import pathSatisfies from './pathSatisfies';
-import gt from '../logic/greaterThan';
-import __ from '../function/placeholderArgument';
+import pathSatisfies from "./pathSatisfies";
+import gt from "../logic/greaterThan";
+import __ from "../function/placeholderArgument";
 
-test('the condition function is called with the prop at the specified path', () => {
+test("the condition function is called with the prop at the specified path", () => {
   const object1 = {
     a: {
-      b: 123,
+      b: 123
     }
   };
 
@@ -15,7 +15,7 @@ test('the condition function is called with the prop at the specified path', () 
     }
   };
 
-  const aBIsLargerThan100 = pathSatisfies(gt(__, 100), 'a.b');
+  const aBIsLargerThan100 = pathSatisfies(gt(__, 100), "a.b");
 
   expect(aBIsLargerThan100(object1)).toBe(true);
   expect(aBIsLargerThan100(object2)).toBe(false);

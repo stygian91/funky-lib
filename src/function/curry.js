@@ -1,5 +1,5 @@
-import __ from './placeholderArgument';
-import _arity from '../internals/_arity';
+import __ from "./placeholderArgument";
+import _arity from "../internals/_arity";
 
 const _curryN = (length, received, func) => (...args) => {
   let combined = [];

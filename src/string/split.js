@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const split = (delimiter, string) => string.split(delimiter);
 

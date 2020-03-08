@@ -1,3 +1,3 @@
-const __ = Symbol('placeholderArgument');
+const __ = Symbol("placeholderArgument");
 
 export default __;

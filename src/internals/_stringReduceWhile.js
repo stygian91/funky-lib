@@ -1,5 +1,5 @@
-import curry from '../function/curry';
-import _stringWhile from './_stringWhile';
+import curry from "../function/curry";
+import _stringWhile from "./_stringWhile";
 
 const _stringReduceWhile = (condFn, reducer, initialValue, string) => {
   let accumulator = initialValue;
@@ -8,15 +8,12 @@ const _stringReduceWhile = (condFn, reducer, initialValue, string) => {
     accumulator = reducer(accumulator, value, key, str);
   };
 
-  const iterationCondFn = (value, key, str) => condFn(accumulator, value, key, str);
+  const iterationCondFn = (value, key, str) =>
+    condFn(accumulator, value, key, str);
 
-  _stringWhile(
-    iterationCondFn,
-    iterationFn,
-    string
-  );
+  _stringWhile(iterationCondFn, iterationFn, string);
 
   return accumulator;
-}
+};
 
 export default curry(_stringReduceWhile);

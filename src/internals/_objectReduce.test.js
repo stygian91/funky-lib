@@ -1,12 +1,12 @@
-import _objectReduce from './_objectReduce';
-import __ from '../function/placeholderArgument';
+import _objectReduce from "./_objectReduce";
+import __ from "../function/placeholderArgument";
 
-test('it reduces while the condition function returns a truthy value', () => {
+test("it reduces while the condition function returns a truthy value", () => {
   const obj = {
     a: 1,
     b: 2,
     c: 3,
-    d: 4,
+    d: 4
   };
 
   const subtractWhileNotNegative = _objectReduce(

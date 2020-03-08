@@ -1,6 +1,6 @@
-import multiply from './multiply';
+import multiply from "./multiply";
 
-test('creates a function that multiplies by 3', () => {
+test("creates a function that multiplies by 3", () => {
   const mul3 = multiply(3);
 
   expect(mul3(1)).toBe(3);

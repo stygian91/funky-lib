@@ -1,20 +1,20 @@
-import _objectWhile from './_objectWhile';
-import always from '../function/always';
+import _objectWhile from "./_objectWhile";
+import always from "../function/always";
 
-test('it iterates through the object properties while the condition is true', () => {
+test("it iterates through the object properties while the condition is true", () => {
   const results = [];
 
-  const mySymbol = Symbol('mySymbol');
+  const mySymbol = Symbol("mySymbol");
 
   const object = {
     a: 1,
     b: 2,
-    [mySymbol]: 3,
+    [mySymbol]: 3
   };
 
   const expectedValues = [
-    { key: 'a', value: 1, object },
-    { key: 'b', value: 2, object },
+    { key: "a", value: 1, object },
+    { key: "b", value: 2, object }
   ];
 
   _objectWhile(
@@ -31,21 +31,21 @@ test('it iterates through the object properties while the condition is true', ()
   });
 });
 
-test('it iterates over everything if the condition function always returns true', () => {
+test("it iterates over everything if the condition function always returns true", () => {
   const results = [];
 
-  const mySymbol = Symbol('mySymbol');
+  const mySymbol = Symbol("mySymbol");
 
   const object = {
     a: 1,
     b: 2,
-    [mySymbol]: 3,
+    [mySymbol]: 3
   };
 
   const expectedValues = [
-    { key: 'a', value: 1, object },
-    { key: 'b', value: 2, object },
-    { key: mySymbol, value: 3, object },
+    { key: "a", value: 1, object },
+    { key: "b", value: 2, object },
+    { key: mySymbol, value: 3, object }
   ];
 
   _objectWhile(
