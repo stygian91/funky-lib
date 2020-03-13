@@ -10,7 +10,8 @@
     "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist",
     "build": "npm run build:es && npm run build:cjs",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "test:badges": "npm run test -- --coverage && jest-coverage-badges"
   },
   "author": "",
   "license": "ISC",
@@ -21,7 +22,8 @@
     "@babel/preset-env": "^7.8.7",
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "cross-env": "^7.0.2",
-    "jest": "^25"
+    "jest": "^25",
+    "jest-coverage-badges": "^1.1.2"
   },
   "sideEffects": false
 }
