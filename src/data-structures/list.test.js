@@ -1,8 +1,14 @@
 import List from "./list";
 import Maybe from "./maybe";
 import multiply from "../math/multiply";
-import { expectEquals, expectNotEquals } from "../internals/_test-helpers";
+import {
+  expectEquals,
+  expectNotEquals,
+  expectType
+} from "../internals/_test-helpers";
 
+const expectMaybe = expectType(Maybe);
+const expectList = expectType(List);
 const expectListEq = expectEquals(List);
 const expectListNotEq = expectNotEquals(List);
 
@@ -47,5 +53,8 @@ test("it chains", () => {
 test("it's traversable", () => {
   const listOfMaybes = new List([Maybe.of(1), Maybe.of(2), Maybe.of(3)]);
   const maybeOfList = listOfMaybes.sequence(Maybe.of);
-  console.log(maybeOfList);
+
+  expectMaybe(maybeOfList);
+  expectList(maybeOfList.join());
+  expectListEq(maybeOfList.join(), new List([1, 2, 3]));
 });
