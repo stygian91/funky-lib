@@ -20,8 +20,10 @@ test("it's a setoid", () => {
 
 test("it joins values", () => {
   expect(Maybe.of(321).join()).toEqual(321);
+  expect(Maybe.of(321).getValue()).toEqual(321);
 
   const maybeNull = Maybe.of(null).join();
+  expect(maybeNull.getValue()).toEqual(null);
   expectMaybe(maybeNull);
   expectMaybeVal(null, maybeNull);
 });

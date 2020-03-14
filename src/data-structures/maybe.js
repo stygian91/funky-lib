@@ -37,6 +37,10 @@ class Maybe {
     return this.isNothing ? this : this.value;
   }
 
+  getValue() {
+    return this.value;
+  }
+
   sequence(of) {
     return this.traverse(of, identity);
   }
