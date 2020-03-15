@@ -1,9 +1,9 @@
 import groupBy from "./groupBy";
+import identity from "../function/identity";
 
 test("groups lists with a specified function", () => {
-  const groupFn = (value, index) => value;
   const list = [1, 2, 1, 3, 4, 2];
-  const result = groupBy(groupFn, list);
+  const result = groupBy(identity, list);
   const expected = {
     1: [1, 1],
     2: [2, 2],

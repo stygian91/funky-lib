@@ -1,6 +1,7 @@
 import curry from "../function/curry";
+import propOr from "./propOr";
 
 const propSatisfies = (conditionFn, propName, object) =>
-  conditionFn(object[propName]);
+  conditionFn(propOr(void 0, propName, object));
 
 export default curry(propSatisfies);
