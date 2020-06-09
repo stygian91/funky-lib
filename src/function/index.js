@@ -9,8 +9,6 @@ export { default as identity } from "./identity";
 export { default as pipe } from "./pipe";
 export { default as tap } from "./tap";
 export { default as thunkify } from "./thunkify";
-export { default as then } from "./then";
-export { default as otherwise } from "./otherwise";
 export { default as memoizeWith } from "./memoizeWith";
 export { default as nthArg } from "./nthArg";
 export { default as unapply } from "./unapply";
