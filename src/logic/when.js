@@ -1,5 +1,6 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
-const when = (conditionFn, thenFn) => (arg) => conditionFn(arg) ? thenFn(arg) : arg;
+const when = (conditionFn, thenFn, arg) =>
+  conditionFn(arg) ? thenFn(arg) : arg;
 
 export default curry(when);
