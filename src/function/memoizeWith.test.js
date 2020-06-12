@@ -7,7 +7,7 @@ test("it caches results and doesn't call the function with the same arguments tw
     return a + b;
   };
 
-  const keyGenerator = argList => {
+  const keyGenerator = (...argList) => {
     return JSON.stringify(argList);
   };
 

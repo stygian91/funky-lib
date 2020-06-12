@@ -4,7 +4,7 @@ import multiply from "../math/multiply";
 import {
   expectEquals,
   expectNotEquals,
-  expectType
+  expectType,
 } from "../internals/_test-helpers";
 
 const expectMaybe = expectType(Maybe);
