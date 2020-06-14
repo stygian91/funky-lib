@@ -1,6 +1,6 @@
 {
   "name": "funky-lib",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "",
   "main": "dist/index.js",
   "module": "es/index.js",

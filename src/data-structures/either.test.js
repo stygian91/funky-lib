@@ -1,5 +1,5 @@
 import { expectEquals, expectType } from "../internals/_test-helpers";
-import { Left, Right, Either, toEither } from "./either";
+import { Left, Right, Either } from "./either";
 import Identity from "./identity";
 
 const expectRightEquals = expectEquals(Right);
@@ -45,14 +45,4 @@ test("Either", () => {
 
   const idOfLeft3 = new Left().traverse(Identity.of);
   expectLeftEquals(idOfLeft.join(), idOfLeft3.join());
-});
-
-test("toEither", () => {
-  const error = new Error("Error message");
-  const throwingFunc = toEither(() => {
-    throw error;
-  });
-  const regularFunc = toEither(() => 5);
-  expectLeftEquals(new Left(error), throwingFunc);
-  expectRightEquals(Either.of(5), regularFunc);
 });

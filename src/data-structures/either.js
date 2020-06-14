@@ -97,11 +97,3 @@ export class Right extends Either {
     return fn(this.value).map(Either.of);
   }
 }
-
-export const toEither = curry((fn) => {
-  try {
-    return Either.of(fn());
-  } catch (error) {
-    return new Left(error);
-  }
-});
