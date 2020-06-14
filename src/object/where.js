@@ -9,7 +9,7 @@ import map from "../list/map";
 const where = (specObject, testObject) => {
   const condFns = pipe(
     Object.keys,
-    map(key => propSatisfies(prop(key, specObject).join(), key, testObject)),
+    map((key) => propSatisfies(prop(key, specObject), key, testObject)),
     map(always)
   )(specObject);
 

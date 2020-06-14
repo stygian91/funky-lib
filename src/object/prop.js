@@ -1,6 +1,5 @@
 import curry from "../function/curry";
-import Maybe from "../data-structures/maybe";
 
-const prop = (propName, object) => Maybe.of(object[propName]);
+const prop = (propName, object) => object[propName];
 
 export default curry(prop);
