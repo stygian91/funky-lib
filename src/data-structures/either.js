@@ -1,3 +1,5 @@
+import curry from "../function/curry";
+
 export class Either {
   constructor(x) {
     this.value = x;
@@ -24,7 +26,7 @@ export class Left extends Either {
   }
 
   equals(other) {
-    return other instanceof Left;
+    return other instanceof Left && this.value === other.value;
   }
 
   map() {
@@ -95,3 +97,11 @@ export class Right extends Either {
     return fn(this.value).map(Either.of);
   }
 }
+
+export const toEither = curry((fn) => {
+  try {
+    return Either.of(fn());
+  } catch (error) {
+    return new Left(error);
+  }
+});
