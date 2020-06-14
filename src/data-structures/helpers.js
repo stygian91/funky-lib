@@ -9,6 +9,6 @@ export const toEither = curry((fn) => {
   }
 });
 
-export const mapIOEither = curry((fn, ioEither) =>
+export const mapIOInner = curry((fn, ioEither) =>
   ioEither.map((either) => either.map(fn))
 );
