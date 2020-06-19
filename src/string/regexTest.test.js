@@ -1,5 +1,5 @@
 // use an alias so that there's no conflict with jest
-import testFn from "./regex-test";
+import testFn from "./regexTest";
 
 test("Regex test", () => {
   const testLipsum = testFn(/lipsum/);
