@@ -9,8 +9,8 @@ A FUNctional libary.
 
 ## Test
 
-`yarn test`
+`npm run test`
 
 ## Build
 
-`yarn build`
+`npm run build`
