@@ -4,6 +4,7 @@ export { default as any } from "./any";
 export { default as concatA } from "./concat";
 export { default as filter } from "./filter";
 export { default as find } from "./find";
+export { default as findLast } from "./findLast";
 export { default as groupBy } from "./groupBy";
 export { default as join } from "./join";
 export { default as map } from "./map";

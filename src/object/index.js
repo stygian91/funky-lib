@@ -3,6 +3,7 @@ export { default as has } from "./has";
 export { default as path } from "./path";
 export { default as pathOr } from "./pathOr";
 export { default as pathSatisfies } from "./pathSatisfies";
+export { default as pick } from "./pick";
 export { default as prop } from "./prop";
 export { default as propEq } from "./propEq";
 export { default as propOr } from "./propOr";
