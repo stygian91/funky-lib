@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "module": "es/index.js",
   "scripts": {
-    "prepare": "npm run build",
+    "prepare": "npm run clean && npm run build",
+    "clean": "rimraf es/* dist/*",
     "build:es": "cross-env BABEL_ENV=es babel src -d es",
     "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist",
     "build": "npm run build:es && npm run build:cjs",
@@ -23,7 +24,8 @@
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "cross-env": "^7.0.2",
     "jest": "^25",
-    "jest-coverage-badges": "^1.1.2"
+    "jest-coverage-badges": "^1.1.2",
+    "rimraf": "^3.0.2"
   },
   "sideEffects": false
 }
