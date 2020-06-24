@@ -4,6 +4,10 @@
   "description": "",
   "main": "dist/index.js",
   "module": "es/index.js",
+  "files": [
+    "es",
+    "dist"
+  ],
   "scripts": {
     "prepare": "npm run clean && npm run build",
     "clean": "rimraf es/* dist/*",
