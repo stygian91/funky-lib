@@ -1,13 +1,9 @@
 import curry from "../function/curry";
+import findLastIndex from "./findLastIndex";
 
-const findLast = (conditionFn, list) => {
-  for (let index = list.length; index >= 0; index--) {
-    if (conditionFn(list[index], index, list)) {
-      return list[index];
-    }
-  }
-
-  return void 0;
+const findLast = (predicate, list) => {
+  const index = findLastIndex(predicate, list);
+  return index === -1 ? void 0 : list[index];
 };
 
 export default curry(findLast);
