@@ -1,5 +1,5 @@
 import { Left, Right, Either } from "./either";
-import { toEither, mapIOInner } from "./helpers";
+import { toEither, toIOEither, mapIOInner } from "./helpers";
 import { expectEquals, expectType } from "../internals/_test-helpers";
 import { IO } from ".";
 
@@ -15,6 +15,12 @@ test("toEither", () => {
   const regularFunc = toEither(() => 5);
   expectLeftEquals(new Left(error), throwingFunc);
   expectRightEquals(Either.of(5), regularFunc);
+});
+
+test("toIOEither", () => {
+  const ioEither = toIOEither(() => 5);
+  expectIO(ioEither);
+  expectRightEquals(Either.of(5), ioEither.run());
 });
 
 test("mapIOInner", () => {
