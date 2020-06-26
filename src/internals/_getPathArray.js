@@ -1,9 +1,10 @@
 import curry from "../function/curry";
 import split from "../string/split";
+import filter from "../list/filter";
 
 const _getPathArray = (path) => {
   if (typeof path === "string") {
-    return split(".", path);
+    return filter((pathPart) => pathPart !== "", split(".", path));
   } else if (Array.isArray(path)) {
     return path;
   } else {
