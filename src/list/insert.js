@@ -1,9 +1,6 @@
 import curry from "../function/curry";
+import splice from "./splice";
 
-const insert = (index, value, list) => {
-  const clone = list.slice();
-  clone.splice(index, 0, value);
-  return clone;
-};
+const insert = (index, value, list) => splice(index, 0, [value], list);
 
 export default curry(insert);
