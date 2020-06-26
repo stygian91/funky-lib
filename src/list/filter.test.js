@@ -6,7 +6,7 @@ test("returns a new list filtered by the condition function", () => {
   const str = "abcd";
   const filterFn = (item, index) => item + index >= 3;
   const filterFn1 = (item, key) => item === 1 || key === "c";
-  const filterFn2 = (char, key) => char === "c" || key === "3";
+  const filterFn2 = (char, key) => char === "c" || key === 3;
   const newList = filter(filterFn, list);
   const newObj = filter(filterFn1, obj);
   const newStr = filter(filterFn2, str);
