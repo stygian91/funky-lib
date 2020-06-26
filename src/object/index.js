@@ -1,5 +1,6 @@
 export { default as assoc } from "./assoc";
 export { default as assocPath } from "./assocPath";
+export { default as dissoc } from "./dissoc";
 export { default as has } from "./has";
 export { default as path } from "./path";
 export { default as pathOr } from "./pathOr";
