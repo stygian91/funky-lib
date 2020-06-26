@@ -47,3 +47,7 @@ test("it continues to return a function until all arguments have been passed", (
   const result4 = result3(3);
   expect(result4).toEqual(5);
 });
+
+test("you can curry functions that have already been partially applied", () => {
+  expect(curry(operation)(__, 2)(__, 3)(1)).toEqual(5);
+});
