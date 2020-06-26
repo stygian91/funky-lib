@@ -8,6 +8,7 @@ export { default as findIndex } from "./findIndex";
 export { default as findLast } from "./findLast";
 export { default as findLastIndex } from "./findLastIndex";
 export { default as groupBy } from "./groupBy";
+export { default as insert } from "./insert";
 export { default as join } from "./join";
 export { default as map } from "./map";
 export { default as reduce } from "./reduce";
