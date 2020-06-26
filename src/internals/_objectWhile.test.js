@@ -9,12 +9,12 @@ test("it iterates through the object properties while the condition is true", ()
   const object = {
     a: 1,
     b: 2,
-    [mySymbol]: 3
+    [mySymbol]: 3,
   };
 
   const expectedValues = [
     { key: "a", value: 1, object },
-    { key: "b", value: 2, object }
+    { key: "b", value: 2, object },
   ];
 
   _objectWhile(
@@ -39,13 +39,13 @@ test("it iterates over everything if the condition function always returns true"
   const object = {
     a: 1,
     b: 2,
-    [mySymbol]: 3
+    [mySymbol]: 3,
   };
 
   const expectedValues = [
     { key: "a", value: 1, object },
     { key: "b", value: 2, object },
-    { key: mySymbol, value: 3, object }
+    { key: mySymbol, value: 3, object },
   ];
 
   _objectWhile(

@@ -1,7 +1,7 @@
-import ifElse from './ifElse';
-import always from '../function/always';
+import ifElse from "./ifElse";
+import always from "../function/always";
 
-const greaterThan10 = (a, b, c) => (a + b + c) > 10;
+const greaterThan10 = (a, b, c) => a + b + c > 10;
 const sum3 = (a, b, c) => a + b + c;
 
 test('returns "then" statement if condition is true', () => {

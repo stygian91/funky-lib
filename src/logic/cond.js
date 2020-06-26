@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const cond = (pairs, arg) => {
   for (let index = 0; index < pairs.length; index++) {

@@ -7,7 +7,7 @@ test("it applies the list of arguments to the function", () => {
 });
 
 test("it passes undefined as default context", () => {
-  let func = function() {
+  let func = function () {
     return this;
   };
   const result = apply(func, []);
@@ -16,7 +16,7 @@ test("it passes undefined as default context", () => {
 
 test("it doesn't change a bound function's context", () => {
   let obj = {};
-  let func = function() {
+  let func = function () {
     this["someproperty"] = "test";
   }.bind(obj);
   apply(func, []);

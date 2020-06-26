@@ -33,6 +33,6 @@ const _curryN = (length, received, func) => (...args) => {
     : _arity(left, _curryN(length, combined, func));
 };
 
-const curry = func => _curryN(func.length, [], func);
+const curry = (func) => _curryN(func.length, [], func);
 
 export default curry;

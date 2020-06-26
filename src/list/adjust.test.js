@@ -3,7 +3,7 @@ import __ from "../function/placeholderArgument";
 
 test("it updates an item at index with a transform fn and returns the list as a copy", () => {
   const list = [1, 2, 3, 4];
-  const transform = a => a * 2;
+  const transform = (a) => a * 2;
   const adjustList = adjust(__, transform, list);
   const result1 = adjustList(1);
   const result2 = adjustList(-1);

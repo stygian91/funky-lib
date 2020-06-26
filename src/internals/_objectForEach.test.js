@@ -9,19 +9,19 @@ test("it iterates over an object's string and symbol props in that order", () =>
   const object = {
     a: 1,
     b: 2,
-    [mySymbol]: 3
+    [mySymbol]: 3,
   };
 
   Object.defineProperty(object, mySymbol2, {
     value: 4,
     enumerable: false,
-    writable: true
+    writable: true,
   });
 
   const expectedValues = [
     { key: "a", value: 1, object },
     { key: "b", value: 2, object },
-    { key: mySymbol, value: 3, object }
+    { key: mySymbol, value: 3, object },
   ];
 
   _objectForEach(

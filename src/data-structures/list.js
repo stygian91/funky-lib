@@ -23,7 +23,7 @@ export default class List {
     }
 
     return reduceWhile(
-      acc => acc,
+      (acc) => acc,
       (acc, curr, idx) => acc && equals(curr, other.$value[idx]),
       true,
       this.$value
@@ -43,14 +43,14 @@ export default class List {
   }
 
   sequence(of) {
-    return this.traverse(of, x => x);
+    return this.traverse(of, (x) => x);
   }
 
   traverse(of, fn) {
     return this.$value.reduce(
       (f, a) =>
         fn(a)
-          .map(b => bs => bs.concat(b))
+          .map((b) => (bs) => bs.concat(b))
           .ap(f),
       of(new List([]))
     );

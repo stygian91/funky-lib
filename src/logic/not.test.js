@@ -1,6 +1,6 @@
-import not from './not';
+import not from "./not";
 
-test('it returns the opposite argument', () => {
+test("it returns the opposite argument", () => {
   expect(not(true)).toBe(false);
   expect(not(false)).toBe(true);
   expect(not(0)).toBe(true);

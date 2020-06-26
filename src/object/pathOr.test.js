@@ -4,9 +4,9 @@ test("retrieves the value at the specified path, otherwise returns the default",
   const object = {
     a: {
       b: {
-        c: 321
-      }
-    }
+        c: 321,
+      },
+    },
   };
 
   expect(pathOr(111, "a.b.c", object)).toEqual(321);

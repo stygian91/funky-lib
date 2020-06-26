@@ -31,7 +31,7 @@ test("it joins values", () => {
 test("it maps over values", () => {
   const maybe = Maybe.of("a");
   const maybeNull = Maybe.of(null);
-  const fn = x => x.concat("bcd");
+  const fn = (x) => x.concat("bcd");
   const res = maybe.map(fn);
 
   expectMaybeVal("abcd", res);
@@ -44,7 +44,7 @@ test("it recognises Just()", () => {
 });
 
 test("it applies Just(func)", () => {
-  const fn = x => x + 5;
+  const fn = (x) => x + 5;
   const maybeNum = Maybe.of(10);
   const maybeNull = Maybe.of(null);
 
@@ -53,7 +53,7 @@ test("it applies Just(func)", () => {
 });
 
 test("it chains", () => {
-  expect(Maybe.of(20).chain(x => x - 10)).toEqual(10);
+  expect(Maybe.of(20).chain((x) => x - 10)).toEqual(10);
 });
 
 test("it's traversable", () => {

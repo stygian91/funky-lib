@@ -1,3 +1,3 @@
-const always = arg => () => arg;
+const always = (arg) => () => arg;
 
 export default always;

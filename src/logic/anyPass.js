@@ -1,11 +1,12 @@
-import curry from '../function/curry';
-import reduceWhile from '../list/reduceWhile';
+import curry from "../function/curry";
+import reduceWhile from "../list/reduceWhile";
 
-const anyPass = (...funcs) => (...args) => reduceWhile(
-  acc => !acc,
-  (acc, current) => acc || current(...args),
-  false,
-  funcs
-);
+const anyPass = (...funcs) => (...args) =>
+  reduceWhile(
+    (acc) => !acc,
+    (acc, current) => acc || current(...args),
+    false,
+    funcs
+  );
 
 export default curry(anyPass);

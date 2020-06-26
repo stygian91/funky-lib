@@ -3,7 +3,7 @@ import curry from "../function/curry";
 const _objectWhile = (condFn, iterationFn, object) => {
   const ownProps = Object.getOwnPropertyNames(object)
     .concat(Object.getOwnPropertySymbols(object))
-    .filter(key => object.propertyIsEnumerable(key));
+    .filter((key) => object.propertyIsEnumerable(key));
 
   for (let index = 0; index < ownProps.length; index++) {
     const key = ownProps[index];

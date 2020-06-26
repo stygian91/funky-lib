@@ -1,4 +1,4 @@
-import curry from '../function/curry';
+import curry from "../function/curry";
 
 const not = (arg) => !arg;
 
