@@ -1,19 +1,12 @@
 import curry from "../function/curry";
 import reduceWhile from "../list/reduceWhile";
-import split from "../string/split";
+import _getPathArray from "../internals/_getPathArray";
 
 const pathOr = (defaultValue, path, object) => {
-  let pathArray;
-  if (typeof path === "string") {
-    pathArray = split(".", path);
-  } else if (Array.isArray(path)) {
-    pathArray = path;
-  } else {
-    throw new Error("Path must be either a dot-separated string or an array.");
-  }
+  const pathArray = _getPathArray(path);
 
   const value = reduceWhile(
-    acc => typeof acc !== "undefined",
+    (acc) => typeof acc !== "undefined",
     (acc, key) => acc[key],
     object,
     pathArray
