@@ -2,6 +2,7 @@ export { default as adjust } from "./adjust";
 export { default as all } from "./all";
 export { default as any } from "./any";
 export { default as concat } from "./concat";
+export { default as chunk } from "./chunk";
 export { default as drop } from "./drop";
 export { default as filter } from "./filter";
 export { default as find } from "./find";
