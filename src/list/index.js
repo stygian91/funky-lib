@@ -21,3 +21,4 @@ export { default as sort } from "./sort";
 export { default as splice } from "./splice";
 export { default as take } from "./take";
 export { default as takeLast } from "./takeLast";
+export { default as unique } from "./unique";

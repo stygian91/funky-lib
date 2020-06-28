@@ -1,7 +1,8 @@
 import curry from "../function/curry";
+import isNullish from "./isNullish";
 
 const equal = (left, right) => {
-  if (left && typeof left.equals === "function") {
+  if (!isNullish(left) && typeof left.equals === "function") {
     return left.equals(right);
   }
 
