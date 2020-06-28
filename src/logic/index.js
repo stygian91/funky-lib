@@ -1,3 +1,4 @@
+export { default as and } from "./and";
 export { default as allPass } from "./allPass";
 export { default as anyPass } from "./anyPass";
 export { default as both } from "./both";
@@ -12,5 +13,7 @@ export { default as isNullish } from "./isNullish";
 export { default as lt } from "./lessThan";
 export { default as lte } from "./lessThanOrEqual";
 export { default as not } from "./not";
+export { default as or } from "./or";
 export { default as unless } from "./unless";
 export { default as when } from "./when";
+export { default as xor } from "./xor";
