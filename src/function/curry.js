@@ -8,24 +8,22 @@ const _curryN = (length, received, func) => (...args) => {
   let combinedIdx = 0;
 
   while (combinedIdx < received.length || argsIdx < args.length) {
-    let result;
+    let arg;
 
     if (
       combinedIdx < received.length &&
       (received[combinedIdx] !== __ || argsIdx >= args.length)
     ) {
-      result = received[combinedIdx];
+      arg = received[combinedIdx];
     } else {
-      result = args[argsIdx++];
+      arg = args[argsIdx++];
     }
 
-    combined[combinedIdx] = result;
-
-    if (result !== __) {
+    if (arg !== __) {
       left--;
     }
 
-    combinedIdx++;
+    combined[combinedIdx++] = arg;
   }
 
   if (left <= 0) {

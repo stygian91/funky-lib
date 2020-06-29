@@ -1,3 +1,4 @@
+/* jshint maxcomplexity: false */
 export default function _arity(n, fn) {
   switch (n) {
     case 0:

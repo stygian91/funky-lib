@@ -33,7 +33,8 @@
     "rimraf": "^3.0.2"
   },
   "jshintConfig": {
-    "esversion": "9"
+    "esversion": "9",
+    "maxcomplexity": "7"
   },
   "sideEffects": false
 }
