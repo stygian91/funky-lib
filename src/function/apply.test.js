@@ -17,8 +17,8 @@ test("it passes undefined as default context", () => {
 test("it doesn't change a bound function's context", () => {
   let obj = {};
   let func = function () {
-    this["someproperty"] = "test";
+    this.someproperty = "test";
   }.bind(obj);
   apply(func, []);
-  expect(obj["someproperty"]).toEqual("test");
+  expect(obj.someproperty).toEqual("test");
 });

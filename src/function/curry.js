@@ -28,9 +28,11 @@ const _curryN = (length, received, func) => (...args) => {
     combinedIdx++;
   }
 
-  return left <= 0
-    ? func.apply(this, combined)
-    : _arity(left, _curryN(length, combined, func));
+  if (left <= 0) {
+    return func.apply(this, combined);
+  }
+
+  return _arity(left, _curryN(length, combined, func));
 };
 
 const curry = (func) => _curryN(func.length, [], func);

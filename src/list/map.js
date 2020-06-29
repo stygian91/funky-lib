@@ -3,7 +3,7 @@ import _objectMap from "../internals/_objectMap";
 import _stringMap from "../internals/_stringMap";
 
 const map = (func, list) => {
-  if (typeof list["map"] === "function") {
+  if (typeof list.map === "function") {
     return list.map(func);
   }
 

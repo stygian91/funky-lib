@@ -3,7 +3,7 @@ import _objectFilter from "../internals/_objectFilter";
 import _stringFilter from "../internals/_stringFilter";
 
 const filter = (func, list) => {
-  if (typeof list["filter"] === "function") {
+  if (typeof list.filter === "function") {
     return list.filter(func);
   }
 
