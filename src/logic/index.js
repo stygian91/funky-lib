@@ -4,6 +4,7 @@ export { default as anyPass } from "./anyPass";
 export { default as both } from "./both";
 export { default as complement } from "./complement";
 export { default as cond } from "./cond";
+export { default as defaultTo } from "./defaultTo";
 export { default as either } from "./either";
 export { default as equals } from "./equals";
 export { default as gt } from "./greaterThan";
