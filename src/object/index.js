@@ -2,6 +2,7 @@ export { default as assoc } from "./assoc";
 export { default as assocPath } from "./assocPath";
 export { default as dissoc } from "./dissoc";
 export { default as dissocPath } from "./dissocPath";
+export { default as evolve } from "./evolve";
 export { default as has } from "./has";
 export { default as hasPath } from "./hasPath";
 export { default as path } from "./path";
