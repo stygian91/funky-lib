@@ -10,8 +10,7 @@ const unique = (list) => {
 
   return reduce(
     (acc, element) => {
-      const foundIndex = findIndex(equals(element), acc);
-      if (foundIndex === -1) {
+      if (findIndex(equals(element), acc) === -1) {
         acc.push(element);
       }
 
