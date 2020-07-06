@@ -1,7 +1,12 @@
-import reduce from "./reduce";
+import reduceWhile from "./reduceWhile";
 import curry from "../function/curry";
 
 const any = (condFn, list) =>
-  reduce((acc, current) => acc || condFn(current), false, list);
+  reduceWhile(
+    (acc) => !acc,
+    (acc, current) => acc || condFn(current),
+    false,
+    list
+  );
 
 export default curry(any);
