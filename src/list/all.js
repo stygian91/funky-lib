@@ -1,8 +1,9 @@
-import reduce from "./reduce";
-import curry from "../function/curry";
+import reduceWhile from "./reduceWhile";
+import { curry, identity } from "../function/";
 
 const all = (condFn, list) =>
-  reduce(
+  reduceWhile(
+    identity,
     (acc, current, index, list) => acc && condFn(current, index, list),
     true,
     list
