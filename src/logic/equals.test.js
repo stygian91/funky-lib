@@ -1,4 +1,5 @@
 import equals from "./equals";
+import { Identity } from "../data-structures";
 
 test("returns true if left === right", () => {
   const func1 = (a, b) => a + b;
@@ -24,4 +25,6 @@ test("returns true if left === right", () => {
   expect(equals(null, null)).toBe(true);
   expect(equals(undefined, undefined)).toBe(true);
   expect(equals(null, undefined)).toBe(false);
+
+  expect(equals(Identity.of(2), Identity.of(2))).toEqual(true);
 });

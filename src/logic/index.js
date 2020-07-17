@@ -10,7 +10,7 @@ export { default as equals } from "./equals";
 export { default as gt } from "./greaterThan";
 export { default as gte } from "./greaterThanOrEqual";
 export { default as ifElse } from "./ifElse";
-export { default as isNullish } from "./isNullish";
+export { default as isNil } from "./isNil";
 export { default as lt } from "./lessThan";
 export { default as lte } from "./lessThanOrEqual";
 export { default as not } from "./not";

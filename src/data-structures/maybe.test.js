@@ -1,10 +1,9 @@
-import Maybe from "./maybe";
-import List from "./list";
+import { Identity, Maybe } from "./";
 import { expectType, expectValue } from "../internals/_test-helpers";
 
 const expectMaybe = expectType(Maybe);
 const expectMaybeVal = expectValue(Maybe);
-const expectList = expectType(List);
+const expectId = expectType(Identity);
 
 test("it's a setoid", () => {
   const maybeNull1 = Maybe.of(null);
@@ -58,20 +57,17 @@ test("it chains", () => {
 
 test("it's traversable", () => {
   const arr = [1, 2];
-  const maybe = Maybe.of(new List(arr));
-  const listOfMaybes = maybe.sequence(List.of);
-  expectList(listOfMaybes);
-  const arrOfMaybes = listOfMaybes.join();
-  arrOfMaybes.forEach((maybe, idx) => {
-    expectMaybe(maybe);
-    expectMaybeVal(arr[idx], maybe);
-  });
+  const maybeOfId = Maybe.of(Identity.of(arr));
+  const idOfMaybe = maybeOfId.sequence(Identity.of);
+  expectId(idOfMaybe);
+  const maybe = idOfMaybe.join();
+  expectMaybe(maybe);
+  expect(maybe.join()).toEqual([1, 2]);
 
   const maybeNull = Maybe.of(null);
-  const listOfMaybes2 = maybeNull.sequence(List.of);
-  expectList(listOfMaybes2);
-  const arrOfMaybes2 = listOfMaybes2.join();
-  expect(arrOfMaybes2.length).toEqual(1);
-  expectMaybe(arrOfMaybes2[0]);
-  expectMaybeVal(null, arrOfMaybes2[0]);
+  const idOfMaybe2 = maybeNull.sequence(Identity.of);
+  expectId(idOfMaybe2);
+  const maybe2 = idOfMaybe2.join();
+  expectMaybe(maybe2);
+  expect(maybe2.isNothing).toEqual(true);
 });

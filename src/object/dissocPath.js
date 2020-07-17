@@ -2,7 +2,7 @@ import curry from "../function/curry";
 import _getPathArray from "../internals/_getPathArray";
 import dissoc from "./dissoc";
 import assoc from "./assoc";
-import isNullish from "../logic/isNullish";
+import isNil from "../logic/isNil";
 import slice from "../list/slice";
 
 const dissocPath = (path, object) => {
@@ -18,7 +18,7 @@ const dissocPath = (path, object) => {
     return dissoc(prop, object);
   }
 
-  if (isNullish(object[prop])) {
+  if (isNil(object[prop])) {
     return { ...object };
   }
 

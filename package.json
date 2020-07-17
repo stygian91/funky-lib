@@ -1,6 +1,6 @@
 {
   "name": "funky-lib",
-  "version": "2.11.0",
+  "version": "3.0.0",
   "description": "",
   "main": "dist/index.js",
   "module": "es/index.js",
@@ -16,7 +16,8 @@
     "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist",
     "build": "npm run build:es && npm run build:cjs",
     "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "prettier": "npx prettier --write ./src"
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +29,7 @@
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "cross-env": "^7.0.2",
     "jest": "^25",
+    "prettier": "2.0.5",
     "rimraf": "^3.0.2"
   },
   "jshintConfig": {

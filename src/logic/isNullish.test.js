@@ -1,9 +1,9 @@
-import isNullish from "./isNullish";
+import isNil from "./isNil";
 
 test("it determines if the argument is nullish", () => {
-  expect(isNullish(null)).toEqual(true);
-  expect(isNullish(undefined)).toEqual(true);
-  expect(isNullish(0)).toEqual(false);
-  expect(isNullish("")).toEqual(false);
-  expect(isNullish("test")).toEqual(false);
+  expect(isNil(null)).toEqual(true);
+  expect(isNil(undefined)).toEqual(true);
+  expect(isNil(0)).toEqual(false);
+  expect(isNil("")).toEqual(false);
+  expect(isNil("test")).toEqual(false);
 });
