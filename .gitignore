@@ -1,6 +1,5 @@
 .vscode
 node_modules
-coverage/**/*
-!coverage/badge*.svg
+coverage
 dist
 es

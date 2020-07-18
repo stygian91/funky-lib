@@ -1,11 +1,9 @@
 # funky-lib
 
-A FUNctional libary.
+[![Build Status](https://travis-ci.com/stygian91/funky-lib.svg?branch=master)](https://travis-ci.com/stygian91/funky-lib)
+[![Coverage Status](https://coveralls.io/repos/github/stygian91/funky-lib/badge.svg)](https://coveralls.io/github/stygian91/funky-lib)
 
-![Line coverage](./coverage/badge-lines.svg)
-![Branch coverage](./coverage/badge-branches.svg)
-![Function coverage](./coverage/badge-functions.svg)
-![Statement coverage](./coverage/badge-statements.svg)
+A FUNctional libary.
 
 ## Test
 
