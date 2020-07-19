@@ -17,7 +17,7 @@
     "build": "npm run build:es && npm run build:cjs",
     "test": "jest",
     "test:watch": "npm run test -- --watch",
-    "prettier": "npx prettier --write ./src"
+    "prettier": "prettier --write ./src"
   },
   "author": "",
   "license": "ISC",
