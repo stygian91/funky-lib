@@ -1,5 +1,5 @@
-import { curry } from '../function';
+import { curry } from "../function";
 
-const toUpper = str => str.toUpperCase();
+const toUpper = (str) => str.toUpperCase();
 
 export default curry(toUpper);
