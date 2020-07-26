@@ -1,3 +1,4 @@
+export { default as indexOf } from "./indexOf";
 export { default as match } from "./match";
 export { default as replace } from "./replace";
 export { default as split } from "./split";
