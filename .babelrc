@@ -1,5 +1,6 @@
 {
   "presets": ["@babel/preset-env"],
+  "plugins": ["@babel/plugin-transform-runtime", "annotate-pure-calls"],
   "env": {
     "es": {
       "presets": [
@@ -10,7 +11,6 @@
           }
         ]
       ],
-      "plugins": ["annotate-pure-calls"],
       "ignore": ["**/*.test.js"]
     },
     "cjs": {
