@@ -1,5 +1,3 @@
-import curry from "../function/curry";
-
 export class Either {
   constructor(x) {
     this.value = x;
