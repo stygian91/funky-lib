@@ -18,6 +18,7 @@ export { default as join } from "./join";
 export { default as keyWith } from "./keyWith";
 export { default as map } from "./map";
 export { default as nth } from "./nth";
+export { default as range } from "./range";
 export { default as reduce } from "./reduce";
 export { default as reduceWhile } from "./reduceWhile";
 export { default as slice } from "./slice";
