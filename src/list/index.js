@@ -22,6 +22,7 @@ export { default as range } from "./range";
 export { default as reduce } from "./reduce";
 export { default as reduceWhile } from "./reduceWhile";
 export { default as reverse } from "./reverse";
+export { default as size } from "./size";
 export { default as slice } from "./slice";
 export { default as sort } from "./sort";
 export { default as splice } from "./splice";
