@@ -1,6 +1,5 @@
-import curry from "../function/curry";
 import slice from "./slice";
 
-const take = (numElements, list) => slice(0, numElements, list);
+const take = slice(0);
 
-export default curry(take);
+export default take;

@@ -7,10 +7,8 @@ test("it slices a list or string", () => {
   const sliceSecondTwo = slice(1, 3);
 
   const listResult = sliceSecondTwo(list);
-  expect(listResult.length).toBe(2);
-  expect(listResult[0]).toBe(2);
-  expect(listResult[1]).toBe(3);
+  expect(listResult).toEqual([2, 3]);
 
   const stringResult = sliceSecondTwo(string);
-  expect(stringResult).toBe("23");
+  expect(stringResult).toEqual("23");
 });
