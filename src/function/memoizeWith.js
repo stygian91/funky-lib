@@ -1,5 +1,12 @@
 import curry from "./curry";
 
+/**
+ * Memoizes a function where the key generator function
+ * decides which cached result should be returned.
+ *
+ * @param {function} keyGenerator
+ * @param {function} func
+ */
 const memoizeWith = (keyGenerator, func) => {
   const cache = {};
 
