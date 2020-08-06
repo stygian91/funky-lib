@@ -1,5 +1,12 @@
 import curry from "../function/curry";
 
-const split = (delimiter, string) => string.split(delimiter);
+/**
+ * Splits a string into a list of strings based on a delimiter.
+ *
+ * @param {string} delimiter
+ * @param {string} string
+ * @returns {string[]}
+ */
+const split = curry((delimiter, string) => string.split(delimiter));
 
-export default curry(split);
+export default split;

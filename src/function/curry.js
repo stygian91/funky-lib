@@ -33,6 +33,12 @@ const _curryN = (length, received, func) => (...args) => {
   return _arity(left, _curryN(length, combined, func));
 };
 
+/**
+ * Curries the provided function.
+ *
+ * @param {function} func
+ * @returns {function}
+ */
 const curry = (func) => _curryN(func.length, [], func);
 
 export default curry;
