@@ -8,6 +8,7 @@ import flip from "./flip";
  * The right-most function may have any arity, while the rest must be unary.
  * An example with three functions (f, g, h) => (...args) => h(g(f(...args)))
  *
+ * @function
  * @param  {...function} funcs
  * @returns {function}
  */

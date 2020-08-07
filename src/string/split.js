@@ -7,6 +7,6 @@ import curry from "../function/curry";
  * @param {string} string
  * @returns {string[]}
  */
-const split = curry((delimiter, string) => string.split(delimiter));
+const split = (delimiter, string) => string.split(delimiter);
 
-export default split;
+export default curry(split);
