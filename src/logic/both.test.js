@@ -9,7 +9,7 @@ test("returns true only when both argument functions return true", () => {
     productGreaterThan10
   );
   expect(typeof sumAndProductGreaterThan10).toBe("function");
-  expect(sumAndProductGreaterThan10(1, 2)).toBe(false);
-  expect(sumAndProductGreaterThan10(2, 6)).toBe(false);
-  expect(sumAndProductGreaterThan10(5, 6)).toBe(true);
+  expect(sumAndProductGreaterThan10([1, 2])).toBe(false);
+  expect(sumAndProductGreaterThan10([2, 6])).toBe(false);
+  expect(sumAndProductGreaterThan10([5, 6])).toBe(true);
 });
