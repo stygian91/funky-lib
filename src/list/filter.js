@@ -2,6 +2,14 @@ import curry from "../function/curry";
 import _objectFilter from "../internals/_objectFilter";
 import _stringFilter from "../internals/_stringFilter";
 
+/**
+ * Filters the elements of an array, object or string
+ * and returns a new array, object or string respectively.
+ *
+ * @param {function} func
+ * @param {array|string|object} list
+ * @returns {array|string|object}
+ */
 const filter = (func, list) => {
   if (typeof list.filter === "function") {
     return list.filter(func);

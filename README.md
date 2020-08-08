@@ -23,4 +23,8 @@ Yup, this thing started as an exercise. Most of the functions have the same sign
 
 ## Documentation
 
-I swear I'll get to it someday.
+Work in progress: [Documentation](https://stygian91.github.io/global.html)
+
+The logic, math and object functions are not yet documented.
+
+Currently lacks examples, but you can find those in the `*.test.js` files.

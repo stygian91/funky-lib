@@ -3,6 +3,14 @@ import findIndex from "./findIndex";
 import equals from "../logic/equals";
 import reduce from "./reduce";
 
+/**
+ * Returns a new list with duplicate values removed.
+ * The comparison is done with the `equals` function.
+ *
+ * @see equals
+ * @param {any[]} list
+ * @returns {any[]}
+ */
 const unique = (list) => {
   if (list.length < 2) {
     return list.slice();

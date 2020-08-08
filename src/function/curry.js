@@ -35,8 +35,8 @@ const _curryN = (length, received, func) => (...args) => {
 
 /**
  * Curries the provided function.
- * A curried function does not need to have all of its provided at once.
- * If `f` is a ternary and g = curry(f), then the following is equivalent:
+ * A curried function does not need to have all of its arguments provided at once.
+ * If `f` is a ternary and `g = curry(f)`, then the following is equivalent:
  *
  * <pre>
  * g(1)(2)(3);

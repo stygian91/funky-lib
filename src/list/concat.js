@@ -1,5 +1,12 @@
 import curry from "../function/curry";
 
+/**
+ * Concatenates 2 strings or 2 arrays.
+ *
+ * @param {string|array} left
+ * @param {string|array} right
+ * @returns {string|array}
+ */
 const concat = (left, right) => {
   if (
     !(Array.isArray(left) && Array.isArray(right)) &&

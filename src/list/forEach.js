@@ -3,6 +3,13 @@ import _objectForEach from "../internals/_objectForEach";
 import _stringWhile from "../internals/_stringWhile";
 import always from "../function/always";
 
+/**
+ * Runs a function for each element of the list, object or string.
+ *
+ * @param {function} fn
+ * @param {any[]|object|string} list
+ * @returns {undefined}
+ */
 const forEach = (fn, list) => {
   if (Array.isArray(list)) {
     return list.forEach(fn);

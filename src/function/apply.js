@@ -5,7 +5,7 @@ import curry from "./curry";
  * The `this` variable will be set to undefined for that function execution.
  *
  * @param {function} func
- * @param {array} args
+ * @param {any[]} args
  * @returns {any}
  */
 const apply = (func, args) => {

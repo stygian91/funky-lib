@@ -2,6 +2,18 @@ import curry from "../function/curry";
 import _objectMap from "../internals/_objectMap";
 import _stringMap from "../internals/_stringMap";
 
+/**
+ * Maps over a list, object or string and returns a new object of the corresponding type.
+ * Each element of the collection is passed through the mapping function
+ * and its return value is used for the new collection.
+ * The mapping function receives `(value, key, list)`,
+ * where `list` is the full list, object or string.
+ * Defers to [Array.prototype.map]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map} for lists
+ *
+ * @param {function} func
+ * @param {any[]|object|string} list
+ * @returns {any[]|object|string}
+ */
 const map = (func, list) => {
   if (typeof list.map === "function") {
     return list.map(func);

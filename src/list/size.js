@@ -1,5 +1,14 @@
 import { curry } from "../function";
 
+/**
+ * Returns the size of a list, object or string.
+ * For lists and strings, it will just return the `length` property.
+ * For objects - returns the sum of the counts of its own property names
+ * and its own property symbols.
+ *
+ * @param {any[]|object|string} collection
+ * @returns {number}
+ */
 const size = (collection) => {
   if (Array.isArray(collection) || typeof collection === "string") {
     return collection.length;
