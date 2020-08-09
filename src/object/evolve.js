@@ -2,6 +2,14 @@ import map from "../list/map";
 import prop from "./prop";
 import curry from "../function/curry";
 
+/**
+ * Creates a new object by going through the spec object/list recursively
+ * and transforming the corresponding element in the target object.
+ *
+ * @param {object|any[]} spec
+ * @param {object|any[]} object
+ * @returns {object|any[]}
+ */
 const evolve = (spec, object) =>
   map((value, key) => {
     const transform = prop(key, spec);

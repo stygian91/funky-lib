@@ -6,6 +6,13 @@ import propSatisfies from "./propSatisfies";
 import all from "../list/all";
 import map from "../list/map";
 
+/**
+ * Checks if all of the condition functions in the spec object pass.
+ *
+ * @param {object} specObject
+ * @param {object} testObject
+ * @returns {boolean}
+ */
 const where = (specObject, testObject) =>
   pipe(
     Object.keys,

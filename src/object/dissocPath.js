@@ -5,6 +5,15 @@ import assoc from "./assoc";
 import isNil from "../logic/isNil";
 import slice from "../list/slice";
 
+/**
+ * Creates a shallow copy of the object
+ * with the element at the specified path removed.
+ *
+ * @see assocPath
+ * @param {string|string[]} path
+ * @param {object} object
+ * @returns {object}
+ */
 const dissocPath = (path, object) => {
   const pathArray = _getPathArray(path);
   if (pathArray.length === 0) {

@@ -13,6 +13,7 @@ export { default as findLastIndex } from "./findLastIndex";
 export { default as flatten } from "./flatten";
 export { default as forEach } from "./forEach";
 export { default as groupBy } from "./groupBy";
+export { default as includes } from "./includes";
 export { default as insert } from "./insert";
 export { default as intersection } from "./intersection";
 export { default as join } from "./join";
