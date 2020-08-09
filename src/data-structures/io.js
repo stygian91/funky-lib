@@ -4,6 +4,7 @@ import compose from "../function/compose";
  * The IO monad - defers execution.
  *
  * @class
+ * @name IO
  */
 export default class IO {
   constructor(fn) {

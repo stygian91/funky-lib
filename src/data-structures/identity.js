@@ -4,6 +4,7 @@ import identity from "../function/identity";
  * The identity monad, it's a simple container that just wraps the value.
  *
  * @class
+ * @name Identity
  */
 export default class Identity {
   constructor(x) {
