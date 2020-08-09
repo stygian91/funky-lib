@@ -1,5 +1,11 @@
 import identity from "../function/identity";
 
+/**
+ * The Maybe monad - goes through with operations on the value;
+ * does nothing when the value is nil.
+ *
+ * @class
+ */
 class Maybe {
   constructor(x) {
     this.value = x;

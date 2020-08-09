@@ -1,5 +1,10 @@
 import identity from "../function/identity";
 
+/**
+ * The identity monad, it's a simple container that just wraps the value.
+ *
+ * @class
+ */
 export default class Identity {
   constructor(x) {
     this.$value = x;

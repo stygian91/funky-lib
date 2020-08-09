@@ -1,4 +1,8 @@
-export class Either {
+/**
+ * Either monad, parent of `Left` and `Right`.
+ * Used for `Right` instance creation.
+ */
+class Either {
   constructor(x) {
     this.value = x;
   }
@@ -8,7 +12,11 @@ export class Either {
   }
 }
 
-export class Left extends Either {
+/**
+ * Left value of the Either monad.
+ * Has noop implementations.
+ */
+class Left extends Either {
   get isLeft() {
     return true;
   }
@@ -52,7 +60,10 @@ export class Left extends Either {
   }
 }
 
-export class Right extends Either {
+/**
+ * Right value of the Either monad.
+ */
+class Right extends Either {
   get isLeft() {
     return false;
   }
@@ -95,3 +106,5 @@ export class Right extends Either {
     return fn(this.value).map(Either.of);
   }
 }
+
+export { Left, Right, Either };

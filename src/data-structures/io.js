@@ -1,5 +1,10 @@
 import compose from "../function/compose";
 
+/**
+ * The IO monad - defers execution.
+ *
+ * @class
+ */
 export default class IO {
   constructor(fn) {
     this.fn = fn;
