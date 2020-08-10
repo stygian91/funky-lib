@@ -4,7 +4,7 @@ import curry from "../function/curry";
  * Creates a shallow copy of the object
  * and sets the value at `propName`.
  *
- * @see disoc
+ * @see dissoc
  * @param {string} propName
  * @param {any} value
  * @param {object} object

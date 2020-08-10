@@ -25,6 +25,4 @@ Yup, this thing started as an exercise. Most of the functions have the same sign
 
 Work in progress: [Documentation](https://stygian91.github.io/global.html)
 
-The data structures are not yet documented.
-
 Currently lacks examples, but you can find those in the `*.test.js` files.
