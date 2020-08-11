@@ -1,7 +1,7 @@
 import { curry } from "../";
 
 /**
- * Checks if the list includes `element, starting from `fromIndex`.
+ * Checks if the list includes `element`, starting from `fromIndex`.
  * Defers to [Array.prototype.includes]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes}
  *
  * @param {any} element
