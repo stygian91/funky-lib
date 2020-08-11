@@ -1,4 +1,5 @@
 import curry from "../function/curry";
+import path from "../object/path";
 import _objectForEach from "../internals/_objectForEach";
 import _stringWhile from "../internals/_stringWhile";
 import always from "../function/always";
@@ -11,7 +12,7 @@ import always from "../function/always";
  * @returns {undefined}
  */
 const forEach = (fn, list) => {
-  if (Array.isArray(list)) {
+  if (typeof path("forEach", list) === "function") {
     return list.forEach(fn);
   }
 

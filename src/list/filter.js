@@ -1,4 +1,5 @@
 import curry from "../function/curry";
+import path from "../object/path";
 import _objectFilter from "../internals/_objectFilter";
 import _stringFilter from "../internals/_stringFilter";
 
@@ -11,7 +12,7 @@ import _stringFilter from "../internals/_stringFilter";
  * @returns {array|string|object}
  */
 const filter = (func, list) => {
-  if (typeof list.filter === "function") {
+  if (typeof path("filter", list) === "function") {
     return list.filter(func);
   }
 

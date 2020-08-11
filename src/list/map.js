@@ -1,4 +1,5 @@
 import curry from "../function/curry";
+import path from "../object/path";
 import _objectMap from "../internals/_objectMap";
 import _stringMap from "../internals/_stringMap";
 
@@ -15,7 +16,7 @@ import _stringMap from "../internals/_stringMap";
  * @returns {any[]|object|string}
  */
 const map = (func, list) => {
-  if (typeof list.map === "function") {
+  if (typeof path("map", list) === "function") {
     return list.map(func);
   }
 
