@@ -10,7 +10,7 @@ import isNil from "./isNil";
  * @param {any} right
  * @returns {boolean}
  */
-const equal = (left, right) => {
+const equals = (left, right) => {
   if (!isNil(left) && typeof left.equals === "function") {
     return left.equals(right);
   }
@@ -18,4 +18,4 @@ const equal = (left, right) => {
   return left === right;
 };
 
-export default curry(equal);
+export default curry(equals);
