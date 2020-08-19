@@ -17,6 +17,7 @@ export { default as head } from "./head";
 export { default as includes } from "./includes";
 export { default as insert } from "./insert";
 export { default as intersection } from "./intersection";
+export { default as intersectionWith } from "./intersectionWith";
 export { default as join } from "./join";
 export { default as keyWith } from "./keyWith";
 export { default as map } from "./map";
