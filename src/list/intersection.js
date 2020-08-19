@@ -1,4 +1,3 @@
-import curry from "../function/curry";
 import equals from "../logic/equals";
 import intersectionWith from "./intersectionWith";
 
@@ -16,4 +15,4 @@ import intersectionWith from "./intersectionWith";
  */
 const intersection = intersectionWith(equals);
 
-export default curry(intersection);
+export default intersection;
