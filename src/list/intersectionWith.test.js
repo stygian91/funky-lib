@@ -8,4 +8,6 @@ test("intersectionWith", () => {
     { id: 2 },
     { id: 3 },
   ]);
+  expect(list1).toEqual([{ id: 1 }, { id: 2 }, { id: 3 }]);
+  expect(list2).toEqual([{ id: 2 }, { id: 3 }, { id: 4 }]);
 });

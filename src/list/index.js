@@ -34,6 +34,8 @@ export { default as splice } from "./splice";
 export { default as tail } from "./tail";
 export { default as take } from "./take";
 export { default as takeLast } from "./takeLast";
+export { default as union } from "./union";
+export { default as unionWith } from "./unionWith";
 export { default as unique } from "./unique";
 export { default as zip } from "./zip";
 export { default as zipObj } from "./zipObj";
