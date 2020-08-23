@@ -1,24 +1,14 @@
-import curry from "../function/curry";
-import forEach from "./forEach";
+import _flatten from "../internals/_flatten";
 
 /**
  * Returns a new list with all nested arrays flattened.
  *
+ * @function
+ * @name flatten
+ * @see unnest
  * @param {any[]} list
  * @returns {any[]}
  */
-const flatten = (list) => {
-  const result = [];
+const flatten = _flatten(true);
 
-  forEach((value) => {
-    if (Array.isArray(value)) {
-      forEach((innerValue) => result.push(innerValue), flatten(value));
-    } else {
-      result.push(value);
-    }
-  }, list);
-
-  return result;
-};
-
-export default curry(flatten);
+export default flatten;
