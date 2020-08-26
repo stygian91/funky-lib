@@ -1,6 +1,6 @@
 // jshint maxcomplexity: false
 /**
- * Create a new function with the specified rarity between 0 and 10.
+ * Create a new function with the specified arity between 0 and 10.
  *
  * @param {number} n
  * @param {function} fn
