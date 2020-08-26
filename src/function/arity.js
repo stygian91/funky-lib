@@ -4,6 +4,7 @@
  *
  * @param {number} n
  * @param {function} fn
+ * @returns {function}
  */
 export default function _arity(n, fn) {
   switch (n) {
