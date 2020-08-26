@@ -1,4 +1,10 @@
-/* jshint maxcomplexity: false */
+// jshint maxcomplexity: false
+/**
+ * Create a new function with the specified rarity between 0 and 10.
+ *
+ * @param {number} n
+ * @param {function} fn
+ */
 export default function _arity(n, fn) {
   switch (n) {
     case 0:

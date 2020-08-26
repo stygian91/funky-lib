@@ -1,5 +1,5 @@
 import __ from "./placeholderArgument";
-import _arity from "../internals/_arity";
+import arity from "./arity";
 
 const _curryN = (length, received, func) => (...args) => {
   let combined = [];
@@ -30,7 +30,7 @@ const _curryN = (length, received, func) => (...args) => {
     return func.apply(this, combined);
   }
 
-  return _arity(left, _curryN(length, combined, func));
+  return arity(left, _curryN(length, combined, func));
 };
 
 /**

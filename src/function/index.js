@@ -1,6 +1,7 @@
 export { default as __ } from "./placeholderArgument";
 export { default as ap } from "./ap";
 export { default as apply } from "./apply";
+export { default as arity } from "./arity";
 export { default as always } from "./always";
 export { default as compose } from "./compose";
 export { default as converge } from "./converge";
