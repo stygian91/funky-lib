@@ -1,11 +1,13 @@
 export { default as __ } from "./placeholderArgument";
+export { default as always } from "./always";
 export { default as ap } from "./ap";
 export { default as apply } from "./apply";
 export { default as arity } from "./arity";
-export { default as always } from "./always";
+export { default as ascend } from "./ascend";
 export { default as compose } from "./compose";
 export { default as converge } from "./converge";
 export { default as curry } from "./curry";
+export { default as descend } from "./descend";
 export { default as flip } from "./flip";
 export { default as identity } from "./identity";
 export { default as pipe } from "./pipe";
