@@ -5,6 +5,8 @@ export { default as append } from "./append";
 export { default as concat } from "./concat";
 export { default as chunk } from "./chunk";
 export { default as chain } from "./chain";
+export { default as difference } from "./difference";
+export { default as differenceWith } from "./differenceWith";
 export { default as drop } from "./drop";
 export { default as filter } from "./filter";
 export { default as find } from "./find";
