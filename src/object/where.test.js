@@ -1,11 +1,10 @@
 import where from "./where";
 import gt from "../logic/greaterThan";
-import __ from "../function/placeholderArgument";
 
 test("it returns true only if all functions in the spec object return true", () => {
   const specObject = {
-    a: gt(__, 5),
-    b: gt(__, 10),
+    a: gt(5),
+    b: gt(10),
   };
 
   const doesObjectMatch = where(specObject);

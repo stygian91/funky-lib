@@ -1,6 +1,5 @@
 import pathSatisfies from "./pathSatisfies";
 import gt from "../logic/greaterThan";
-import __ from "../function/placeholderArgument";
 
 test("the condition function is called with the prop at the specified path", () => {
   const object1 = {
@@ -13,7 +12,7 @@ test("the condition function is called with the prop at the specified path", () 
       b: 1,
     },
   };
-  const aBIsLargerThan100 = pathSatisfies(gt(__, 100), "a.b");
+  const aBIsLargerThan100 = pathSatisfies(gt(100), "a.b");
   const isUndefined = (x) => typeof x === "undefined";
   expect(aBIsLargerThan100(object1)).toBe(true);
   expect(aBIsLargerThan100(object2)).toBe(false);

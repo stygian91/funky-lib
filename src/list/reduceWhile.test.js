@@ -13,7 +13,7 @@ test("it reduces the list only while the condition fn returns a truthy value", (
   );
 
   const addWhileLessThan500 = reduceWhile(
-    (accumulator, current) => lte(accumulator + current.charCodeAt(0), 500),
+    (accumulator, current) => lte(500, accumulator + current.charCodeAt(0)),
     (accumulator, current) => accumulator + current.charCodeAt(0),
     __,
     str

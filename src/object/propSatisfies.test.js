@@ -8,7 +8,7 @@ test("applies the predicate to the prop and returns its result", () => {
     b: 2,
   };
 
-  const isPropGTOne = propSatisfies(gt(__, 1), __, object);
+  const isPropGTOne = propSatisfies(gt(1), __, object);
 
   expect(isPropGTOne("a")).toBe(false);
   expect(isPropGTOne("b")).toBe(true);

@@ -11,7 +11,7 @@ test("it reduces while the condition function returns a truthy value", () => {
   };
 
   const subtractWhileNotNegative = _objectReduceWhile(
-    (accumulator, current) => gte(accumulator - current, 0),
+    (accumulator, current) => gte(0, accumulator - current),
     (accumulator, current) => accumulator - current,
     __,
     obj

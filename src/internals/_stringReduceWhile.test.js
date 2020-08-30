@@ -6,7 +6,7 @@ test("it reduces while the condition function returns a truthy value", () => {
   const str = "abcd";
 
   const addWhileLessThan500 = _stringReduceWhile(
-    (accumulator, current) => lte(accumulator + current.charCodeAt(0), 500),
+    (accumulator, current) => lte(500, accumulator + current.charCodeAt(0)),
     (accumulator, current) => accumulator + current.charCodeAt(0),
     __,
     str
