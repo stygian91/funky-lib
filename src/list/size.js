@@ -1,4 +1,5 @@
 import { curry } from "../function";
+import _keys from "../internals/_keys";
 
 /**
  * Returns the size of a list, object or string.
@@ -15,10 +16,7 @@ const size = (collection) => {
   }
 
   if (typeof collection === "object") {
-    return (
-      Object.getOwnPropertyNames(collection).length +
-      Object.getOwnPropertySymbols(collection).length
-    );
+    return _keys(collection).length;
   }
 
   throw new Error(
