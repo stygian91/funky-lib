@@ -1,6 +1,5 @@
 import findLastIndex from "./findLastIndex";
 import lt from "../logic/lessThan";
-import __ from "../function/placeholderArgument";
 
 test("findLastIndex", () => {
   const list = [1, 2, 3, 1];

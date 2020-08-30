@@ -1,11 +1,8 @@
 import findIndex from "./findIndex";
 import gt from "../logic/greaterThan";
-import __ from "../function/placeholderArgument";
 
 test("findIndex", () => {
   const list = [10, 5, 12, 3];
-  const predicate = gt(10);
-  const predicate2 = gt(100);
-  expect(findIndex(predicate, list)).toEqual(2);
-  expect(findIndex(predicate2, list)).toEqual(-1);
+  expect(findIndex(gt(10), list)).toEqual(2);
+  expect(findIndex(gt(100), list)).toEqual(-1);
 });
