@@ -3,10 +3,10 @@ import curry from "../function/curry";
 /**
  * A curried version of the `-` operator.
  *
- * @param {number} a
  * @param {number} b
+ * @param {number} a
  * @returns {number}
  */
-const subtract = (a, b) => a - b;
+const subtract = (b, a) => a - b;
 
 export default curry(subtract);
