@@ -40,5 +40,6 @@
     "esversion": "9",
     "maxcomplexity": "7"
   },
+  "repository": "github:stygian91/funky-lib",
   "sideEffects": false
 }
