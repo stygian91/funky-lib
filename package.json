@@ -1,6 +1,6 @@
 {
   "name": "funky-lib",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "",
   "main": "dist/index.js",
   "module": "es/index.js",
@@ -20,7 +20,7 @@
     "prettier": "prettier --write ./src"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.10.5"
   },
