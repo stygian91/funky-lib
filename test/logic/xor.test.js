@@ -1,4 +1,4 @@
-import xor from "./xor";
+import xor from "../../src/logic/xor";
 
 test("xor", () => {
   expect(xor(false, false)).toEqual(0);

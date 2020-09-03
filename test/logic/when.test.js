@@ -1,6 +1,6 @@
-import when from "./when";
-import gt from "./greaterThan";
-import always from "../function/always";
+import when from "../../src/logic/when";
+import gt from "../../src/logic/greaterThan";
+import always from "../../src/function/always";
 
 test("it calls the thenFn only when the condition is met", () => {
   const neverPast18 = when(gt(18), always(18));

@@ -1,4 +1,4 @@
-import { isEmpty } from ".";
+import { isEmpty } from "../../src/logic";
 
 test("isEmpty", () => {
   expect(isEmpty(null)).toEqual(false);

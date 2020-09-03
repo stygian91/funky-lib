@@ -1,4 +1,4 @@
-import gt from "./greaterThan";
+import gt from "../../src/logic/greaterThan";
 
 test("returns true if left is > right argument", () => {
   expect(gt(1, 2)).toBe(true);

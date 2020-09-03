@@ -1,4 +1,4 @@
-import and from "./and";
+import and from "../../src/logic/and";
 
 test("and", () => {
   expect(and(false, false)).toEqual(false);

@@ -1,4 +1,4 @@
-import cond from "./cond";
+import cond from "../../src/logic/cond";
 
 test("it executes the transform function of the first matching pair", () => {
   const a = 15;

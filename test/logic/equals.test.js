@@ -1,5 +1,5 @@
-import equals from "./equals";
-import { Identity } from "../data-structures";
+import equals from "../../src/logic/equals";
+import { Identity } from "../../src/data-structures";
 
 test("returns true if left === right", () => {
   const func1 = (a, b) => a + b;

@@ -1,4 +1,4 @@
-import isNil from "./isNil";
+import isNil from "../../src/logic/isNil";
 
 test("it determines if the argument is nullish", () => {
   expect(isNil(null)).toEqual(true);

@@ -1,4 +1,4 @@
-import defaultTo from "./defaultTo";
+import defaultTo from "../../src/logic/defaultTo";
 
 test("defaultTo", () => {
   expect(defaultTo(10, null)).toEqual(10);

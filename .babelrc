@@ -10,8 +10,11 @@
             "modules": false
           }
         ]
-      ]
+      ],
+      "ignore": ["**/*.test.js"]
     },
-    "cjs": {}
+    "cjs": {
+      "ignore": ["**/*.test.js"]
+    }
   }
 }

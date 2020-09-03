@@ -1,5 +1,5 @@
-import ifElse from "./ifElse";
-import always from "../function/always";
+import ifElse from "../../src/logic/ifElse";
+import always from "../../src/function/always";
 
 const greaterThan10 = (a, b, c) => a + b + c > 10;
 const sum3 = (a, b, c) => a + b + c;

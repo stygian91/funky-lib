@@ -1,4 +1,4 @@
-import lte from "./lessThanOrEqual";
+import lte from "../../src/logic/lessThanOrEqual";
 
 test("returns true if left <= right", () => {
   expect(lte(2, 1)).toBe(true);

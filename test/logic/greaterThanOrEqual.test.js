@@ -1,4 +1,4 @@
-import gte from "./greaterThanOrEqual";
+import gte from "../../src/logic/greaterThanOrEqual";
 
 test("returns true if left is >= right", () => {
   expect(gte(2, 2)).toBe(true);

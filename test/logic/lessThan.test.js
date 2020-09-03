@@ -1,4 +1,4 @@
-import lt from "./lessThan";
+import lt from "../../src/logic/lessThan";
 
 test("returns true if left < right", () => {
   expect(lt(2, 1)).toBe(true);

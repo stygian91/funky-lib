@@ -1,6 +1,6 @@
-import unless from "./unless";
-import gt from "./greaterThan";
-import always from "../function/always";
+import unless from "../../src/logic/unless";
+import gt from "../../src/logic/greaterThan";
+import always from "../../src/function/always";
 
 test("it calls the elseFn only unless the condition is met", () => {
   const neverBelow18 = unless(gt(18), always(18));

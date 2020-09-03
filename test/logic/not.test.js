@@ -1,4 +1,4 @@
-import not from "./not";
+import not from "../../src/logic/not";
 
 test("it returns the opposite argument", () => {
   expect(not(true)).toBe(false);
