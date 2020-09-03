@@ -7,6 +7,6 @@ import curry from "../function/curry";
  * @param {any} left
  * @returns {boolean}
  */
-const greaterThan = (right, left) => left > right;
+const gt = (right, left) => left > right;
 
-export default curry(greaterThan);
+export default curry(gt);
