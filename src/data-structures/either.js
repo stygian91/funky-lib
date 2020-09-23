@@ -25,12 +25,6 @@ class Left extends Either {
     return false;
   }
 
-  static of(x) {
-    throw new Error(
-      "`of` called on class Left (value) instead of Either (type)"
-    );
-  }
-
   equals(other) {
     return other instanceof Left && this.value === other.value;
   }
@@ -70,12 +64,6 @@ class Right extends Either {
 
   get isRight() {
     return true;
-  }
-
-  static of(x) {
-    throw new Error(
-      "`of` called on class Right (value) instead of Either (type)"
-    );
   }
 
   equals(other) {

@@ -10,7 +10,6 @@ test("Either", () => {
   expectRightEquals(new Right(1), either);
   expect(either.isRight).toEqual(true);
   expect(either.isLeft).toEqual(false);
-  expect(() => Right.of(2)).toThrow();
   expect(either.chain((x) => x + 5)).toEqual(6);
   const rightOfFunc = Either.of((x) => x + 3);
   expect(rightOfFunc.ap(Identity.of(5)).join()).toEqual(8);
@@ -20,7 +19,6 @@ test("Either", () => {
   expectRightEquals(idOfRight.join(), Either.of(10));
 
   // Left:
-  expect(() => Left.of(2)).toThrow();
   expectLeftEquals(new Left("an error"), new Left("an error"));
   expect(new Left().isLeft).toEqual(true);
   expect(new Left().isRight).toEqual(false);

@@ -41,5 +41,6 @@
     "maxcomplexity": "7"
   },
   "repository": "github:stygian91/funky-lib",
+  "types": "defs/index.d.ts",
   "sideEffects": false
 }

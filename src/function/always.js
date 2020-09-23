@@ -2,7 +2,7 @@
  * Creates a nullary function that always returns the original argument.
  *
  * @param {any} arg
- * @returns {any}
+ * @returns {function}
  */
 const always = (arg) => () => arg;
 
