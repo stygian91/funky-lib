@@ -1,12 +1,14 @@
-import curry from "../function/curry";
+import propOr from "./propOr";
 
 /**
  * Retruns the prop with the specified key.
  *
+ * @function
+ * @name prop
  * @param {string} propName
  * @param {object} object
  * @returns {any}
  */
-const prop = (propName, object) => object[propName];
+const prop = propOr(void 0);
 
-export default curry(prop);
+export default prop;

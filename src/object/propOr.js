@@ -9,6 +9,10 @@ import curry from "../function/curry";
  * @returns {any}
  */
 const propOr = (defaultValue, propName, object) => {
+  if (object === null || typeof object === "undefined") {
+    return defaultValue;
+  }
+
   const value = object[propName];
   return typeof value === "undefined" ? defaultValue : value;
 };
