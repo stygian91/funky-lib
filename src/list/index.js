@@ -42,5 +42,6 @@ export { default as union } from "./union";
 export { default as unionWith } from "./unionWith";
 export { default as unique } from "./unique";
 export { default as unnest } from "./unnest";
+export { default as without } from "./without";
 export { default as zip } from "./zip";
 export { default as zipObj } from "./zipObj";
