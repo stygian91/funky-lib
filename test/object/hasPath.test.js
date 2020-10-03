@@ -6,6 +6,7 @@ test("hasPath", () => {
   const obj = { a: { b: { c: 123 } } };
   const expectHasPath = compose(expect, hasPath(__, obj));
   expectHasPath("asd").toEqual(false);
+  expect(hasPath("a.b.c", void 0)).toEqual(false);
   expectHasPath("a").toEqual(true);
   expectHasPath("a.b").toEqual(true);
   expectHasPath("a.b.c").toEqual(true);

@@ -12,6 +12,7 @@ import findIndex from "./findIndex";
  * @see equals
  * @param {any[]} values
  * @param {any[]} list
+ * @returns {any[]}
  */
 const without = (values, list) =>
   filter((val) => findIndex(equals(val), values) === -1, list);

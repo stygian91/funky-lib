@@ -7,6 +7,9 @@ import curry from "../function/curry";
  * @param {object} object
  * @returns {boolean}
  */
-const has = (prop, object) => object.hasOwnProperty(prop);
+const has = (prop, object) =>
+  object !== null &&
+  typeof object !== "undefined" &&
+  object.hasOwnProperty(prop);
 
 export default curry(has);
