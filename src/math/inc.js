@@ -1,11 +1,12 @@
-import curry from "../function/curry";
+import add from "./add";
 
 /**
  * Increments a number.
  *
+ * @function
  * @param {number} number
  * @returns {number}
  */
-const inc = (num) => num + 1;
+const inc = add(1);
 
-export default curry(inc);
+export default inc;

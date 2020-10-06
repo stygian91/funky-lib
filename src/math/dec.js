@@ -1,11 +1,12 @@
-import curry from "../function/curry";
+import sub from "./subtract";
 
 /**
  * Decrements a number.
  *
+ * @function
  * @param {number} num
  * @returns {number}
  */
-const dec = (num) => num - 1;
+const dec = sub(1);
 
-export default curry(dec);
+export default dec;
