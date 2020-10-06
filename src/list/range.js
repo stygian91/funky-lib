@@ -1,6 +1,6 @@
 import { curry } from "../function";
 import { unfold } from "../list";
-import { inRange } from "../math";
+import { inRange, inc } from "../math";
 
 /**
  * Returns a list of numbers from the first argument(inclusive)
@@ -12,6 +12,6 @@ import { inRange } from "../math";
  * @returns {number[]}
  */
 const range = (from, to) =>
-  unfold((seed) => (inRange(from, to, seed) ? [seed, seed + 1] : false), from);
+  unfold((seed) => (inRange(from, to, seed) ? [seed, inc(seed)] : false), from);
 
 export default curry(range);
