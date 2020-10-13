@@ -5,6 +5,7 @@ import id from "../function/identity";
 import propSatisfies from "./propSatisfies";
 import all from "../list/all";
 import map from "../list/map";
+import keys from "./keys";
 
 /**
  * Checks if all of the condition functions in the spec object pass.
@@ -15,7 +16,7 @@ import map from "../list/map";
  */
 const where = (specObject, testObject) =>
   pipe(
-    Object.keys,
+    keys,
     map((key) => propSatisfies(prop(key, specObject), key, testObject)),
     all(id)
   )(specObject);
