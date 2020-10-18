@@ -17,10 +17,6 @@ const chunk = (size, list) => {
     throw new Error("Size must be a positive integer");
   }
 
-  if (size >= list.length) {
-    return [list.slice()];
-  }
-
   const result = [];
   let begin = 0,
     end = size;
