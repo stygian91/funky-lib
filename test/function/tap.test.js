@@ -1,12 +1,13 @@
 import tap from "../../src/function/tap";
 
 test("runs a function on an argument and then returns that argument", () => {
-  const obj = { a: 1, b: 2 };
-  const func = (obj) => {
-    obj.a++;
+  const example = "lorem";
+  let result;
+  const func = (string) => {
+    result = `${string} ipsum`;
   };
 
-  const result = tap(func, obj);
-  expect(result.a).toBe(2);
-  expect(result.b).toBe(2);
+  const output = tap(func, example);
+  expect(output).toEqual("lorem");
+  expect(result).toEqual("lorem ipsum");
 });

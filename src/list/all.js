@@ -11,7 +11,7 @@ import { curry, identity } from "../function/";
 const all = (condFn, list) =>
   reduceWhile(
     identity,
-    (acc, current, index, list) => acc && condFn(current, index, list),
+    (acc, current, index, array) => acc && condFn(current, index, array),
     true,
     list
   );

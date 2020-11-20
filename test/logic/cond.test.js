@@ -5,8 +5,8 @@ test("it executes the transform function of the first matching pair", () => {
   const b = 25;
   const c = 5;
   const pairs = [
-    [(a) => a < 10, (a) => a + 1],
-    [(a) => a < 20, (a) => a + 2],
+    [(num) => num < 10, (num) => num + 1],
+    [(num) => num < 20, (num) => num + 2],
   ];
 
   const testCond = cond(pairs);

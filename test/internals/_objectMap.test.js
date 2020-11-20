@@ -23,5 +23,5 @@ test("it maps over an object's enumerable string and symbol keys", () => {
   });
 
   const expected = { a: 2, b: 3, [mySymbol]: 5 };
-  expect(_objectMap((value) => ++value, obj)).toEqual(expected);
+  expect(_objectMap((value) => value + 1, obj)).toEqual(expected);
 });

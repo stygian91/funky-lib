@@ -1,9 +1,10 @@
 # funky-lib
 
+A FUNctional libary.
+
 [![Build Status](https://travis-ci.com/stygian91/funky-lib.svg?branch=master)](https://travis-ci.com/stygian91/funky-lib)
 [![Coverage Status](https://coveralls.io/repos/github/stygian91/funky-lib/badge.svg)](https://coveralls.io/github/stygian91/funky-lib)
-
-A FUNctional libary.
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=stygian91_funky-lib&metric=alert_status)](https://sonarcloud.io/dashboard?id=stygian91_funky-lib)
 
 ---
 

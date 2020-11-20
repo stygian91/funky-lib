@@ -9,6 +9,6 @@ import pathOr from "./pathOr";
  * @param {object} object
  * @returns {any}
  */
-const path = (path, object) => pathOr(void 0, path, object);
+const path = (pathStr, object) => pathOr(void 0, pathStr, object);
 
 export default curry(path);

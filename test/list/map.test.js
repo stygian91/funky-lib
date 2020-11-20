@@ -10,7 +10,7 @@ test("it returns a new list/object of the same size", () => {
   expect(() => map(func, 1234)).toThrow();
 
   const object = { x: 1, y: 2, z: 3 };
-  const func1 = (item) => ++item;
+  const func1 = (item) => item + 1;
   expect(map(func1, object)).toEqual({ x: 2, y: 3, z: 4 });
 
   const func2 = (item) => String.fromCharCode(item.charCodeAt(0) + 1);

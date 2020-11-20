@@ -5,8 +5,8 @@ import _stringWhile from "./_stringWhile";
 const _stringMap = (func, string) => {
   const result = [];
 
-  const iterationFn = (char, key, string) => {
-    result.push(func(char, key, string));
+  const iterationFn = (char, key, str) => {
+    result.push(func(char, key, str));
   };
 
   _stringWhile(always(true), iterationFn, string);
