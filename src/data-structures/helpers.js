@@ -43,3 +43,20 @@ export const toIOEither = curry((fn) => {
 export const mapIOInner = curry((fn, ioInner) =>
   ioInner.map((inner) => inner.map(fn))
 );
+
+/**
+ * Executes a function that returns a promise and wraps its result in a Right.
+ * If an exception is thrown it's caught and returned wrapped in a Left.
+ *
+ * @function
+ * @param {function}
+ * @returns {Promise<Either>}
+ */
+export const toAsyncEither = curry(async (fn) => {
+  try {
+    const res = await fn();
+    return Either.of(res);
+  } catch (error) {
+    return new Left(error);
+  }
+});
