@@ -43,3 +43,22 @@ export const toIOEither = curry((fn) => {
 export const mapIOInner = curry((fn, ioInner) =>
   ioInner.map((inner) => inner.map(fn))
 );
+
+/**
+ * Wraps a function that returns a promise into IO<Either>
+ *
+ * @function
+ * @param {function} fn
+ * @returns {IO<Either>}
+ */
+export const toAsyncIOEither = curry(
+  (fn) =>
+    new IO(async () => {
+      try {
+        const res = await fn();
+        return Either.of(res);
+      } catch (error) {
+        return new Left(error);
+      }
+    })
+);

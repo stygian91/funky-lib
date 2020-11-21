@@ -22,4 +22,11 @@ export default class IO {
   map(fn) {
     return new IO(compose(fn, this.fn));
   }
+
+  asyncMap(fn) {
+    return new IO(async () => {
+      const res = await Promise.resolve(this.fn());
+      return await Promise.resolve(fn(res));
+    });
+  }
 }
