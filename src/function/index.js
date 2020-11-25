@@ -6,6 +6,7 @@ export { default as applyTo } from "./applyTo";
 export { default as arity } from "./arity";
 export { default as ascend } from "./ascend";
 export { default as compose } from "./compose";
+export { default as construct, constructN } from "./construct";
 export { default as converge } from "./converge";
 export { default as curry } from "./curry";
 export { default as descend } from "./descend";
