@@ -113,9 +113,6 @@ test("constructN", () => {
   expect(() => constructN(-1, classes[0])).toThrow();
   expect(() => constructN(11, classes[0])).toThrow();
 
-  const obj = construct(classes[1])(123);
-  expect(obj.a0).toEqual(123);
-
   const objConstructor = construct(classes[2]);
   const obj2 = objConstructor(123)(456);
   expect(obj2.a0).toEqual(123);
