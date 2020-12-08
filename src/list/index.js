@@ -25,6 +25,7 @@ export { default as join } from "./join";
 export { default as keyWith } from "./keyWith";
 export { default as map } from "./map";
 export { default as nth } from "./nth";
+export { default as of } from "./of";
 export { default as pluck } from "./pluck";
 export { default as prepend } from "./prepend";
 export { default as range } from "./range";
