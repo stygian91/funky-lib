@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry1 from "./curry1";
 
 /**
  * Takes an index and returns a function
@@ -18,4 +18,4 @@ const nthArg = (index) => (...args) => {
   return args[args.length + index];
 };
 
-export default curry(nthArg);
+export default curry1(nthArg);

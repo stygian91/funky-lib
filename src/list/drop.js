@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import splice from "./splice";
 
 /**
@@ -10,4 +10,4 @@ import splice from "./splice";
  */
 const drop = (index, list) => splice(index, 1, [], list);
 
-export default curry(drop);
+export default curry2(drop);

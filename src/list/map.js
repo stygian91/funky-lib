@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import path from "../object/path";
 import _objectMap from "../internals/_objectMap";
 import _stringMap from "../internals/_stringMap";
@@ -31,4 +31,4 @@ const map = (func, list) => {
   throw new Error("Argument is not mappable");
 };
 
-export default curry(map);
+export default curry2(map);

@@ -1,4 +1,4 @@
-import { curry, size, slice } from "../";
+import { curry1, size, slice } from "../";
 
 /**
  * Returns all elements from a list or string, except the first one.
@@ -8,4 +8,4 @@ import { curry, size, slice } from "../";
  */
 const tail = (list) => slice(1, size(list), list);
 
-export default curry(tail);
+export default curry1(tail);

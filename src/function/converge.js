@@ -1,5 +1,5 @@
 import map from "../list/map";
-import curry from "./curry";
+import curry2 from "./curry2";
 
 /**
  * Takes a list of functions and a converging function.
@@ -19,4 +19,4 @@ const converge = (convergingFn, branchingFns) => (...args) => {
   return convergingFn(...branchResults);
 };
 
-export default curry(converge);
+export default curry2(converge);

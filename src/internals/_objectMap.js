@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import _objectForEach from "./_objectForEach";
 
 const _objectMap = (func, object) => {
@@ -13,4 +13,4 @@ const _objectMap = (func, object) => {
   return result;
 };
 
-export default curry(_objectMap);
+export default curry2(_objectMap);

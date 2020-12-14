@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 import findIndex from "./findIndex";
 import equals from "../logic/equals";
 import reduce from "./reduce";
@@ -29,4 +29,4 @@ const unique = (list) => {
   );
 };
 
-export default curry(unique);
+export default curry1(unique);

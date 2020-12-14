@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Returns the index of the first element that
@@ -19,4 +19,4 @@ const findIndex = (condFn, list) => {
   return -1;
 };
 
-export default curry(findIndex);
+export default curry2(findIndex);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Joins the elements of a list into a string
@@ -10,4 +10,4 @@ import curry from "../function/curry";
  */
 const join = (glue, list) => list.join(glue);
 
-export default curry(join);
+export default curry2(join);

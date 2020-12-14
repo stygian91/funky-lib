@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import pathFn from "./path";
 
 /**
@@ -11,4 +11,4 @@ import pathFn from "./path";
  */
 const hasPath = (path, object) => pathFn(path, object) !== undefined;
 
-export default curry(hasPath);
+export default curry2(hasPath);

@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry2 } from "../function";
 import { unfold } from "../list";
 import { inRange, inc } from "../math";
 
@@ -14,4 +14,4 @@ import { inRange, inc } from "../math";
 const range = (from, to) =>
   unfold((seed) => (inRange(from, to, seed) ? [seed, inc(seed)] : false), from);
 
-export default curry(range);
+export default curry2(range);

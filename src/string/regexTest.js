@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Tests a string vs a regular expression.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const regexTest = (regex, str) => regex.test(str);
 
-export default curry(regexTest);
+export default curry2(regexTest);

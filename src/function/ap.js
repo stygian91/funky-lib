@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import reduce from "../list/reduce";
 import concat from "../list/concat";
 import map from "../list/map";
@@ -24,4 +24,4 @@ const ap = (applyF, applyX) => {
   return reduce((acc, f) => concat(acc, map(f, applyX)), [], applyF);
 };
 
-export default curry(ap);
+export default curry2(ap);

@@ -1,5 +1,5 @@
 import map from "../list/map";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Filters an object by only copying values that are in the `props` list.
@@ -21,4 +21,4 @@ const pick = (props, object) => {
   return result;
 };
 
-export default curry(pick);
+export default curry2(pick);

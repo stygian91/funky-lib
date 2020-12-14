@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry1 from "./curry1";
 
 /**
  * Creates a new function that takes its arguments
@@ -8,4 +8,4 @@ import curry from "./curry";
  */
 const flip = (func) => (...args) => func(...args.reverse());
 
-export default curry(flip);
+export default curry1(flip);

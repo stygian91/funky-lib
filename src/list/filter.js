@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import path from "../object/path";
 import _objectFilter from "../internals/_objectFilter";
 import _stringFilter from "../internals/_stringFilter";
@@ -27,4 +27,4 @@ const filter = (func, list) => {
   throw new Error("Argument is not filterable.");
 };
 
-export default curry(filter);
+export default curry2(filter);

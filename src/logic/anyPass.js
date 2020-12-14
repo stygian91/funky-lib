@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import reduceWhile from "../list/reduceWhile";
 
 /**
@@ -18,4 +18,4 @@ const anyPass = (funcs, args) =>
     funcs
   );
 
-export default curry(anyPass);
+export default curry2(anyPass);

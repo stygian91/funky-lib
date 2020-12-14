@@ -1,6 +1,7 @@
 import { Either, Left } from "./either";
 import IO from "./io";
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
+import curry2 from "../function/curry2";
 
 /**
  * Executes a function and wraps its result in a Right.
@@ -11,7 +12,7 @@ import curry from "../function/curry";
  * @param {function} fn
  * @returns {Left|Right}
  */
-export const toEither = curry((fn) => {
+export const toEither = curry1((fn) => {
   try {
     return Either.of(fn());
   } catch (error) {
@@ -27,7 +28,7 @@ export const toEither = curry((fn) => {
  * @param {function} fn
  * @returns {IO<Either>}
  */
-export const toIOEither = curry((fn) => {
+export const toIOEither = curry1((fn) => {
   return new IO(() => toEither(fn));
 });
 
@@ -40,7 +41,7 @@ export const toIOEither = curry((fn) => {
  * @param {IO} ioInner
  * @returns {IO}
  */
-export const mapIOInner = curry((fn, ioInner) =>
+export const mapIOInner = curry2((fn, ioInner) =>
   ioInner.map((inner) => inner.map(fn))
 );
 
@@ -52,7 +53,7 @@ export const mapIOInner = curry((fn, ioInner) =>
  * @param {function}
  * @returns {Promise<Either>}
  */
-export const toAsyncEither = curry(async (fn) => {
+export const toAsyncEither = curry1(async (fn) => {
   try {
     const res = await fn();
     return Either.of(res);

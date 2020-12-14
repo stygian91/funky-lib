@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Generates a list based on a seed and an iterator function.
@@ -23,4 +23,4 @@ const unfold = (fn, seed) => {
   return result;
 };
 
-export default curry(unfold);
+export default curry2(unfold);

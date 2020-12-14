@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import findLastIndex from "./findLastIndex";
 
 /**
@@ -14,4 +14,4 @@ const findLast = (condFn, list) => {
   return index === -1 ? void 0 : list[index];
 };
 
-export default curry(findLast);
+export default curry2(findLast);

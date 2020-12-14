@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Checks an object contains a prop.
@@ -12,4 +12,4 @@ const has = (prop, object) =>
   typeof object !== "undefined" &&
   object.hasOwnProperty(prop);
 
-export default curry(has);
+export default curry2(has);

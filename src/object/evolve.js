@@ -1,6 +1,6 @@
 import map from "../list/map";
 import prop from "./prop";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Creates a new object by going through the spec object/list recursively
@@ -25,4 +25,4 @@ const evolve = (spec, object) =>
     return value;
   }, object);
 
-export default curry(evolve);
+export default curry2(evolve);

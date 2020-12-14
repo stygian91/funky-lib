@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * A curried version of the modulo `%` operator (a % b).
@@ -15,4 +15,4 @@ const modulo = (b, a) => {
   return a % b;
 };
 
-export default curry(modulo);
+export default curry2(modulo);

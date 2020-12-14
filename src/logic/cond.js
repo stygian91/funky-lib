@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Works a bit like the `switch` structure.
@@ -34,4 +34,4 @@ const cond = (pairs, arg) => {
   }
 };
 
-export default curry(cond);
+export default curry2(cond);

@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry1 from "./curry1";
 
 /**
  * The identity function just returns its first argument.
@@ -8,4 +8,4 @@ import curry from "./curry";
  */
 const identity = (a) => a;
 
-export default curry(identity);
+export default curry1(identity);

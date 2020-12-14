@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import isNil from "./isNil";
 
 /**
@@ -18,4 +18,4 @@ const equals = (left, right) => {
   return left === right;
 };
 
-export default curry(equals);
+export default curry2(equals);

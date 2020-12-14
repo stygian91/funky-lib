@@ -1,5 +1,7 @@
 import arity from "./arity";
 import curry from "./curry";
+import curry1 from "./curry1";
+import curry2 from "./curry2";
 
 // jshint maxcomplexity: false
 
@@ -12,7 +14,7 @@ import curry from "./curry";
  * @param {function} classFn
  * @returns {function}
  */
-const construct = curry((classFn) => constructN(classFn.length, classFn));
+const construct = curry1((classFn) => constructN(classFn.length, classFn));
 
 /**
  * Creates a curried constructor, like `construct`,
@@ -24,7 +26,7 @@ const construct = curry((classFn) => constructN(classFn.length, classFn));
  * @param {function} classFn
  * @returns {function}
  */
-export const constructN = curry((n, classFn) => {
+export const constructN = curry2((n, classFn) => {
   if (n < 0 || n > 10) {
     throw new Error("The n argument must be from 0 to 10, inclusive.");
   }

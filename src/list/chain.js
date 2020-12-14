@@ -1,6 +1,6 @@
 import map from "./map";
 import _flatten from "../internals/_flatten";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import { isNil } from "../logic";
 
 /**
@@ -19,4 +19,4 @@ const chain = (fn, list) => {
   return _flatten(false, map(fn, list));
 };
 
-export default curry(chain);
+export default curry2(chain);

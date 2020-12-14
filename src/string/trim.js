@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry1 } from "../function";
 
 /**
  * Trims whitespace at the beginning and end of a string.
@@ -7,4 +7,4 @@ import { curry } from "../function";
  */
 const trim = (str) => str.trim();
 
-export default curry(trim);
+export default curry1(trim);

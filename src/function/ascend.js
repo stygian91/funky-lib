@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry1 from "./curry1";
 
 /**
  * Creates an ascending comparator function to be used with the sort function.
@@ -18,4 +18,4 @@ const ascend = (fn) => (a, b) => {
   return a1 < b1 ? -1 : a1 > b1 ? 1 : 0;
 };
 
-export default curry(ascend);
+export default curry1(ascend);

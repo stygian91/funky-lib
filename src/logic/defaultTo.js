@@ -1,7 +1,7 @@
 import isNil from "./isNil";
 import when from "./when";
 import always from "../function/always";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * If `value` is nil, then the default value will be returned,
@@ -15,4 +15,4 @@ import curry from "../function/curry";
  */
 const defaultTo = (def, value) => when(isNil, always(def), value);
 
-export default curry(defaultTo);
+export default curry2(defaultTo);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Similar to `zip`, but the elements of the first list are used for keys
@@ -27,4 +27,4 @@ const zipObj = (keys, values) => {
   return result;
 };
 
-export default curry(zipObj);
+export default curry2(zipObj);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import _getPathArray from "../internals/_getPathArray";
 import dissoc from "./dissoc";
 import assoc from "./assoc";
@@ -34,4 +34,4 @@ const dissocPath = (path, object) => {
   return assoc(prop, dissocPath(remainingPath, object[prop]), object);
 };
 
-export default curry(dissocPath);
+export default curry2(dissocPath);

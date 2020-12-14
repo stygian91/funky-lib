@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import forEach from "../list/forEach";
 
 const _flatten = (recursive, list) => {
@@ -18,4 +18,4 @@ const _flatten = (recursive, list) => {
   return result;
 };
 
-export default curry(_flatten);
+export default curry2(_flatten);

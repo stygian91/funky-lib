@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry1 } from "../function";
 import _keys from "../internals/_keys";
 
 /**
@@ -24,4 +24,4 @@ const size = (collection) => {
   );
 };
 
-export default curry(size);
+export default curry1(size);
