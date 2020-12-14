@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 import _objectForEach from "../internals/_objectForEach";
 
 /**
@@ -13,4 +13,4 @@ const values = (obj) => {
   return res;
 };
 
-export default curry(values);
+export default curry1(values);

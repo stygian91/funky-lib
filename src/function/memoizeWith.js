@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry2 from "./curry2";
 
 /**
  * Memoizes a function where the key generator function
@@ -21,4 +21,4 @@ const memoizeWith = (keyGenerator, func) => {
   };
 };
 
-export default curry(memoizeWith);
+export default curry2(memoizeWith);

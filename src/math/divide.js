@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * A curried version of the `/` operator.
@@ -16,4 +16,4 @@ const divide = (divisor, divident) => {
   return divident / divisor;
 };
 
-export default curry(divide);
+export default curry2(divide);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 import split from "../string/split";
 
 const _getPathArray = (path) => {
@@ -11,4 +11,4 @@ const _getPathArray = (path) => {
   }
 };
 
-export default curry(_getPathArray);
+export default curry1(_getPathArray);

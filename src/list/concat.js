@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Concatenates 2 strings or 2 arrays.
@@ -18,4 +18,4 @@ const concat = (left, right) => {
   return left.concat(right);
 };
 
-export default curry(concat);
+export default curry2(concat);

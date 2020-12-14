@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import path from "../object/path";
 import _objectForEach from "../internals/_objectForEach";
 import _stringWhile from "../internals/_stringWhile";
@@ -27,4 +27,4 @@ const forEach = (fn, list) => {
   throw new Error("Can only use forEach on arrays, objects and strings.");
 };
 
-export default curry(forEach);
+export default curry2(forEach);

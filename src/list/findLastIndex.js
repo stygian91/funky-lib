@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Finds the index of the last element that passes the condition function.
@@ -20,4 +20,4 @@ const findLastIndex = (condFn, list) => {
   return -1;
 };
 
-export default curry(findLastIndex);
+export default curry2(findLastIndex);

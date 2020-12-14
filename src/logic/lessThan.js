@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * A curried wrapper around the `<` operator.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const lt = (right, left) => left < right;
 
-export default curry(lt);
+export default curry2(lt);

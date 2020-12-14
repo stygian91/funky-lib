@@ -1,5 +1,5 @@
 import size from "../list/size";
-import { curry } from "../function";
+import { curry1 } from "../function";
 
 /**
  * Checks if the value is empty.
@@ -16,4 +16,4 @@ const isEmpty = (arg) => {
   }
 };
 
-export default curry(isEmpty);
+export default curry1(isEmpty);

@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry1 } from "../function";
 
 /**
  * Converts a string to upper case.
@@ -7,4 +7,4 @@ import { curry } from "../function";
  */
 const toUpper = (str) => str.toUpperCase();
 
-export default curry(toUpper);
+export default curry1(toUpper);

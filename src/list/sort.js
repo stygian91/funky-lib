@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Returns a new list that's sorted according to the predicate.
@@ -12,4 +12,4 @@ import curry from "../function/curry";
  */
 const sort = (predicate, list) => list.slice().sort(predicate);
 
-export default curry(sort);
+export default curry2(sort);

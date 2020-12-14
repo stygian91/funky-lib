@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 
 /**
  * A curried wrapper around the `!` operator.
@@ -8,4 +8,4 @@ import curry from "../function/curry";
  */
 const not = (arg) => !arg;
 
-export default curry(not);
+export default curry1(not);

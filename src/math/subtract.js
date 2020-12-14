@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * A curried version of the `-` operator.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const subtract = (b, a) => a - b;
 
-export default curry(subtract);
+export default curry2(subtract);

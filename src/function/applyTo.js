@@ -1,8 +1,8 @@
-import curry from "./curry";
+import curry2 from "./curry2";
 
 /**
  * Takes a value and a function and applies the function to the value.
- * With currying, this allows for the creation of a function that always supplies the same value for different operations.
+ * With curry2ing, this allows for the creation of a function that always supplies the same value for different operations.
  *
  * @param {any} x
  * @param {function} fn
@@ -10,4 +10,4 @@ import curry from "./curry";
  */
 const applyTo = (x, fn) => fn(x);
 
-export default curry(applyTo);
+export default curry2(applyTo);

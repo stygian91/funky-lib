@@ -1,5 +1,5 @@
 import _stringWhile from "./_stringWhile";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import always from "../function/always";
 
 const _stringFilter = (filterFn, string) => {
@@ -18,4 +18,4 @@ const _stringFilter = (filterFn, string) => {
   return result.join("");
 };
 
-export default curry(_stringFilter);
+export default curry2(_stringFilter);

@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry1 from "./curry1";
 
 /**
  * Returns a new function that delays execution by returning a nullary function.
@@ -8,4 +8,4 @@ import curry from "./curry";
  */
 const thunkify = (func) => (...args) => () => func(...args);
 
-export default curry(thunkify);
+export default curry1(thunkify);

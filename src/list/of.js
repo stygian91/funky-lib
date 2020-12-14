@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 
 /**
  * Wraps an argument in an array
@@ -7,6 +7,6 @@ import curry from "../function/curry";
  * @param {any} arg
  * @returns {any[]}
  */
-const of = curry((arg) => [arg]);
+const of = curry1((arg) => [arg]);
 
 export default of;

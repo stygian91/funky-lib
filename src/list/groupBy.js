@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Groups the elements of a list into an object
@@ -33,4 +33,4 @@ const groupBy = (groupFn, list) => {
   return result;
 };
 
-export default curry(groupBy);
+export default curry2(groupBy);

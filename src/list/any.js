@@ -1,5 +1,5 @@
 import reduceWhile from "./reduceWhile";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Checks if any of the elements in the list pass a condition.
@@ -16,4 +16,4 @@ const any = (condFn, list) =>
     list
   );
 
-export default curry(any);
+export default curry2(any);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Returns the nth element of a list.
@@ -15,4 +15,4 @@ const nth = (n, list) => {
   return list[list.length + n];
 };
 
-export default curry(nth);
+export default curry2(nth);

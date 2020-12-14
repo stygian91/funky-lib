@@ -1,6 +1,6 @@
 import map from "./map";
 import pathFn from "../object/path";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Takes a list of objects and returns a new list with the values at the specified path plucked.
@@ -14,4 +14,4 @@ import curry from "../function/curry";
  */
 const pluck = (path, list) => map(pathFn(path), list);
 
-export default curry(pluck);
+export default curry2(pluck);

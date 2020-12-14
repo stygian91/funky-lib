@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 
 /**
  * Creates a complementing funciton.
@@ -10,4 +10,4 @@ import curry from "../function/curry";
  */
 const complement = (func) => (...args) => (func(...args) ? false : true);
 
-export default curry(complement);
+export default curry1(complement);

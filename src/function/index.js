@@ -9,6 +9,8 @@ export { default as compose } from "./compose";
 export { default as construct, constructN } from "./construct";
 export { default as converge } from "./converge";
 export { default as curry } from "./curry";
+export { default as curry1 } from "./curry1";
+export { default as curry2 } from "./curry2";
 export { default as descend } from "./descend";
 export { default as flip } from "./flip";
 export { default as identity } from "./identity";

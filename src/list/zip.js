@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Creates a new list with pairs of values from the 2 lists,
@@ -28,4 +28,4 @@ const zip = (list1, list2) => {
   return result;
 };
 
-export default curry(zip);
+export default curry2(zip);

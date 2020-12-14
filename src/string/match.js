@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Matches the regular expression with the string and returns the match results.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const match = (regex, str) => str.match(regex);
 
-export default curry(match);
+export default curry2(match);

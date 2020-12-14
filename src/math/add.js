@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * A curried version of the `+` operator.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const add = (a, b) => a + b;
 
-export default curry(add);
+export default curry2(add);

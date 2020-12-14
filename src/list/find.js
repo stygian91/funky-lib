@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Returns the first element of a list that passes the condition function.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  */
 const find = (condFn, list) => list.find(condFn);
 
-export default curry(find);
+export default curry2(find);

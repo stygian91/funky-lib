@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 
 /**
  * Checks if a value is nil.
@@ -10,4 +10,4 @@ import curry from "../function/curry";
 const isNil = (arg) =>
   arg === null || typeof arg === "undefined" || Number.isNaN(arg);
 
-export default curry(isNil);
+export default curry1(isNil);

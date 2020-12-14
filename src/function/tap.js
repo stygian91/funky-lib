@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry2 from "./curry2";
 
 /**
  * Runs a function on an argument and returns the argument.
@@ -12,4 +12,4 @@ const tap = (func, arg) => {
   return arg;
 };
 
-export default curry(tap);
+export default curry2(tap);

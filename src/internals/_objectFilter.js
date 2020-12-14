@@ -1,5 +1,5 @@
 import _objectForEach from "./_objectForEach";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 const _objectFilter = (filterFn, object) => {
   const result = {};
@@ -17,4 +17,4 @@ const _objectFilter = (filterFn, object) => {
   return result;
 };
 
-export default curry(_objectFilter);
+export default curry2(_objectFilter);

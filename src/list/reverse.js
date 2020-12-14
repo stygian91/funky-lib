@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry1 } from "../function";
 
 /**
  * Returns a new list or string (depending on the argument)
@@ -15,4 +15,4 @@ const reverse = (listOrStr) => {
   return listOrStr.split("").reverse().join("");
 };
 
-export default curry(reverse);
+export default curry1(reverse);

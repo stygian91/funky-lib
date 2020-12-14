@@ -1,5 +1,5 @@
 import _keys from "../internals/_keys";
-import curry from "../function/curry";
+import curry1 from "../function/curry1";
 
 /**
  * Returns all own enumerable property names and symbols.
@@ -9,4 +9,4 @@ import curry from "../function/curry";
  * @param {object} obj
  * @returns {any[]}
  */
-export default curry(_keys);
+export default curry1(_keys);

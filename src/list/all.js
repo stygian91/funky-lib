@@ -1,5 +1,5 @@
 import reduceWhile from "./reduceWhile";
-import { curry, identity } from "../function/";
+import { curry2, identity } from "../function/";
 
 /**
  * Checks if all elements of a list pass a condition.
@@ -16,4 +16,4 @@ const all = (condFn, list) =>
     list
   );
 
-export default curry(all);
+export default curry2(all);

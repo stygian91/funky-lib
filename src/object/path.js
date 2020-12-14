@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import pathOr from "./pathOr";
 
 /**
@@ -11,4 +11,4 @@ import pathOr from "./pathOr";
  */
 const path = (pathStr, object) => pathOr(void 0, pathStr, object);
 
-export default curry(path);
+export default curry2(path);

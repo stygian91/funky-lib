@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import slice from "./slice";
 
 /**
@@ -12,4 +12,4 @@ import slice from "./slice";
 const takeLast = (numElements, list) =>
   slice(-1 * numElements, list.length, list);
 
-export default curry(takeLast);
+export default curry2(takeLast);

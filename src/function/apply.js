@@ -1,4 +1,4 @@
-import curry from "./curry";
+import curry2 from "./curry2";
 
 /**
  * Applies a list of arguments to a function.
@@ -12,4 +12,4 @@ const apply = (func, args) => {
   return func.apply(void 0, args);
 };
 
-export default curry(apply);
+export default curry2(apply);

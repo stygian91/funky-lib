@@ -1,5 +1,5 @@
 import prop from "./prop";
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import pipe from "../function/pipe";
 import id from "../function/identity";
 import propSatisfies from "./propSatisfies";
@@ -21,4 +21,4 @@ const where = (specObject, testObject) =>
     all(id)
   )(specObject);
 
-export default curry(where);
+export default curry2(where);

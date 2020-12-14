@@ -1,5 +1,5 @@
 import { forEach } from ".";
-import { curry } from "../function";
+import { curry2 } from "../function";
 
 /**
  * Creates an object whose keys are determined by `keyFn`.
@@ -22,4 +22,4 @@ const keyWith = (keyFn, list) => {
   return object;
 };
 
-export default curry(keyWith);
+export default curry2(keyWith);

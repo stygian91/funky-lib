@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 
 /**
  * Splits a list into a groups of smaller lists with the provided size.
@@ -29,4 +29,4 @@ const chunk = (size, list) => {
   return result;
 };
 
-export default curry(chunk);
+export default curry2(chunk);

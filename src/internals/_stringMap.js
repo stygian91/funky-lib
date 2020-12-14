@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry2 from "../function/curry2";
 import always from "../function/always";
 import _stringWhile from "./_stringWhile";
 
@@ -14,4 +14,4 @@ const _stringMap = (func, string) => {
   return result.join("");
 };
 
-export default curry(_stringMap);
+export default curry2(_stringMap);
