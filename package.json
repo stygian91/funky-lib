@@ -1,6 +1,6 @@
 {
   "name": "funky-lib",
-  "version": "6.9.0",
+  "version": "6.9.1",
   "description": "",
   "main": "dist/index.js",
   "module": "es/index.js",
@@ -32,7 +32,7 @@
     "babel-plugin-annotate-pure-calls": "^0.4.0",
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
-    "jest": "^25",
+    "jest": "^26",
     "prettier": "2.0.5",
     "rimraf": "^3.0.2"
   },
