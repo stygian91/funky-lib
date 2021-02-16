@@ -6,6 +6,7 @@ export { default as evolve } from "./evolve";
 export { default as has } from "./has";
 export { default as hasPath } from "./hasPath";
 export { default as keys } from "./keys";
+export { default as omit } from "./omit";
 export { default as path } from "./path";
 export { default as pathOr } from "./pathOr";
 export { default as pathSatisfies } from "./pathSatisfies";
