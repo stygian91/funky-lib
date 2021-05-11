@@ -14,16 +14,16 @@ const expectIO = expectType(IO);
 
 test("toEither", () => {
   const error = new Error("Error message");
-  const throwingFunc = toEither(() => {
+  const throwingFunc = toEither((error) => {
     throw error;
-  });
-  const regularFunc = toEither(() => 5);
+  }, [error]);
+  const regularFunc = toEither((a) => a, [5]);
   expectLeftEquals(new Left(error), throwingFunc);
   expectRightEquals(Either.of(5), regularFunc);
 });
 
 test("toIOEither", () => {
-  const ioEither = toIOEither(() => 5);
+  const ioEither = toIOEither(() => 5, []);
   expectIO(ioEither);
   expectRightEquals(Either.of(5), ioEither.run());
 });
@@ -39,14 +39,14 @@ test("mapIOInner", () => {
 
 test("toAsyncEither", async () => {
   const error = new Error("test");
-  const asyncFn = () =>
-    new Promise((resolve) => setTimeout(() => resolve(42), 10));
+  const asyncFn = (arg) =>
+    new Promise((resolve) => setTimeout(() => resolve(arg), 10));
 
-  const asyncFn2 = () =>
+  const asyncFn2 = (error) =>
     new Promise((resolve, reject) => setTimeout(() => reject(error), 10));
 
-  const res = await toAsyncEither(() => asyncFn());
-  const res2 = await toAsyncEither(() => asyncFn2());
+  const res = await toAsyncEither(asyncFn, [42]);
+  const res2 = await toAsyncEither(asyncFn2, [error]);
 
   expectRightEquals(Either.of(42), res);
   expectLeftEquals(new Left(error), res2);

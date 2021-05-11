@@ -1,6 +1,5 @@
 import { Either, Left } from "./either";
 import IO from "./io";
-import curry1 from "../function/curry1";
 import curry2 from "../function/curry2";
 
 /**
@@ -10,11 +9,12 @@ import curry2 from "../function/curry2";
  * @function
  * @name toEither
  * @param {function} fn
+ * @param {array} args
  * @returns {Left|Right}
  */
-export const toEither = curry1((fn) => {
+export const toEither = curry2((fn, args) => {
   try {
-    return Either.of(fn());
+    return Either.of(fn(...args));
   } catch (error) {
     return new Left(error);
   }
@@ -26,10 +26,11 @@ export const toEither = curry1((fn) => {
  * @function
  * @name toIOEither
  * @param {function} fn
+ * @param {array} args
  * @returns {IO<Either>}
  */
-export const toIOEither = curry1((fn) => {
-  return new IO(() => toEither(fn));
+export const toIOEither = curry2((fn, args) => {
+  return new IO(() => toEither(fn, args));
 });
 
 /**
@@ -51,11 +52,12 @@ export const mapIOInner = curry2((fn, ioInner) =>
  *
  * @function
  * @param {function}
+ * @param {array}
  * @returns {Promise<Either>}
  */
-export const toAsyncEither = curry1(async (fn) => {
+export const toAsyncEither = curry2(async (fn, args) => {
   try {
-    const res = await fn();
+    const res = await fn(...args);
     return Either.of(res);
   } catch (error) {
     return new Left(error);
