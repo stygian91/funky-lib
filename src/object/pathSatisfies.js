@@ -5,6 +5,7 @@ import curry from "../function/curry";
  * Checks if the value at the specified path passes the condition.
  * The path can be provided as a dot-separated string or a list of strings.
  *
+ * @function
  * @param {function} condFn
  * @param {string|string[]} path
  * @param {object} object

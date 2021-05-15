@@ -6,7 +6,7 @@ import isNil from "../logic/isNil";
  * Returns the first element of a list that passes the condition function.
  *
  * @param {function} condFn
- * @param {any[]} list
+ * @param {any[]|object} list
  * @returns {any}
  */
 const find = (condFn, list) => {
