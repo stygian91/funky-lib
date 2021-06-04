@@ -12,7 +12,7 @@ import curry2 from "../function/curry2";
  * @param {array} args
  * @returns {Left|Right}
  */
-export const toEither = curry2((fn, args) => { // NOSONAR
+export const toEither = curry2((fn, args) => {
   try {
     return Either.of(fn(...args));
   } catch (error) {
