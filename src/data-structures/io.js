@@ -26,7 +26,7 @@ export default class IO {
   asyncMap(fn) {
     return new IO(async () => {
       const res = await Promise.resolve(this.fn());
-      return await Promise.resolve(fn(res));
+      return Promise.resolve(fn(res));
     });
   }
 }

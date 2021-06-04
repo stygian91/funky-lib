@@ -15,7 +15,15 @@ const descend = (fn) => (a, b) => {
   const a1 = fn(a);
   const b1 = fn(b);
 
-  return a1 < b1 ? 1 : a1 > b1 ? -1 : 0;
+  if (a1 < b1) {
+    return 1;
+  }
+
+  if (a1 > b1) {
+    return -1;
+  }
+
+  return 0;
 };
 
 export default curry1(descend);

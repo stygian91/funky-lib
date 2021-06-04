@@ -14,8 +14,8 @@ const expectIO = expectType(IO);
 
 test("toEither", () => {
   const error = new Error("Error message");
-  const throwingFunc = toEither((error) => {
-    throw error;
+  const throwingFunc = toEither((err) => {
+    throw err;
   }, [error]);
   const regularFunc = toEither((a) => a, [5]);
   expectLeftEquals(new Left(error), throwingFunc);
@@ -42,8 +42,8 @@ test("toAsyncEither", async () => {
   const asyncFn = (arg) =>
     new Promise((resolve) => setTimeout(() => resolve(arg), 10));
 
-  const asyncFn2 = (error) =>
-    new Promise((resolve, reject) => setTimeout(() => reject(error), 10));
+  const asyncFn2 = (err) =>
+    new Promise((resolve, reject) => setTimeout(() => reject(err), 10));
 
   const res = await toAsyncEither(asyncFn, [42]);
   const res2 = await toAsyncEither(asyncFn2, [error]);
