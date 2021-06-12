@@ -19,8 +19,8 @@ test("IO", async () => {
   expect(io2.run()).toEqual(7);
 
   // asyncMap:
-  const asyncFn = () => new Promise((resolve) => resolve(100), 10);
-  const asyncFn2 = (num) => new Promise((resolve) => resolve(num + 10), 10);
+  const asyncFn = () => new Promise((resolve) => setTimeout(() => resolve(100), 10));
+  const asyncFn2 = (num) => new Promise((resolve) => setTimeout(() => resolve(num + 10), 10));
 
   const io3 = new IO(asyncFn).asyncMap((num) => num + 10);
   const io3Res = await io3.run();
