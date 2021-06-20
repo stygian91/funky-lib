@@ -7,6 +7,8 @@ export { default as has } from "./has";
 export { default as hasPath } from "./hasPath";
 export { default as keys } from "./keys";
 export { default as lens } from "./lens";
+export { default as lensIndex } from "./lensIndex";
+export { default as lensPath } from "./lensPath";
 export { default as omit } from "./omit";
 export { default as over } from "./over";
 export { default as path } from "./path";
