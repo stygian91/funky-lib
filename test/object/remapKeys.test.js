@@ -16,7 +16,7 @@ test("remapKeys", () => {
     key2: "value2",
   });
 
-  expect(remapKeys({ key1: "newKey1", nonExistant: "newKey123" }, obj)).toEqual(
+  expect(remapKeys({ key1: "newKey1", nonExistent: "newKey123" }, obj)).toEqual(
     {
       newKey1: "value1",
       key2: "value2",
