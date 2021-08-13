@@ -19,6 +19,7 @@ export { default as prop } from "./prop";
 export { default as propEq } from "./propEq";
 export { default as propOr } from "./propOr";
 export { default as propSatisfies } from "./propSatisfies";
+export { default as remapKeys } from "./remapKeys";
 export { default as set } from "./set";
 export { default as values } from "./values";
 export { default as view } from "./view";
