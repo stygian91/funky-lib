@@ -1,6 +1,5 @@
 import differenceWith from "./differenceWith";
-import { equals } from "../";
-import { curry } from "../function";
+import equals from "../logic/equals";
 
 /**
  * Returns a unique list of elements from list1 that are not present in list2.
@@ -16,4 +15,4 @@ import { curry } from "../function";
  */
 const difference = differenceWith(equals);
 
-export default curry(difference);
+export default difference;
