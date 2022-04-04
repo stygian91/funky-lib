@@ -1,6 +1,7 @@
 import { chain } from "../../src/list";
 import Maybe from "../../src/data-structures/maybe";
 import { expectValue } from "../../src/internals/_test-helpers";
+import transduce from "../../src/list/transduce";
 
 test("chain", () => {
   const list = [1, 2, 3, 4];
@@ -14,4 +15,8 @@ test("chain", () => {
   const maybeB = Maybe.of(2);
   expectValue(Maybe, null, chain(fn, maybeA));
   expect(chain(fn, maybeB)).toEqual([2, 4]);
+
+  const reducer = (acc, curr) => { acc.push(curr); return acc; };
+  const res = transduce(chain(fn), reducer, [], list);
+  expect(res).toEqual([1, 2, 2, 4, 3, 6, 4, 8]);
 });

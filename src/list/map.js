@@ -10,6 +10,8 @@ import reduce from "./reduce";
  * where `list` is the full list, object or string.
  * Defers to [Array.prototype.map]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map} for lists
  *
+ * Acts as a transducer when a transformer is given in place of the list.
+ *
  * @param {function} func
  * @param {any[]|object|string} list
  * @returns {any[]|object|string}
@@ -23,15 +25,8 @@ const map = (func, list) => {
     return new Transformer(step, list.init, list.result);
   }
 
-  if (Array.isArray(list)) {
-    return reduce(
-      (acc, curr, index, _list) => {
-        acc.push(func(curr, index, _list));
-        return acc;
-      },
-      [],
-      list
-    );
+  if (list && typeof list.map === 'function') {
+    return list.map(func);
   }
 
   if (typeof list === "object") {

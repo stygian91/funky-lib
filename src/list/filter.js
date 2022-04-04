@@ -8,6 +8,8 @@ import Transformer, { isTransformer } from "../data-structures/transformer";
  * Filters the elements of an array, object or string
  * and returns a new array, object or string respectively.
  *
+ * Acts as a transducer when a transformer is given in place of the list.
+ *
  * @param {function} func
  * @param {array|string|object} list
  * @returns {array|string|object}
