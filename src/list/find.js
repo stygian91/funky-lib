@@ -1,3 +1,4 @@
+import Transformer, { isTransformer } from "../data-structures/transformer";
 import curry2 from "../function/curry2";
 import objectWhile from "../internals/_objectWhile";
 import isNil from "../logic/isNil";
@@ -10,6 +11,18 @@ import isNil from "../logic/isNil";
  * @returns {any}
  */
 const find = (condFn, list) => {
+  if (isTransformer(list)) {
+    const step = (acc, curr, index, _list) => {
+      if (condFn(curr, index, _list)) {
+        return list.step(acc, curr, index, _list);
+      }
+
+      return acc;
+    };
+
+    return new Transformer(step, list.init, list.result);
+  }
+
   if (Array.isArray(list)) {
     return list.find(condFn);
   }
