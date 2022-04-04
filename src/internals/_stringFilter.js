@@ -1,21 +1,17 @@
-import _stringWhile from "./_stringWhile";
 import curry2 from "../function/curry2";
-import always from "../function/always";
+import reduce from "../list/reduce";
 
-const _stringFilter = (filterFn, string) => {
-  const result = [];
+const _stringFilter = (filterFn, string) =>
+  reduce(
+    (acc, curr, index, str) => {
+      if (filterFn(curr, index, str)) {
+        acc += curr;
+      }
 
-  const iterationFn = (char, key, str) => {
-    if (!filterFn(char, key, str)) {
-      return;
-    }
-
-    result.push(char);
-  };
-
-  _stringWhile(always(true), iterationFn, string);
-
-  return result.join("");
-};
+      return acc;
+    },
+    "",
+    string
+  );
 
 export default curry2(_stringFilter);

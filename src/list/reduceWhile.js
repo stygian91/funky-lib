@@ -1,7 +1,6 @@
+import Transformer from "../data-structures/transformer";
 import curry from "../function/curry";
-import _listReduceWhile from "../internals/_listReduceWhile";
-import _objectReduceWhile from "../internals/_objectReduceWhile";
-import _stringReduceWhile from "../internals/_stringReduceWhile";
+import _reduceWhile from "../internals/_reduceWhile";
 
 /**
  * Similar to `reduce`, but it will terminate early if the `condFn` returns false.
@@ -16,19 +15,8 @@ import _stringReduceWhile from "../internals/_stringReduceWhile";
  * @returns {any}
  */
 const reduceWhile = (condFn, reducer, initialValue, list) => {
-  if (Array.isArray(list)) {
-    return _listReduceWhile(condFn, reducer, initialValue, list);
-  }
-
-  if (typeof list === "object") {
-    return _objectReduceWhile(condFn, reducer, initialValue, list);
-  }
-
-  if (typeof list === "string") {
-    return _stringReduceWhile(condFn, reducer, initialValue, list);
-  }
-
-  throw new Error("Argument is not reducible.");
+  const transformer = new Transformer(reducer, () => initialValue);
+  return _reduceWhile(condFn, transformer, list);
 };
 
 export default curry(reduceWhile);

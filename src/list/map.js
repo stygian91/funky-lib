@@ -1,7 +1,6 @@
 import curry2 from "../function/curry2";
-import path from "../object/path";
-import _objectMap from "../internals/_objectMap";
-import _stringMap from "../internals/_stringMap";
+import Transformer, { isTransformer } from "../data-structures/transformer";
+import reduce from "./reduce";
 
 /**
  * Maps over a list, object or string and returns a new object of the corresponding type.
@@ -16,16 +15,45 @@ import _stringMap from "../internals/_stringMap";
  * @returns {any[]|object|string}
  */
 const map = (func, list) => {
-  if (typeof path("map", list) === "function") {
-    return list.map(func);
+  if (isTransformer(list)) {
+    const step = function(acc, curr, index, _list) {
+      return list.step(acc, func(curr, index, _list), index, _list);
+    };
+
+    return new Transformer(step, list.init, list.result);
+  }
+
+  if (Array.isArray(list)) {
+    return reduce(
+      (acc, curr, index, _list) => {
+        acc.push(func(curr, index, _list));
+        return acc;
+      },
+      [],
+      list
+    );
   }
 
   if (typeof list === "object") {
-    return _objectMap(func, list);
+    return reduce(
+      (acc, curr, key, obj) => {
+        acc[key] = func(curr, key, obj);
+        return acc;
+      },
+      {},
+      list
+    );
   }
 
   if (typeof list === "string") {
-    return _stringMap(func, list);
+    return reduce(
+      (acc, curr, key, str) => {
+        acc += func(curr, key, str);
+        return acc;
+      },
+      "",
+      list
+    );
   }
 
   throw new Error("Argument is not mappable");

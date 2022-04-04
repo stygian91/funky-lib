@@ -1,20 +1,17 @@
-import _objectForEach from "./_objectForEach";
 import curry2 from "../function/curry2";
+import reduce from "../list/reduce";
 
-const _objectFilter = (filterFn, object) => {
-  const result = {};
+const _objectFilter = (filterFn, object) =>
+  reduce(
+    (acc, curr, key, obj) => {
+      if (filterFn(curr, key, obj)) {
+        acc[key] = curr;
+      }
 
-  const iterationFn = (value, key, obj) => {
-    if (!filterFn(value, key, obj)) {
-      return;
-    }
-
-    result[key] = value;
-  };
-
-  _objectForEach(iterationFn, object);
-
-  return result;
-};
+      return acc;
+    },
+    {},
+    object
+  );
 
 export default curry2(_objectFilter);
