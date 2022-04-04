@@ -30,6 +30,7 @@ export { default as pluck } from "./pluck";
 export { default as prepend } from "./prepend";
 export { default as range } from "./range";
 export { default as reduce } from "./reduce";
+export { default as reduced } from "./reduced";
 export { default as reduceWhile } from "./reduceWhile";
 export { default as reverse } from "./reverse";
 export { default as size } from "./size";

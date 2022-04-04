@@ -1,4 +1,5 @@
 import curry from "../function/curry";
+import { isReduced, _reduced } from "../list/reduced";
 import _objectWhile from "../internals/_objectWhile";
 import _stringWhile from "../internals/_stringWhile";
 import _listWhile from "../internals/_listWhile";
@@ -7,14 +8,14 @@ const _runReduce = (whileFn, condFn, transformer, object) => {
   let accumulator = transformer.init();
 
   whileFn(
-    (value, key, obj) => condFn(accumulator, value, key, obj),
+    (value, key, obj) => condFn(accumulator, value, key, obj) && !isReduced(accumulator),
     (value, key, obj) => {
       accumulator = transformer.step(accumulator, value, key, obj);
     },
     object
   );
 
-  return transformer.result(accumulator);
+  return transformer.result(isReduced(accumulator) ? accumulator[_reduced] : accumulator);
 };
 
 const _reduceWhile = (condFn, transformer, list) => {
