@@ -8,6 +8,8 @@ import Transformer, { isTransformer } from "../data-structures/transformer";
  * Maps a function over a list and concatenates the results.
  * Dispatches to the `chain` method of the second argument, if one exists.
  *
+ * Acts as a transducer when a transformer is given in place of the list.
+ *
  * @param {function} fn
  * @param {any[]} list
  * @returns {any[]}

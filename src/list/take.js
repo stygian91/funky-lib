@@ -1,6 +1,7 @@
 import Transformer, { isTransformer } from "../data-structures/transformer";
 import slice from "./slice";
-import curry from "../function/curry";
+import reduced from "./reduced";
+import curry2 from "../function/curry2";
 
 /**
  * Takes the first `n` elements of a list,
@@ -22,7 +23,7 @@ const take = (n, list) => {
         return list.step(acc, curr, index, _list);
       }
 
-      return acc;
+      return reduced(acc);
     };
 
     return new Transformer(step, list.init, list.result);
@@ -31,4 +32,4 @@ const take = (n, list) => {
   return slice(0, n, list);
 }
 
-export default curry(take);
+export default curry2(take);
