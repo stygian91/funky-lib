@@ -2,8 +2,9 @@ import __ from "./placeholderArgument";
 import curry1 from "./curry1";
 import curry2 from "./curry2";
 
+// jshint maxcomplexity: false
 /**
- * A simplified curry for binary functions.
+ * A simplified curry for tertiary functions.
  *
  * @param {function} fn
  * @return {function}
