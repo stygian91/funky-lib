@@ -1,11 +1,11 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 import curry2 from "../function/curry2";
 
-export const expectValue = curry((type, expectedValue, actual) =>
+export const expectValue = curry3((type, expectedValue, actual) =>
   expect(actual.equals(type.of(expectedValue))).toEqual(true)
 );
 
-export const expectEquals = curry((type, expected, actual) => {
+export const expectEquals = curry3((type, expected, actual) => {
   expectType(type, actual);
   expect(actual.equals(expected)).toEqual(true);
 });

@@ -1,5 +1,5 @@
 import pathFn from "./path";
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Checks if the value at the specified path passes the condition.
@@ -13,4 +13,4 @@ import curry from "../function/curry";
  */
 const pathSatisfies = (condFn, path, object) => !!condFn(pathFn(path, object));
 
-export default curry(pathSatisfies);
+export default curry3(pathSatisfies);

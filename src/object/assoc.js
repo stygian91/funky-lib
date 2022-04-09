@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Creates a shallow copy of the object
@@ -15,4 +15,4 @@ const assoc = (propName, value, object) => ({
   [propName]: value,
 });
 
-export default curry(assoc);
+export default curry3(assoc);

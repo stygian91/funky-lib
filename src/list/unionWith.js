@@ -1,5 +1,5 @@
 import { forEach, findIndex } from "./";
-import { curry } from "..";
+import { curry3 } from "..";
 
 /**
  * Returns the union of two lists.
@@ -28,4 +28,4 @@ const unionWith = (equalsFn, list1, list2) => {
   return result;
 };
 
-export default curry(unionWith);
+export default curry3(unionWith);

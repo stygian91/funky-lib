@@ -1,4 +1,4 @@
-import { curry, always } from "../function";
+import { curry3, always } from "../function";
 import adjust from "./adjust";
 
 /**
@@ -10,4 +10,4 @@ import adjust from "./adjust";
  */
 const update = (index, value, list) => adjust(index, always(value), list);
 
-export default curry(update);
+export default curry3(update);

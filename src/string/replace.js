@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Replaces
@@ -11,4 +11,4 @@ import curry from "../function/curry";
 const replace = (search, replacement, string) =>
   string.replace(search, replacement);
 
-export default curry(replace);
+export default curry3(replace);

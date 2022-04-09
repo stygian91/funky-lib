@@ -1,6 +1,6 @@
 import { lensSymbol } from "./lens";
 import path from "./path";
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Runs the transform function over the part of the data that the lens is focusing on.
@@ -17,4 +17,4 @@ const over = (lens, transformFn, data) => {
   return setter(transformFn(getter(data)), data);
 };
 
-export default curry(over);
+export default curry3(over);

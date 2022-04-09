@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Returns a new array with the element at the provided index
@@ -16,4 +16,4 @@ const adjust = (index, transformFn, list) => {
   return newList;
 };
 
-export default curry(adjust);
+export default curry3(adjust);

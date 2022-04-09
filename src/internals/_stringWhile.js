@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 const _stringWhile = (condFn, func, string) => {
   for (let key = 0; key < string.length; key++) {
@@ -12,4 +12,4 @@ const _stringWhile = (condFn, func, string) => {
   }
 };
 
-export default curry(_stringWhile);
+export default curry3(_stringWhile);

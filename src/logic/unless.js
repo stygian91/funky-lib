@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Returns the result of `elseFn(arg)` only if `conditionFn(arg)` returns a falsy value,
@@ -13,4 +13,4 @@ import curry from "../function/curry";
 const unless = (conditionFn, elseFn, arg) =>
   conditionFn(arg) ? arg : elseFn(arg);
 
-export default curry(unless);
+export default curry3(unless);
