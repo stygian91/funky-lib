@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Returns `object[prop]` if it exists or `defaultValue` otherwise.
@@ -17,4 +17,4 @@ const propOr = (defaultValue, propName, object) => {
   return typeof value === "undefined" ? defaultValue : value;
 };
 
-export default curry(propOr);
+export default curry3(propOr);

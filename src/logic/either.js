@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 import { anyPass } from "./";
 
 /**
@@ -12,4 +12,4 @@ import { anyPass } from "./";
  */
 const either = (f1, f2, args) => anyPass([f1, f2], args);
 
-export default curry(either);
+export default curry3(either);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Checks if a number is within range.
@@ -11,4 +11,4 @@ import curry from "../function/curry";
  */
 const inRange = (min, max, value) => min <= value && max > value;
 
-export default curry(inRange);
+export default curry3(inRange);

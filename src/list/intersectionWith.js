@@ -1,4 +1,4 @@
-import { curry } from "../";
+import { curry3 } from "../";
 import filter from "./filter";
 import findIndex from "./findIndex";
 
@@ -17,4 +17,4 @@ import findIndex from "./findIndex";
 const intersectionWith = (equalsFn, list1, list2) =>
   filter((el) => findIndex((el2) => equalsFn(el, el2), list2) !== -1, list1);
 
-export default curry(intersectionWith);
+export default curry3(intersectionWith);

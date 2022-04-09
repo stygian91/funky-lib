@@ -11,6 +11,7 @@ export { default as converge } from "./converge";
 export { default as curry } from "./curry";
 export { default as curry1 } from "./curry1";
 export { default as curry2 } from "./curry2";
+export { default as curry3 } from "./curry3";
 export { default as descend } from "./descend";
 export { default as F } from "./F";
 export { default as flip } from "./flip";

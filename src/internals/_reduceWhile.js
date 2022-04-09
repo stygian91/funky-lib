@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 import { isReduced, _reduced } from "../list/reduced";
 import _objectWhile from "../internals/_objectWhile";
 import _stringWhile from "../internals/_stringWhile";
@@ -37,4 +37,4 @@ const _reduceWhile = (condFn, transformer, list) => {
   throw new Error("Argument is not reducible.");
 };
 
-export default curry(_reduceWhile);
+export default curry3(_reduceWhile);

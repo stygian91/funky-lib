@@ -1,4 +1,4 @@
-import { curry } from "../function";
+import { curry3 } from "../function";
 
 /**
  * Finds the index of the first match, or -1 if there's no match.
@@ -10,4 +10,4 @@ import { curry } from "../function";
  */
 const indexOf = (search, fromIndex, str) => str.indexOf(search, fromIndex);
 
-export default curry(indexOf);
+export default curry3(indexOf);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Clamps a number to fit in a range.
@@ -20,4 +20,4 @@ const clamp = (min, max, value) => {
   return value;
 };
 
-export default curry(clamp);
+export default curry3(clamp);

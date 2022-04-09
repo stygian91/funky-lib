@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 const _listWhile = (condFn, iterationFn, list) => {
   for (let index = 0; index < list.length; index++) {
@@ -11,4 +11,4 @@ const _listWhile = (condFn, iterationFn, list) => {
   }
 };
 
-export default curry(_listWhile);
+export default curry3(_listWhile);

@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 import reduceWhile from "../list/reduceWhile";
 import _getPathArray from "../internals/_getPathArray";
 
@@ -24,4 +24,4 @@ const pathOr = (defaultValue, path, object) => {
   return typeof value === "undefined" ? defaultValue : value;
 };
 
-export default curry(pathOr);
+export default curry3(pathOr);

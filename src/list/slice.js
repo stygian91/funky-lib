@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Slices an array from begin to end.
@@ -13,4 +13,4 @@ import curry from "../function/curry";
  */
 const slice = (begin, end, list) => list.slice(begin, end);
 
-export default curry(slice);
+export default curry3(slice);

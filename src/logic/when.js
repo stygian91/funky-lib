@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Returns the result of `thenFn(arg)` only if `conditionFn(arg)` returns a truthy value,
@@ -13,4 +13,4 @@ import curry from "../function/curry";
 const when = (conditionFn, thenFn, arg) =>
   conditionFn(arg) ? thenFn(arg) : arg;
 
-export default curry(when);
+export default curry3(when);

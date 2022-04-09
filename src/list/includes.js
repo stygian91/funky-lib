@@ -1,4 +1,4 @@
-import { curry } from "../";
+import { curry3 } from "../";
 
 /**
  * Checks if the list includes `element`, starting from `fromIndex`.
@@ -12,4 +12,4 @@ import { curry } from "../";
 const includes = (element, fromIndex, list) =>
   list.includes(element, fromIndex);
 
-export default curry(includes);
+export default curry3(includes);

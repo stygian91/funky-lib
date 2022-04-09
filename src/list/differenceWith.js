@@ -1,5 +1,5 @@
 import { forEach, findIndex } from "./";
-import { curry } from "..";
+import { curry3 } from "..";
 
 /**
  * Returns a unique list of elements from list1 that are not present in list2.
@@ -25,4 +25,4 @@ const differenceWith = (equalsFn, list1, list2) => {
   return result;
 };
 
-export default curry(differenceWith);
+export default curry3(differenceWith);

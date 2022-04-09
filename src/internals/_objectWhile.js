@@ -1,4 +1,4 @@
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 import _keys from "./_keys";
 
 const _objectWhile = (condFn, iterationFn, object) => {
@@ -15,4 +15,4 @@ const _objectWhile = (condFn, iterationFn, object) => {
   }
 };
 
-export default curry(_objectWhile);
+export default curry3(_objectWhile);

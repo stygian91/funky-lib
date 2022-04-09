@@ -2,7 +2,7 @@ import _getPathArray from "../internals/_getPathArray";
 import propOr from "./propOr";
 import slice from "../list/slice";
 import assoc from "./assoc";
-import curry from "../function/curry";
+import curry3 from "../function/curry3";
 
 /**
  * Creates a shallow copy of the object and sets
@@ -32,4 +32,4 @@ const assocPath = (path, value, object) => {
   return assoc(prop, newValue, object);
 };
 
-export default curry(assocPath);
+export default curry3(assocPath);
