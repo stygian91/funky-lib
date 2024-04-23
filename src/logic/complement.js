@@ -8,6 +8,9 @@ import curry1 from "../function/curry1";
  * @param {funciton} func
  * @returns {function}
  */
-const complement = (func) => (...args) => (func(...args) ? false : true);
+const complement =
+  (func) =>
+  (...args) =>
+    func(...args) ? false : true;
 
 export default curry1(complement);

@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test } from 'vitest';
 
 test("curry3", function () {
   const f = function (a, b, c) {

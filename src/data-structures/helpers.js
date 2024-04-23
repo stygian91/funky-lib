@@ -43,7 +43,7 @@ export const toIOEither = curry2((fn, args) => {
  * @returns {IO}
  */
 export const mapIOInner = curry2((fn, ioInner) =>
-  ioInner.map((inner) => inner.map(fn))
+  ioInner.map((inner) => inner.map(fn)),
 );
 
 /**

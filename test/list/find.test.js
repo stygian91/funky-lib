@@ -1,6 +1,7 @@
 // import find from "../../src/list/find";
 // import propEq from "../../src/object/propEq";
 import * as F from "../../src";
+import { expect, test, describe } from 'vitest';
 
 describe("find", () => {
   test("finds an element in a list", () => {

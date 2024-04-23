@@ -1,4 +1,5 @@
 import drop from "../../src/list/drop";
+import { expect, test } from 'vitest';
 
 test("drop", () => {
   const original = [1, 2, 3];

@@ -1,4 +1,5 @@
 import concat from "../../src/list/concat";
+import { expect, test } from 'vitest';
 
 test("it concatenates two arrays", () => {
   const leftArray = [1, 2];

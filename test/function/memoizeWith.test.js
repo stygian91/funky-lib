@@ -1,4 +1,5 @@
 import memoizeWith from "../../src/function/memoizeWith";
+import { expect, test } from 'vitest';
 
 test("it caches results and doesn't call the function with the same arguments twice", () => {
   let callCounter = 0;

@@ -1,4 +1,5 @@
 import { curry1, __ } from "../../src/function";
+import { expect, test } from 'vitest';
 
 test("curry1", () => {
   const id = curry1((a) => a);

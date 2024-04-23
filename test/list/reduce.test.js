@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test, describe } from 'vitest';
 
 describe("reduce", () => {
   test("it accumulates a result by calling the function over the list", () => {

@@ -1,4 +1,5 @@
 import _objectForEach from "../../src/internals/_objectForEach";
+import { expect, test } from 'vitest';
 
 test("it iterates over an object's string and symbol props in that order", () => {
   const results = [];

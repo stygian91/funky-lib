@@ -1,4 +1,5 @@
 import { pluck } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("pluck", () => {
   const list = [{ a: { b: 1 } }, { a: { b: 3 } }, { a: { b: 10 } }];

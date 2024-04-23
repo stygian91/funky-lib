@@ -1,5 +1,6 @@
 import pathSatisfies from "../../src/object/pathSatisfies";
 import gt from "../../src/logic/greaterThan";
+import { expect, test } from 'vitest';
 
 test("the condition function is called with the prop at the specified path", () => {
   const object1 = {

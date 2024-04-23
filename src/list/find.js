@@ -39,7 +39,7 @@ const find = (condFn, list) => {
         foundKey = key;
       }
     },
-    list
+    list,
   );
 
   return isNil(foundKey) ? null : list[foundKey];

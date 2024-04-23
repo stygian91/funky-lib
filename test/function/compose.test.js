@@ -1,4 +1,5 @@
 import compose from "../../src/function/compose";
+import { expect, test } from 'vitest';
 
 test("composes results from right to left", () => {
   const add2 = (a) => a + 2;

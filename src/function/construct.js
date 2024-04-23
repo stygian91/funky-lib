@@ -71,7 +71,7 @@ export const constructN = curry2((n, classFn) => {
         default:
           return new classFn(a0, a1, a2, a3, a4, a5, a6, a7, a8, a9);
       }
-    })
+    }),
   );
 });
 

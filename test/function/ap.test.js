@@ -4,6 +4,7 @@ import add from "../../src/math/add";
 import concat from "../../src/list/concat";
 import { expectValue } from "../../src/internals/_test-helpers";
 import Identity from "../../src/data-structures/identity";
+import { expect, test } from 'vitest';
 
 const expectIdentityVal = expectValue(Identity);
 

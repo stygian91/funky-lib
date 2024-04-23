@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test } from 'vitest';
 
 test("it takes the first N elements from a list", () => {
   const list = [1, 2, 3, 4];

@@ -1,4 +1,5 @@
 import not from "../../src/logic/not";
+import { expect, test } from 'vitest';
 
 test("it returns the opposite argument", () => {
   expect(not(true)).toBe(false);

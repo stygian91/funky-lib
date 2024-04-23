@@ -1,4 +1,5 @@
 import { values } from "../../src/object";
+import { expect, test } from 'vitest';
 
 test("values", () => {
   const mySymbol = Symbol("mySymbol");

@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test, describe } from 'vitest';
 
 describe('findIndex', () => {
   test("list", () => {

@@ -1,4 +1,5 @@
 import { differenceWith } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("differenceWith", () => {
   const eqFn = (x, y) => x.a === y.a;

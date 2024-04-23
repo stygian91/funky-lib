@@ -1,4 +1,5 @@
 import defaultTo from "../../src/logic/defaultTo";
+import { expect, test } from 'vitest';
 
 test("defaultTo", () => {
   expect(defaultTo(10, null)).toEqual(10);

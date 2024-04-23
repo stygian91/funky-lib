@@ -1,4 +1,5 @@
 import { unionWith } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("unionWith", () => {
   const list1 = [{ id: 1 }, { id: 2 }, { id: 1 }, { id: 5 }];

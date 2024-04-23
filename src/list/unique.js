@@ -25,7 +25,7 @@ const unique = (list) => {
       return acc;
     },
     [],
-    list
+    list,
   );
 };
 

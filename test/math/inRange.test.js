@@ -1,4 +1,5 @@
 import { inRange } from "../../src/";
+import { expect, test } from 'vitest';
 
 test("inRange", () => {
   expect(inRange(0, 2, 1)).toEqual(true);

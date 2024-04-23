@@ -1,4 +1,5 @@
 import clamp from "../../src/math/clamp";
+import { expect, test } from 'vitest';
 
 test("it restricts values to a range", () => {
   expect(clamp(1, 10, -1)).toEqual(1);

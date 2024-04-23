@@ -1,4 +1,6 @@
-import { curry1, size, slice } from "../";
+import size from "./size";
+import slice from "./slice";
+import curry1 from "../function/curry1";
 
 /**
  * Returns all elements from a list or string, except the first one.

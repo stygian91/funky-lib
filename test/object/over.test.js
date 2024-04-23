@@ -1,5 +1,6 @@
 import { over, lens } from "../../src/object";
 import { add } from "../../src/math";
+import { expect, test } from 'vitest';
 
 test("over", () => {
   const getter = (data) => data.foo;

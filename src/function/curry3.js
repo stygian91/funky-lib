@@ -24,44 +24,44 @@ const curry3 = (fn) =>
         return a === __ && b === __
           ? fn3
           : a === __
-          ? curry2(function (_a, _c) {
-              return fn(_a, b, _c);
-            })
-          : b === __
-          ? curry2(function (_b, _c) {
-              return fn(a, _b, _c);
-            })
-          : curry1(function (_c) {
-              return fn(a, b, _c);
-            });
+            ? curry2(function (_a, _c) {
+                return fn(_a, b, _c);
+              })
+            : b === __
+              ? curry2(function (_b, _c) {
+                  return fn(a, _b, _c);
+                })
+              : curry1(function (_c) {
+                  return fn(a, b, _c);
+                });
       default:
         return a === __ && b === __ && c === __
           ? fn3
           : a === __ && b === __
-          ? curry2(function (_a, _b) {
-              return fn(_a, _b, c);
-            })
-          : a === __ && c === __
-          ? curry2(function (_a, _c) {
-              return fn(_a, b, _c);
-            })
-          : b === __ && c === __
-          ? curry2(function (_b, _c) {
-              return fn(a, _b, _c);
-            })
-          : a === __
-          ? curry1(function (_a) {
-              return fn(_a, b, c);
-            })
-          : b === __
-          ? curry1(function (_b) {
-              return fn(a, _b, c);
-            })
-          : c === __
-          ? curry1(function (_c) {
-              return fn(a, b, _c);
-            })
-          : fn(a, b, c);
+            ? curry2(function (_a, _b) {
+                return fn(_a, _b, c);
+              })
+            : a === __ && c === __
+              ? curry2(function (_a, _c) {
+                  return fn(_a, b, _c);
+                })
+              : b === __ && c === __
+                ? curry2(function (_b, _c) {
+                    return fn(a, _b, _c);
+                  })
+                : a === __
+                  ? curry1(function (_a) {
+                      return fn(_a, b, c);
+                    })
+                  : b === __
+                    ? curry1(function (_b) {
+                        return fn(a, _b, c);
+                      })
+                    : c === __
+                      ? curry1(function (_c) {
+                          return fn(a, b, _c);
+                        })
+                      : fn(a, b, c);
     }
   };
 

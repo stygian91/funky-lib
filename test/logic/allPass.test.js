@@ -1,4 +1,5 @@
 import allPass from "../../src/logic/allPass";
+import { expect, test } from 'vitest';
 
 test("returns true only when all argument functions return true", () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

@@ -27,7 +27,7 @@ class Left extends Either {
 
   static of(x) {
     throw new Error(
-      "`of` called on class Left (value) instead of Either (type)"
+      "`of` called on class Left (value) instead of Either (type)",
     );
   }
 
@@ -74,7 +74,7 @@ class Right extends Either {
 
   static of(x) {
     throw new Error(
-      "`of` called on class Right (value) instead of Either (type)"
+      "`of` called on class Right (value) instead of Either (type)",
     );
   }
 

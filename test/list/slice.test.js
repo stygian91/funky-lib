@@ -1,4 +1,5 @@
 import slice from "../../src/list/slice";
+import { expect, test } from 'vitest';
 
 test("it slices a list or string", () => {
   const list = [1, 2, 3];

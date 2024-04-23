@@ -1,6 +1,7 @@
 import { expectEquals, expectType } from "../../src/internals/_test-helpers";
 import { Left, Right, Either } from "../../src/data-structures/either";
 import Identity from "../../src/data-structures/identity";
+import { expect, test } from 'vitest';
 
 const expectRightEquals = expectEquals(Right);
 const expectLeftEquals = expectEquals(Left);

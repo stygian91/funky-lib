@@ -1,6 +1,7 @@
 import construct, { constructN } from "../../src/function/construct";
 import apply from "../../src/function/apply";
 import slice from "../../src/list/slice";
+import { expect, test } from 'vitest';
 
 test("constructN", () => {
   const args = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];

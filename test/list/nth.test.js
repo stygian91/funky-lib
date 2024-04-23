@@ -1,5 +1,6 @@
 import nth from "../../src/list/nth";
 import __ from "../../src/function/placeholderArgument";
+import { expect, test } from 'vitest';
 
 test("nth", () => {
   const arr = [1, 2, 3];

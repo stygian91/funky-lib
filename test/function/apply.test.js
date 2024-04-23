@@ -1,4 +1,5 @@
 import apply from "../../src/function/apply";
+import { expect, test } from 'vitest';
 
 test("it applies the list of arguments to the function", () => {
   let func = (a, b) => a + b;

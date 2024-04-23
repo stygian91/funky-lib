@@ -1,4 +1,5 @@
 import { dec } from "../../src";
+import { expect, test } from 'vitest';
 
 test("dec", () => {
   expect(dec(1)).toEqual(0);

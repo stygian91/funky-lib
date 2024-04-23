@@ -1,5 +1,6 @@
 import has from "../../src/object/has";
 import __ from "../../src/function/placeholderArgument";
+import { expect, test } from 'vitest';
 
 test("returns whether the object has an own property", () => {
   const mySymbol = Symbol("mySymbol");

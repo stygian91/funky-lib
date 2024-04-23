@@ -1,4 +1,5 @@
 import modulo from "../../src/math/modulo";
+import { expect, test } from 'vitest';
 
 test("it returns the remainder of a division", () => {
   expect(modulo(5, 5)).toEqual(0);

@@ -1,4 +1,5 @@
 import dissoc from "../../src/object/dissoc";
+import { expect, test } from 'vitest';
 
 test("dissoc", () => {
   const original = { a: 1, b: 2, c: 3 };

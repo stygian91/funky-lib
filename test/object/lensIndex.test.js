@@ -1,5 +1,6 @@
 import { lensIndex, view, set, over } from "../../src/object";
 import { add } from "../../src/math";
+import { expect, test } from 'vitest';
 
 test("lensIndex", () => {
   const myLens = lensIndex(1);

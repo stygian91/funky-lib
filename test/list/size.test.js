@@ -1,4 +1,5 @@
 import { size } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("size", () => {
   expect(size("abc")).toEqual(3);

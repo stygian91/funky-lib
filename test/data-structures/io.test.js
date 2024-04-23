@@ -1,4 +1,5 @@
 import IO from "../../src/data-structures/io";
+import { expect, test } from 'vitest';
 
 test("IO", async () => {
   let obj = { a: 1 };

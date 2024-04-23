@@ -1,4 +1,5 @@
 import unapply from "../../src/function/unapply";
+import { expect, test } from 'vitest';
 
 test("it creates a variadic function from a unary function that takes a list", () => {
   const unary = (list) => list.map((item) => item + 1);

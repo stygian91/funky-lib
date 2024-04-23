@@ -1,4 +1,5 @@
 import without from "../../src/list/without";
+import { expect, test } from 'vitest';
 
 test("without", () => {
   const list = [1, 2, 3, 4, 5];

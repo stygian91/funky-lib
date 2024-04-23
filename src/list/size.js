@@ -20,7 +20,7 @@ const size = (collection) => {
   }
 
   throw new Error(
-    `Cannot determine the size of a variable with a type of ${typeof collection}.`
+    `Cannot determine the size of a variable with a type of ${typeof collection}.`,
   );
 };
 

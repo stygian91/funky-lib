@@ -1,4 +1,5 @@
 import pipe from "../../src/function/pipe";
+import { expect, test } from 'vitest';
 
 test("pipes results from left to right", () => {
   const add2 = (a) => a + 2;

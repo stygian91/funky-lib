@@ -1,4 +1,5 @@
 import { view, lens, path } from "../../src/object";
+import { expect, test } from 'vitest';
 
 test("view", () => {
   const getter = path("foo.bar");

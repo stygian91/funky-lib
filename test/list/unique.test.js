@@ -1,4 +1,5 @@
 import unique from "../../src/list/unique";
+import { expect, test } from 'vitest';
 
 test("unique", () => {
   const arr = [1, 2, 3, 4, 3, 2, 4];

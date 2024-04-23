@@ -16,7 +16,7 @@ import Transformer, { isTransformer } from "../data-structures/transformer";
  */
 const filter = (func, list) => {
   if (isTransformer(list)) {
-    const step = function(acc, curr, index, _list) {
+    const step = function (acc, curr, index, _list) {
       if (func(curr, index, list)) {
         return list.step(acc, curr, index, _list);
       }

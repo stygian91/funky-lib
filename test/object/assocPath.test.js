@@ -1,4 +1,5 @@
 import assocPath from "../../src/object/assocPath";
+import { expect, test } from 'vitest';
 
 test("assocPath", () => {
   const orig = { a: { b: { c: 0 } } };

@@ -1,4 +1,5 @@
 import _stringFilter from "../../src/internals/_stringFilter";
+import { expect, test } from 'vitest';
 
 test("it filters strings based on the filter function", () => {
   const str = "abcd";

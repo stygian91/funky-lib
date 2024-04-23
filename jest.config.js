@@ -1,6 +1,4 @@
 module.exports = {
-  collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.{js,jsx}", "!**/node_modules/**"],
-  coverageReporters: ["lcov", "text"],
+  preset: 'vite-jest',
   testPathIgnorePatterns: ["<rootDir>/es/", "<rootDir>/dist/"],
 };

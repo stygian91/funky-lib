@@ -18,14 +18,14 @@ import reduce from "./reduce";
  */
 const map = (func, list) => {
   if (isTransformer(list)) {
-    const step = function(acc, curr, index, _list) {
+    const step = function (acc, curr, index, _list) {
       return list.step(acc, func(curr, index, _list), index, _list);
     };
 
     return new Transformer(step, list.init, list.result);
   }
 
-  if (list && typeof list.map === 'function') {
+  if (list && typeof list.map === "function") {
     return list.map(func);
   }
 
@@ -36,7 +36,7 @@ const map = (func, list) => {
         return acc;
       },
       {},
-      list
+      list,
     );
   }
 
@@ -47,7 +47,7 @@ const map = (func, list) => {
         return acc;
       },
       "",
-      list
+      list,
     );
   }
 

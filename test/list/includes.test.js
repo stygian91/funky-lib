@@ -1,4 +1,5 @@
 import { includes } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("includes", () => {
   expect(includes(1, 0, [1, 2, 3])).toEqual(true);

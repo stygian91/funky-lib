@@ -1,5 +1,6 @@
 import { keyWith } from "../../src/list";
 import { prop } from "../../src/object";
+import { expect, test } from 'vitest';
 
 test("keyWith", () => {
   const list = [

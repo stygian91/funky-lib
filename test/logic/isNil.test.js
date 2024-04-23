@@ -1,4 +1,5 @@
 import isNil from "../../src/logic/isNil";
+import { expect, test } from 'vitest';
 
 test("it determines if the argument is nullish", () => {
   expect(isNil(null)).toEqual(true);

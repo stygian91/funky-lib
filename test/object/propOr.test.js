@@ -1,4 +1,5 @@
 import propOr from "../../src/object/propOr";
+import { expect, test } from 'vitest';
 
 test("returns the default value if the prop is undefined", () => {
   const object1 = { a: 1 };
