@@ -1,4 +1,5 @@
 import keys from "../../src/internals/_keys";
+import { expect, test } from 'vitest';
 
 test("keys", () => {
   const mySymbol = Symbol("mySymbol");

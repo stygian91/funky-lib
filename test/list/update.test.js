@@ -1,4 +1,5 @@
 import { update } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("update", () => {
   const list = [100, 200, 300];

@@ -1,4 +1,5 @@
 import splice from "../../src/list/splice";
+import { expect, test } from 'vitest';
 
 test("splice", () => {
   const original = [1, 2, 3, 4, 5];

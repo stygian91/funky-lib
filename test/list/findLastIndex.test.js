@@ -1,5 +1,6 @@
 import findLastIndex from "../../src/list/findLastIndex";
 import lt from "../../src/logic/lessThan";
+import { expect, test } from 'vitest';
 
 test("findLastIndex", () => {
   const list = [1, 2, 3, 1];

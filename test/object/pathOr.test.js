@@ -1,4 +1,5 @@
 import pathOr from "../../src/object/pathOr";
+import { expect, test } from 'vitest';
 
 test("retrieves the value at the specified path, otherwise returns the default", () => {
   const object = {

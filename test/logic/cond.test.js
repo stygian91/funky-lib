@@ -1,4 +1,5 @@
 import cond from "../../src/logic/cond";
+import { expect, test } from 'vitest';
 
 test("it executes the transform function of the first matching pair", () => {
   const a = 15;

@@ -27,7 +27,7 @@ const assocPath = (path, value, object) => {
   const newValue = assocPath(
     slice(1, pathArray.length, pathArray),
     value,
-    nextObject
+    nextObject,
   );
   return assoc(prop, newValue, object);
 };

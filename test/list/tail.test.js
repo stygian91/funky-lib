@@ -1,4 +1,5 @@
 import { tail } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("tail", () => {
   const str = "qwerty";

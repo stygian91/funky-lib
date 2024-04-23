@@ -1,4 +1,5 @@
 import { set, lens } from "../../src/object";
+import { expect, test } from 'vitest';
 
 test("set", () => {
   const getter = () => {};

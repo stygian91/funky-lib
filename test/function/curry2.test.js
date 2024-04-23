@@ -1,4 +1,5 @@
 import { curry2, __ } from "../../src/function";
+import { expect, test } from 'vitest';
 
 test("curry2", () => {
   const fn = (a, b) => a + b;

@@ -1,4 +1,5 @@
 import xor from "../../src/logic/xor";
+import { expect, test } from 'vitest';
 
 test("xor", () => {
   expect(xor(false, false)).toEqual(0);

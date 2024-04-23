@@ -1,4 +1,5 @@
 import unfold from "../../src/list/unfold";
+import { expect, test } from 'vitest';
 
 test("unfold", () => {
   expect(unfold(() => false, 0)).toEqual([]);

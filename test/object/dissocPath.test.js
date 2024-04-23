@@ -1,4 +1,5 @@
 import dissocPath from "../../src/object/dissocPath";
+import { expect, test } from 'vitest';
 
 test("dissocPath", () => {
   const obj = { a: { b: { c: 321 } } };

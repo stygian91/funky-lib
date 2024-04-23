@@ -11,7 +11,7 @@ const _objectFilter = (filterFn, object) =>
       return acc;
     },
     {},
-    object
+    object,
   );
 
 export default curry2(_objectFilter);

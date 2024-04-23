@@ -1,4 +1,5 @@
 import add from "../../src/math/add";
+import { expect, test } from 'vitest';
 
 test("creates a function that adds 2", () => {
   const add2 = add(2);

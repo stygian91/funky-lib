@@ -1,4 +1,5 @@
 import nthArg from "../../src/function/nthArg";
+import { expect, test } from 'vitest';
 
 test("it returns the nth argument", () => {
   expect(nthArg(0)(1, 2, 3)).toEqual(1);

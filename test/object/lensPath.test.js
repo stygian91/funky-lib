@@ -1,5 +1,6 @@
 import { lensPath, view, set, over } from "../../src/object";
 import { multiply } from "../../src/math";
+import { expect, test } from 'vitest';
 
 test("lensPath object", () => {
   const myLens = lensPath('foo.bar');

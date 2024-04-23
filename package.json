@@ -1,49 +1,30 @@
 {
   "name": "funky-lib",
-  "version": "7.7.1",
+  "version": "8.0.0",
   "description": "",
-  "main": "dist/index.js",
-  "module": "es/index.js",
-  "unpkg": "umd/main.js",
+  "main": "dist/funkyLib.es.js",
+  "module": "dist/funkyLib.es.js",
+  "unpkg": "dist/funkyLib.umd.js",
+  "type": "module",
   "files": [
-    "es",
     "dist",
-    "umd",
     "src"
   ],
   "scripts": {
     "prepare": "npm run clean && npm run build",
-    "clean": "rimraf es/* dist/* umd/*",
-    "build:es": "cross-env BABEL_ENV=es babel src -d es",
-    "build:cjs": "cross-env BABEL_ENV=cjs babel src -d dist",
-    "build:umd": "webpack --mode=production",
-    "build": "npm run build:es && npm run build:cjs && npm run build:umd",
-    "test": "jest",
-    "test:watch": "npm run test -- --watch",
+    "clean": "rimraf --glob dist/*",
+    "build": "vite build",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
     "prettier": "prettier --write ./src"
   },
-  "author": "",
+  "author": "Styg",
   "license": "MIT",
-  "dependencies": {
-    "@babel/runtime": "^7.10.5"
-  },
   "devDependencies": {
-    "@babel/cli": "^7.15.7",
-    "@babel/core": "^7.8.7",
-    "@babel/plugin-transform-runtime": "^7.10.5",
-    "@babel/preset-env": "^7.8.7",
-    "babel-loader": "^8.2.4",
-    "babel-plugin-annotate-pure-calls": "^0.4.0",
-    "cross-env": "^7.0.2",
-    "jest": "^27.5.1",
-    "prettier": "2.0.5",
-    "rimraf": "^3.0.2",
-    "webpack": "^5.71.0",
-    "webpack-cli": "^4.9.2"
-  },
-  "jshintConfig": {
-    "esversion": "9",
-    "maxcomplexity": "7"
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "vite": "^5.2.10",
+    "vitest": "^1.5.0"
   },
   "repository": "github:stygian91/funky-lib",
   "sideEffects": false

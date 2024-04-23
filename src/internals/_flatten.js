@@ -8,7 +8,7 @@ const _flatten = (recursive, list) => {
     if (Array.isArray(value)) {
       forEach(
         (innerValue) => result.push(innerValue),
-        recursive ? _flatten(true, value) : value
+        recursive ? _flatten(true, value) : value,
       );
     } else {
       result.push(value);

@@ -8,14 +8,17 @@ const _runReduce = (whileFn, condFn, transformer, object) => {
   let accumulator = transformer.init();
 
   whileFn(
-    (value, key, obj) => condFn(accumulator, value, key, obj) && !isReduced(accumulator),
+    (value, key, obj) =>
+      condFn(accumulator, value, key, obj) && !isReduced(accumulator),
     (value, key, obj) => {
       accumulator = transformer.step(accumulator, value, key, obj);
     },
-    object
+    object,
   );
 
-  return transformer.result(isReduced(accumulator) ? accumulator[_reduced] : accumulator);
+  return transformer.result(
+    isReduced(accumulator) ? accumulator[_reduced] : accumulator,
+  );
 };
 
 const _reduceWhile = (condFn, transformer, list) => {

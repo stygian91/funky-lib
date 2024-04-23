@@ -1,4 +1,5 @@
 import insert from "../../src/list/insert";
+import { expect, test } from 'vitest';
 
 test("insert", () => {
   const original = [0, 2, 3, 5];

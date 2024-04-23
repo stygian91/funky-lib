@@ -1,5 +1,6 @@
 import ifElse from "../../src/logic/ifElse";
 import always from "../../src/function/always";
+import { expect, test } from 'vitest';
 
 const greaterThan10 = (a, b, c) => a + b + c > 10;
 const sum3 = (a, b, c) => a + b + c;

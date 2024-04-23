@@ -1,4 +1,5 @@
 import unnest from "../../src/list/unnest";
+import { expect, test } from 'vitest';
 
 test("unest", () => {
   const list = [1, [2, 3], [4, [5]]];

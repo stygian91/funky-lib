@@ -3,6 +3,7 @@ import reduce from "../../src/list/reduce";
 import add from "../../src/math/add";
 import div from "../../src/math/divide";
 import prop from "../../src/object/prop";
+import { expect, test } from 'vitest';
 
 test("it executes the branch functions and passes their results to the converging function", () => {
   const sum = reduce(add, 0);

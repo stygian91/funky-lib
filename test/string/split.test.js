@@ -1,4 +1,5 @@
 import split from "../../src/string/split";
+import { expect, test } from 'vitest';
 
 test("it splits a string into an array based on the delimiter", () => {
   const splitBySpace = split(" ");

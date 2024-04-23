@@ -1,5 +1,6 @@
 import { Identity, Maybe } from "../../src/data-structures";
 import { expectType, expectValue } from "../../src/internals/_test-helpers";
+import { expect, test } from 'vitest';
 
 const expectMaybe = expectType(Maybe);
 const expectMaybeVal = expectValue(Maybe);

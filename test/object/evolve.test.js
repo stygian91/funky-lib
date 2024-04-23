@@ -1,5 +1,6 @@
 import evolve from "../../src/object/evolve";
 import add from "../../src/math/add";
+import { expect, test } from 'vitest';
 
 test("evolve", () => {
   const obj = { a: 1, b: { c: 2 }, d: [3, 4], e: 5 };

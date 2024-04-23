@@ -56,7 +56,7 @@ export default function arity(n, fn) {
       };
     default:
       throw new Error(
-        "First argument to _arity must be a non-negative integer no greater than ten"
+        "First argument to _arity must be a non-negative integer no greater than ten",
       );
   }
 }

@@ -18,7 +18,7 @@ import curry2 from "../function/curry2";
  */
 const take = (n, list) => {
   if (isTransformer(list)) {
-    const step = function(acc, curr, index, _list) {
+    const step = function (acc, curr, index, _list) {
       if (index < n) {
         return list.step(acc, curr, index, _list);
       }
@@ -30,6 +30,6 @@ const take = (n, list) => {
   }
 
   return slice(0, n, list);
-}
+};
 
 export default curry2(take);

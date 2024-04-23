@@ -1,4 +1,5 @@
 import _stringWhile from "../../src/internals/_stringWhile";
+import { expect, test } from 'vitest';
 
 test("it loops over a string's characters while the condition is true", () => {
   let result = "";

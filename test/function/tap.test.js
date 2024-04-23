@@ -1,4 +1,5 @@
 import * as F from '../../src';
+import { expect, test, describe } from 'vitest';
 
 describe('tap', () => {
   test("runs a function on an argument and then returns that argument", () => {

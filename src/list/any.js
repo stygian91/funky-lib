@@ -13,7 +13,7 @@ const any = (condFn, list) =>
     (acc) => !acc,
     (acc, current) => acc || condFn(current),
     false,
-    list
+    list,
   );
 
 export default curry2(any);

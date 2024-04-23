@@ -1,5 +1,6 @@
 import findLast from "../../src/list/findLast";
 import gt from "../../src/logic/greaterThan";
+import { expect, test } from 'vitest';
 
 test("findLast", () => {
   const list = [10, 5, 12, 3];

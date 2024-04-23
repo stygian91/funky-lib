@@ -1,4 +1,5 @@
 import or from "../../src/logic/or";
+import { expect, test } from 'vitest';
 
 test("or", () => {
   expect(or(false, false)).toEqual(false);

@@ -18,7 +18,7 @@ const where = (specObject, testObject) =>
   pipe(
     keys,
     map((key) => propSatisfies(prop(key, specObject), key, testObject)),
-    all(id)
+    all(id),
   )(specObject);
 
 export default curry2(where);

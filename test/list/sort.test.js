@@ -1,4 +1,5 @@
 import sort from "../../src/list/sort";
+import { expect, test } from 'vitest';
 
 test("sort", () => {
   const original = [5, 2, 1, 3, 4, 10, 7];

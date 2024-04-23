@@ -1,4 +1,5 @@
 import gt from "../../src/logic/greaterThan";
+import { expect, test } from 'vitest';
 
 test("returns true if left is > right argument", () => {
   expect(gt(1, 2)).toBe(true);

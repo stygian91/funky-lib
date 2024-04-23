@@ -1,4 +1,5 @@
 import anyPass from "../../src/logic/anyPass";
+import { expect, test } from 'vitest';
 
 test("returns true when any one of the argument functions returns true", () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

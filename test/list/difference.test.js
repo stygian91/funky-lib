@@ -1,4 +1,5 @@
 import { difference } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("difference", () => {
   const list1 = [1, 2, 3, 4];

@@ -1,4 +1,5 @@
 import chunk from "../../src/list/chunk";
+import { expect, test } from 'vitest';
 
 test("chunk", () => {
   const arr = [1, 2, 3, 4, 5, 6];

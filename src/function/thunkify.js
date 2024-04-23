@@ -6,6 +6,10 @@ import curry1 from "./curry1";
  * @param {function} func
  * @returns {function}
  */
-const thunkify = (func) => (...args) => () => func(...args);
+const thunkify =
+  (func) =>
+  (...args) =>
+  () =>
+    func(...args);
 
 export default curry1(thunkify);

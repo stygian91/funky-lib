@@ -1,4 +1,5 @@
 import path from "../../src/object/path";
+import { expect, test } from 'vitest';
 
 test("retrieves a prop from an object with the provided path", () => {
   const object = {

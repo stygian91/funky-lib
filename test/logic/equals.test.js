@@ -1,5 +1,6 @@
 import equals from "../../src/logic/equals";
 import { Identity } from "../../src/data-structures";
+import { expect, test } from 'vitest';
 
 test("returns true if left === right", () => {
   const func1 = (a, b) => a + b;

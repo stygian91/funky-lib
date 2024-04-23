@@ -10,12 +10,14 @@ import curry1 from "./curry1";
  * @param {number} index
  * @returns {function}
  */
-const nthArg = (index) => (...args) => {
-  if (index >= 0) {
-    return args[index];
-  }
+const nthArg =
+  (index) =>
+  (...args) => {
+    if (index >= 0) {
+      return args[index];
+    }
 
-  return args[args.length + index];
-};
+    return args[args.length + index];
+  };
 
 export default curry1(nthArg);

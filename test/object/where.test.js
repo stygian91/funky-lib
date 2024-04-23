@@ -1,5 +1,6 @@
 import where from "../../src/object/where";
 import gt from "../../src/logic/greaterThan";
+import { expect, test } from 'vitest';
 
 test("it returns true only if all functions in the spec object return true", () => {
   const specObject = {

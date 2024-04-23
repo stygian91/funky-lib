@@ -1,5 +1,6 @@
 import _objectWhile from "../../src/internals/_objectWhile";
 import always from "../../src/function/always";
+import { expect, test } from 'vitest';
 
 test("it iterates through the object properties while the condition is true", () => {
   const results = [];

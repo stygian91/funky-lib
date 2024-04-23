@@ -12,7 +12,7 @@ import curry2 from "./curry2";
  */
 const tap = (func, arg) => {
   if (isTransformer(arg)) {
-    const step = function(acc, curr, index, _arg) {
+    const step = function (acc, curr, index, _arg) {
       func(curr);
       return arg.step(acc, curr, index, _arg);
     };

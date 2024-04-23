@@ -1,4 +1,5 @@
 import { head } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("head", () => {
   expect(head("qwery")).toEqual("q");

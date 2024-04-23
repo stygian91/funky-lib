@@ -1,4 +1,5 @@
 import sub from "../../src/math/subtract";
+import { expect, test } from 'vitest';
 
 test("creates a function that subtracts 3", () => {
   const sub3 = sub(3);

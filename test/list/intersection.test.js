@@ -1,4 +1,5 @@
 import intersection from "../../src/list/intersection";
+import { expect, test } from 'vitest';
 
 test("intersection", () => {
   const list1 = [1, 2, 3, 4];

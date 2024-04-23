@@ -1,4 +1,5 @@
 import { arity } from "../../src/function";
+import { expect, test } from 'vitest';
 
 test("it changes the arity of a function", () => {
   const func = (a) => a;

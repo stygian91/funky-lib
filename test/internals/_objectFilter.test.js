@@ -1,4 +1,5 @@
 import _objectFilter from "../../src/internals/_objectFilter";
+import { expect, test } from 'vitest';
 
 test("it filters an object's properties based on the condition function", () => {
   const obj = { a: 1, b: 2, c: 3 };

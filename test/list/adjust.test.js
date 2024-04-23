@@ -1,5 +1,6 @@
 import adjust from "../../src/list/adjust";
 import __ from "../../src/function/placeholderArgument";
+import { expect, test } from 'vitest';
 
 test("it updates an item at index with a transform fn and returns the list as a copy", () => {
   const list = [1, 2, 3, 4];

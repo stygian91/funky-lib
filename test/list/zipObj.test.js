@@ -1,4 +1,5 @@
 import zipObj from "../../src/list/zipObj";
+import { expect, test } from 'vitest';
 
 test("zipObj", () => {
   const keys = ["a", "b", "c"];

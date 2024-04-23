@@ -11,7 +11,7 @@ const _stringFilter = (filterFn, string) =>
       return acc;
     },
     "",
-    string
+    string,
   );
 
 export default curry2(_stringFilter);

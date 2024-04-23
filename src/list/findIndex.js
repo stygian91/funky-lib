@@ -15,7 +15,7 @@ import reduced from "./reduced";
 const findIndex = (condFn, list) => {
   if (isTransformer(list)) {
     const step = (acc, curr, index, _list) => {
-      const _step = (val) => list.step(acc, val, index, _list)
+      const _step = (val) => list.step(acc, val, index, _list);
       if (condFn(curr, index, _list)) {
         return reduced(_step(index));
       }

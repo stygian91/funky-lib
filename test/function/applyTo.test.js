@@ -1,4 +1,5 @@
 import { applyTo } from "../../src/function";
+import { expect, test } from 'vitest';
 
 test("applyTo", () => {
   const applyTo7 = applyTo(7);

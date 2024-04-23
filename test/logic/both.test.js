@@ -1,4 +1,5 @@
 import both from "../../src/logic/both";
+import { expect, test } from 'vitest';
 
 test("returns true only when both argument functions return true", () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

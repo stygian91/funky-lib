@@ -1,4 +1,5 @@
 import { prepend } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("prepend", () => {
   const list = ["ipsum", "sit"];

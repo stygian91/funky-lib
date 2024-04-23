@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test } from 'vitest';
 
 test("it returns a new list/object of the same size", () => {
   const list = [1, 2, 3];

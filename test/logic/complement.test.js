@@ -1,4 +1,5 @@
 import complement from "../../src/logic/complement";
+import { expect, test } from 'vitest';
 
 test("returns the opposite 'truthy' or 'falsy' value to the provided function", () => {
   const check = (a) => a > 5;

@@ -1,6 +1,7 @@
 import { Identity, Maybe } from "../../src/data-structures";
 import add from "../../src/math/add";
 import { expectValue, expectType } from "../../src/internals/_test-helpers";
+import { expect, test } from 'vitest';
 
 const expectIdentity = expectType(Identity);
 const expectIdentityVal = expectValue(Identity);

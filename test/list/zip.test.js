@@ -1,4 +1,5 @@
 import zip from "../../src/list/zip";
+import { expect, test } from 'vitest';
 
 test("zip", () => {
   const arr1 = [1, 2, 3];

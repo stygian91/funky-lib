@@ -1,4 +1,5 @@
 import pick from "../../src/object/pick";
+import { expect, test } from 'vitest';
 
 test("pick", () => {
   const result = pick(["a", "c", "d"], { a: 1, b: 2, c: 3 });

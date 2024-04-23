@@ -1,4 +1,5 @@
 import { union } from "../../src/list";
+import { expect, test } from 'vitest';
 
 test("union", () => {
   const list1 = [1, 1, 3, 5];

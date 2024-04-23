@@ -13,7 +13,7 @@ const all = (condFn, list) =>
     identity,
     (acc, current, index, array) => acc && condFn(current, index, array),
     true,
-    list
+    list,
   );
 
 export default curry2(all);

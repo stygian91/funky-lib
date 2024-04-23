@@ -1,5 +1,6 @@
 import { omit } from "../../src/object";
 import { __ } from "../../src/function";
+import { expect, test } from 'vitest';
 
 test("omit", () => {
   const nums = { a: 1, b: 2, c: 3, d: 4 };

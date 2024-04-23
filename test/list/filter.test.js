@@ -1,4 +1,5 @@
 import * as F from "../../src";
+import { expect, test } from 'vitest';
 
 test("returns a new list filtered by the condition function", () => {
   const list = [1, 2, 3];

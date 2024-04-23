@@ -1,4 +1,5 @@
 import thunkify from "../../src/function/thunkify";
+import { expect, test } from 'vitest';
 
 test("delays execution by returning a nullary function", () => {
   const func = (a, b) => a * b;

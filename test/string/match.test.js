@@ -1,4 +1,5 @@
 import match from "../../src/string/match";
+import { expect, test } from 'vitest';
 
 test("match", () => {
   const results1 = match(/(lorem)/, "asd lorem");

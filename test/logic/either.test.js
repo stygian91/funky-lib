@@ -1,4 +1,5 @@
 import either from "../../src/logic/either";
+import { expect, test } from 'vitest';
 
 test("returns true when either one of the argument functions returns true", () => {
   const sumGreaterThan10 = (a, b) => a + b > 10;

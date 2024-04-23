@@ -18,7 +18,7 @@ const pathOr = (defaultValue, path, object) => {
     (acc) => typeof acc !== "undefined",
     (acc, key) => acc[key],
     object,
-    pathArray
+    pathArray,
   );
 
   return typeof value === "undefined" ? defaultValue : value;

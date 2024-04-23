@@ -1,4 +1,5 @@
 import forEach from "../../src/list/forEach";
+import { expect, test } from 'vitest';
 
 const testForEach = (original, expected, originalClone) => {
   const result = [];

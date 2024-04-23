@@ -11,12 +11,14 @@ import curry2 from "./curry2";
  * @param {function[]} branchingFns
  * @returns {function}
  */
-const converge = (convergingFn, branchingFns) => (...args) => {
-  const branchResults = map(
-    (branchingFn) => branchingFn(...args),
-    branchingFns
-  );
-  return convergingFn(...branchResults);
-};
+const converge =
+  (convergingFn, branchingFns) =>
+  (...args) => {
+    const branchResults = map(
+      (branchingFn) => branchingFn(...args),
+      branchingFns,
+    );
+    return convergingFn(...branchResults);
+  };
 
 export default curry2(converge);

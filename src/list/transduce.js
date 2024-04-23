@@ -7,7 +7,7 @@ const transduce = (transducer, reducer, initialValue, list) =>
   _reduceWhile(
     T,
     transducer(new Transformer(reducer, () => initialValue)),
-    list
+    list,
   );
 
 export default curry(transduce);

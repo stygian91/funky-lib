@@ -1,4 +1,5 @@
 import { indexOf } from "../../src/string";
+import { expect, test } from 'vitest';
 
 test("indexOf", () => {
   expect(indexOf("asd", 0, "qwe")).toEqual(-1);

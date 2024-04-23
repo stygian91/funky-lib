@@ -7,6 +7,7 @@ import {
 } from "../../src/data-structures/helpers";
 import { expectEquals, expectType } from "../../src/internals/_test-helpers";
 import { IO } from "../../src/data-structures";
+import { expect, test } from 'vitest';
 
 const expectRightEquals = expectEquals(Right);
 const expectLeftEquals = expectEquals(Left);

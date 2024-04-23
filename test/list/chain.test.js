@@ -2,6 +2,7 @@ import { chain } from "../../src/list";
 import Maybe from "../../src/data-structures/maybe";
 import { expectValue } from "../../src/internals/_test-helpers";
 import transduce from "../../src/list/transduce";
+import { expect, test } from 'vitest';
 
 test("chain", () => {
   const list = [1, 2, 3, 4];

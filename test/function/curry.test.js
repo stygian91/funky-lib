@@ -1,5 +1,6 @@
 import curry from "../../src/function/curry";
 import __ from "../../src/function/placeholderArgument";
+import { expect, test } from 'vitest';
 
 const operation = (a, b, c) => a * b + c;
 const biggerOperation = (a, b, c, d) => a * b + c * d;

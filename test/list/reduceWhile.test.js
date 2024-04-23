@@ -2,6 +2,7 @@ import reduceWhile from "../../src/list/reduceWhile";
 import reduced from "../../src/list/reduced";
 import lte from "../../src/logic/lessThanOrEqual";
 import __ from "../../src/function/placeholderArgument";
+import { expect, test, describe } from 'vitest';
 
 describe('reduceWhile', () => {
   test("it reduces the list only while the condition fn returns a truthy value", () => {

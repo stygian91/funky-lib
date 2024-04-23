@@ -1,4 +1,5 @@
 import { remapKeys } from "../../src/object";
+import { expect, test } from 'vitest';
 
 test("remapKeys", () => {
   const obj = {

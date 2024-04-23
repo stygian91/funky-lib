@@ -1,5 +1,6 @@
 import lens, { lensSymbol } from "../../src/object/lens";
 import path from "../../src/object/path";
+import { expect, test } from 'vitest';
 
 test("lens", () => {
   const getter = (obj) => obj.foo;

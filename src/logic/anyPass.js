@@ -15,7 +15,7 @@ const anyPass = (funcs, args) =>
     (acc) => !acc,
     (acc, current) => acc || !!current(...args),
     false,
-    funcs
+    funcs,
   );
 
 export default curry2(anyPass);
