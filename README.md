@@ -16,7 +16,7 @@ Yup, this thing started as an exercise. Most of the functions have the same sign
 
 ## Build
 
-`npm run build` - builds the library as CJS and ES (preset env)
+`npm run build` - builds the library as UMD and ES
 
 ## Documentation
 
